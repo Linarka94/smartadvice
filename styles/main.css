@@ -1,0 +1,404 @@
+ .breadcrum {
+ 	margin: 83px 0 0 11px;
+	font-size: 16px;
+	font-family: helvetica;
+	color: #3c4759;	
+	}
+ .breadcrum a{
+	font-size: 16px;
+	font-family: helvetica;
+	color: #00aeef;
+	text-decoration:none;
+	}
+ .mtitle {
+ 	margin-top: 20px;
+ 	margin-left: 6px;
+	font-size: 48px;
+	font-family: helvetica-bold;
+	color: #3c4759; 
+	}
+	
+/*///////////////////////////////////////////////// Article - блок вывода новостей и контента*/
+ article{
+	width: 1190px;
+	height: 1590px; 	
+	margin: auto;
+	padding-top: 49px;
+	/*background: #e2e2e2;*/
+	}	
+ .article-block {						/* article block left and right*/
+	float: left;
+	height: 445px;
+	width: 370px;
+	margin:0 10px 65px 10px;
+	}
+ .article-blockm {						/* article block middle*/
+	float: left;
+	height: 445px;
+	width: 370px;
+	margin:0 10px 65px 10px;
+	}
+ .article-cat {
+	float: right;
+	background: #242c3a;
+	font: 300 16px helvetica-light; 
+	color: #fff;
+	padding:10px 15px;
+	margin: -62px -10px 0 0;
+	position: relative;
+	} 
+ .article-img {
+	background: #384355 url(img/feedbg.png);
+	width: 370px;
+	height: 230px;
+	} 
+ .article-title {
+	height: 102px;
+	margin-top: 16px;
+	font: 300 26px helvetica; 
+	color: #3c4759;
+	}
+ .article-info {
+	margin-top:2px;
+	font: 300 14px helvetica;
+	color: #637188; 
+	}
+ .article-views {
+	float:left; 
+	}
+ .article-views:before {
+	content: " ";
+	margin-right: 5px;
+	padding:0px 8px;
+	background: url(img/views.png);
+	}	
+ .article-date {
+	float:left; 
+	margin-left: 15px;
+	}
+ .article-date:before {
+	content: " ";
+	margin-right: 5px;
+	padding:0px 8px;
+	background: url(img/date.png);
+	}	
+ .article-text {
+	margin-top:21px;
+	font: 300 16px helvetica;
+	color: #637188; 
+	}	
+/* Выводим ховер блок статьи*/		
+ .article-block2 {	
+	display: none;
+	margin: -40px 0 0 -40px;
+	background: #2a3443; 
+	height: 605px;
+	width: 450px;
+	}
+ .article-cat2 {
+	float: right;
+	background: #242c3a;
+	font: 300 17px helvetica-light; 
+	color: #fff;
+	padding:14px 17px;
+	margin-top: -296px;
+	position: relative;
+	} 
+  .article-readmore {
+	background: #00aeef;
+	width: 175px;
+	padding:17px 0 14px 0;
+	margin: auto;
+	margin-top: -68px;
+	position: relative;
+	text-align: center;
+	} 
+ .article-readmore a{
+	 text-decoration:none;
+	font: 300 18px helvetica-bold; 
+	color: #fff;
+	} 
+ .article-img2 {
+	background: #384355 url(img/feedbg2.png);
+	width: 450px;
+	height: 310px;
+	} 
+ .article-img2 img{
+	width: 450px;
+	height: 310px;
+	} 
+ .overlayed {
+	display:block;
+	position:relative;
+	margin-top: -29px;
+	z-index: 10;
+	width: 450px;
+	height:30px;
+	background: -moz-linear-gradient(bottom, rgba(56,67,85,1) 0%, rgba(56,67,85,0) 100%); 
+    background: -webkit-linear-gradient(bottom, rgba(56,67,85,1) 0%, rgba(56,67,85,0) 100%);
+    background: -o-linear-gradient(bottom, rgba(56,67,85,1) 0%, rgba(56,67,85,0) 100%);
+	}	
+ .article-title2 {
+	height: 102px;
+	margin: 43px 26px 0 26px;
+	font: 300 30px helvetica; 
+	color: #fff;
+	text-align:center;
+	overflow-y:hidden;
+	}
+ .article-info2 {
+	display: block;
+	margin: 15px 26px 15px 26px;
+	font: 300 14px helvetica;
+	color: #a3b0c9; 
+	}
+ .article-views2 {
+	float:left; 
+	}
+ .article-views2:before {
+	content: " ";
+	margin-right: 5px;
+	padding:0px 8px;
+	background: url(img/views.png);
+	}	
+ .article-date2 {
+	float:left; 
+	margin-left: 15px;
+	}
+ .article-date2:before {
+	content: " ";
+	margin-right: 5px;
+	padding:0px 8px;
+	background: url(img/date.png);
+	}	
+ .article-text2 {
+	margin: 50px 26px 21px 26px;
+	font: 300 18px helvetica;
+	color: #637188; 
+	line-height: 1.3;
+	}			
+ .article-block:hover {
+	transform: scale(1);
+	}
+ .article-block:hover .article-block1 {
+	display: none;
+	}
+ .article-block:hover .article-block2 {
+	display: block;
+	}
+ .article-blockm:hover {
+	transform: scale(1);
+	}
+ .article-blockm:hover .article-block1 {
+	display: none;
+	}
+ .article-blockm:hover .article-block2 {
+	display: block;
+	}
+
+/*///////////////////////////////////////////////// Article Older - ссылочка на ранний контент*/
+
+ .article-older {
+	margin:auto;
+	box-sizing: border-box; 
+	width: 1170px; 
+	height: 58px;
+	background: #f7f8ff;
+	text-align:center;
+	border: 1px solid #c8d3eb;
+	padding:25px;
+	}
+ .article-older a{
+	text-decoration: none;
+	font: 300 14px helvetica-bold;
+	color:79879e;
+	}
+	
+ /*///////////////////////////////////////////////// FOOTER*/
+ footer {
+	margin-top:121px;
+	height: 349px;
+	background: #344659;
+	}
+ .ft-line {
+	height: 8px;
+	background: #00aeef;
+	}
+ .ft-content {
+	margin: auto;
+	width: 1170px;
+	height: 261px;
+	color: #979da6;
+	}
+ .ft-home {
+	margin-top:49px;
+	float:left;
+	width: 511px;
+	font: 300 14px helvetica-light;
+	}
+ .ft-followus {
+	margin-top:49px;
+	float: left;
+	width: 516px;
+	font: 300 14px helvetica-light;
+	}	
+.ft-git {
+	margin-top:49px;
+	float: right;
+	width: 143px;
+	font: 300 14px helvetica-light;
+	}	
+	
+/* ul стили FOOTER'а Home*/	
+ ul.ft-home-list {								/* footer home links*/
+	margin-top: -9px;
+	padding:0px;
+	padding-right: 86px;
+	list-style-type: none;
+	float: left;
+	}
+ ul.ft-home-list li {								/* footer home links*/
+	list-style-type: none;
+	padding: 21px 0 0 0;
+	font: 300 14px helvetica;
+	}
+ ul.ft-home-list li a{								/* footer home links*/
+	text-decoration: none;
+	font: 300 14px helvetica;
+	color: #a3b0c9;
+	}	
+/* ul стили FOOTER'а Follow us*/		
+ ul.ft-followus-list {									/* footer home links*/
+	margin-top: -9px;
+	padding:0px;
+	padding-right: 90px;
+	list-style-type: none;
+	float: left;
+	}	
+ ul.ft-followus-list li {								/* footer home links*/
+	list-style-type: none;
+	padding: 21px 0 0 0;
+	font: 300 14px helvetica;
+	}
+ ul.ft-followus-list li a{								/* footer home links*/
+	text-decoration: none;
+	font: 300 14px helvetica;
+	color: #a3b0c9;
+	}		
+ ul.ft-followus-list li.ft-fb:before{
+	content: " ";
+	margin-right: 10px;
+	padding:1px 9px;
+	background: url(img/ft-fb.png);
+	}
+ ul.ft-followus-list li.ft-twit:before{
+	content: " ";
+	margin-right: 10px;
+	padding:1px 9px;
+	background: url(img/ft-twit.png);
+	}
+ ul.ft-followus-list li.ft-inst:before{
+	content: " ";
+	margin-right: 10px;
+	padding:1px 9px;
+	background: url(img/ft-inst.png);
+	}
+ ul.ft-followus-list li.ft-goog:before{
+	content: " ";
+	margin-right: 10px;
+	padding:1px 12px;
+	background: url(img/ft-goog.png);
+	}
+ ul.ft-followus-list li.ft-yout:before{
+	content: " ";
+	margin-right: 14px;
+	padding:1px 10px;
+	background: url(img/ft-yout.png);
+	}
+ ul.ft-followus-list li.ft-in:before{
+	content: " ";
+	margin-right: 10px;
+	padding:1px 12px;
+	background: url(img/ft-in.png);
+	}	
+/* ul стили FOOTER'а Get in touch*/		
+ ul.ft-git-list {									/* footer home links*/
+	margin-top: -9px;
+	padding:0px;
+	list-style-type: none;
+	float: left;
+	}	
+ ul.ft-git-list li {								/* footer home links*/
+	list-style-type: none;
+	padding: 21px 0 0 0;
+	font: 300 14px helvetica;
+	}
+ ul.ft-git-list li a{								/* footer home links*/
+	text-decoration: none;
+	font: 300 14px helvetica;
+	color: #a3b0c9;
+	}
+ ul.ft-git-list li.ft-faq {
+	padding-top: 58px;	
+	}	
+ ul.ft-git-list li.ft-faq a{
+	color: #f2f3f4;
+	border-bottom: 1px solid #f2f3f4;
+	font: 300 14px helvetica-light;
+	}	
+  ul.ft-git-list li.ft-mail:before{
+	content: " ";
+	margin-right: 10px;
+	padding:1px 9px;
+	background: url(img/ft-mail.png);
+	}
+	
+/* Cтили FOOTER'а копирайт и прочее*/		
+ .ft-copyright {
+	margin:auto;
+	width:1170px;	
+	}
+ .ft-logo {
+	float: left; 
+	width:122px;
+	}
+ .ft-copyright-text {
+	float:left;
+	margin-top: 32px;
+	width: 405px;
+	color: #a3b0c9;
+	font: 300 14px helvetica;
+	}
+ .ft-partner {
+	float: left;
+	margin-top: 24px;	
+	width: 375px;
+	}
+ .ft-conditions {
+	float: right;
+	margin-top: 32px;
+	color: #a3b0c9;
+	font: 300 14px helvetica;
+	text-align:right;
+	}
+ .ft-conditions a{
+	text-decoration:none;
+	color: #a3b0c9;
+	font: 300 14px helvetica;
+	}
+	
+/* FONTS*/
+ @font-face {
+ 	font-family: "helvetica-light"; 
+ 	src: url(fonts/helvetica-light.ttf) format("truetype"); 
+	font-style: normal;
+	font-weight: normal;
+	}
+ @font-face {
+ 	font-family: helvetica-bold; 
+ 	src: url(fonts/helvetica-bold.ttf); 
+	}
+@font-face {
+ 	font-family: helvetica; 
+ 	src: url(fonts/helvetica.ttf); 
+	}
