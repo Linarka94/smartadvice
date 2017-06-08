@@ -1,0 +1,37 @@
+
+ .header {
+	height: 66px; 	
+	margin: 0 auto;
+	}
+.header__list {
+	margin-left: 202px;
+	text-decoration: none;
+	color: #3c4759;
+	font-family: sans-serif;
+	font-size: 16px;
+	font-weight: 300;
+	}
+.header__list:before {
+	content: "";
+ 	display: inline-block;
+ 	height: 100%;
+ 	vertical-align: middle;
+	}
+.header__list__el {
+	display: inline-block;
+	padding:0 28px;
+	vertical-align: middle;
+	}
+.header__list__el_text {
+	margin-left: 282px;
+	}
+.header__list__el_line {
+	display: inline-block;
+	width: 1px;
+	height: 24px;
+	padding: 0;
+	background-color: #b7c3db;
+	}
+.header__list__el_last-link { /* */
+	padding: 0;
+	}
