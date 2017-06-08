@@ -1,65 +1,92 @@
 <html>
 	<head>
 		<meta charset="utf-8">
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="styles/style.css">
+		<link rel="stylesheet" type="text/css" href="styles/header.css">
+		<link rel="stylesheet" type="text/css" href="styles/nav.css">
+		<link rel="stylesheet" type="text/css" href="styles/slider.css">
+		<link rel="stylesheet" type="text/css" href="styles/sort.css">
+		<link rel="stylesheet" type="text/css" href="styles/main.css">
+		<!--
+		<link rel="stylesheet" type="text/css" href="styles/footer.css">
+		-->
 		<title>Smart-Advice</title>
 	</head>
-	<body>
-		<header>
-			<div class="header-top">
-				<ul class="tl-left">
-					<li><a href="index.html">MoneySmart</a></li>
-					<li><a href="index.html">Community</a></li>
-					<li><a href="index.html">Banking</a></li>
-				</ul>
-				<ul class="tl-right">
-					<li>AR</li>
-					<li><img src="img/header1.png"></li>
-					<li><a href="index.html">Login</a></li>
-					<li><a href="index.html">Join Now</a></li>
-				</ul>
+	<body class="page">
+<!-- HEADER -->	
+		<header class="page__line">
+			<div class="header">
+				<div class="header__list">
+					<div class="header__list__el link1"><a href="#">MoneySmart</a></div>
+					<div class="header__list__el link1"><a href="#">Community</a></div>
+					<div class="header__list__el link1"><a href="#">Banking</a></div>
+					<div class="header__list__el header__list__el_text">AR</div>
+					<div class="header__list__el header__list__el_line"></div>
+					<div class="header__list__el link1 hover1"><a href="#">Login</a></div>
+					<div class="header__list__el header__list__el_last-link link1 hover1"><a href="#">Join Now</a></div>
+				</div>
 			</div>	
 		</header>
-		<nav>
-			<div class="nav-cont">
-				<div class="logo"></div>
+<!-- NAVIGATION BLOCK -->	
+		<nav class="page bgcolor1">
+			<div class="page__line nav">
 				<div class="nav-block">
-					<ul class="nav-list">
-						<li><a href="index.html">Why Join</a></li>
-						<li><a href="index.html">About Community</a></li>
-						<li><a href="index.html">Smart Advice</a></li>
-						<li><a href="index.html">Deals & Offers</a></li>
-						<li><a href="index.html">Tools & Planners</a></li>
-						<li><a href="index.html">Get in touch</a></li>
-					</ul>
+					<a class="nav-logo" href="#"></a>
 				</div>
-				<div class="nav-search"><a href="index.html"><img src="img/search.png"></a></div>
+				<div class="nav-block nav_block__list">
+					<ul class="nav-list link2">
+						<li><a href="#">Why Join</a></li>
+						<li><a href="#">About Community</a></li>
+						<li><a href="#">Smart Advice</a></li>
+						<li><a href="#">Deals & Offers</a></li>
+						<li><a href="#">Tools & Planners</a></li>
+						<li><a href="#">Get in touch</a></li>
+					</ul>
+				</div>	
+				<div class="nav-block">
+					<a class="nav-search" href="#"></a>
+				</div>
 			</div>
 		</nav>
-		<div class="slider">
-			<div class="slider-text">
-				<div class="slider-mt">See what else is new...</div>
-				<div class="slider-st">Lorem ipsum dolor sit ametsed do eiusmod tempor incididunt ut labore et 
-				<br> dolore magna <b><u>77 Discussions</u></b></div>
-			</div>
-			<div class="slider-label">
-					<ul class="label-list">
-						<li><a href="index.html">FINANCIAL</a></li>
-						<li><a href="index.html">SMART MONEY</a></li>
-						<li><a href="index.html">INVESTMENT</a></li>
-						<li><a href="index.html">LOAN</a></li>
-						<li><a href="index.html">BANKING</a></li>
-					</ul>
-			</div>
-		</div>
-		<div class="filters">
-				<div class="flist-search">
-					<input type="text" value="What are you looking for?" onfocus="if (this.value == 'What are you looking for?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'What are you looking for?';}">
+<!-- SLIDER BLOCK -->
+		<div class="page slider">
+			<div class="page__line">
+				<div class="slider-content">
+					<div>See what else is new...</div>
+					<div class="slider-content__second">Lorem ipsum dolor sit ametsed do eiusmod tempor incididunt ut labore et 
+					<br> dolore magna <b class="helvetica">77 Discussions</b>
+						<div class="slider-label">
+							<ul class="slider-label__list">
+								<li><a href="#">FINANCIAL</a></li>
+								<li><a href="#">SMART MONEY</a></li>
+								<li><a href="#">INVESTMENT</a></li>
+								<li><a href="#">LOAN</a></li>
+								<li><a href="#">BANKING</a></li>
+							</ul>
+						</div>
 				</div>
-				<div class="flist-date">By Date</div>
-				<div class="flist-sort">By Catigories</div>
-				<div class="flist-button"><a href="index.html"><img src="img/right_arrow.png"></a></div>
+			</div>
 		</div>
+<!-- SLIDER BLOCK -->
+		<div class="page relative-block">
+			<div class="page__line filters">
+					<div class="filters__el filters__el_search">
+						<input type="text" value="What are you looking for?" onfocus="if (this.value == 'What are you looking for?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'What are you looking for?';}">
+					</div>
+					<div class="filters__el filters__el_date">By Date</div>
+					<div class="filters__el filters__el_sort">By Catigories</div>
+					<div class="filters__el filters__el_button"><a href="index.html"><img src="styles/img/sort-arrow-right.png"></a></div>
+			</div>
+		</div>
+		<div class="page">
+			<div class="page__line">
+				<div class="breadcrum"><a href="index.html">Home</a>&emsp;/&emsp;Smart Advice</div>
+				<div class="mtitle">Smart Advice</div>
+			</div>
+		</div>
+
+<!--	
+
 		<div class="titles">
 			<div class="breadcrum"><a href="index.html">Home</a>&emsp;/&emsp;Smart Advice</div>
 			<div class="mtitle">Smart Advice</div>
@@ -380,5 +407,6 @@
 				<div class="ft-conditions"><a href="index.html">Term and Conditions</a>&emsp;|&emsp;<a href="index.html">Privacy Policy</a></div>
 			</div>
 		</footer>
+-->
 	</body>
 </html>
