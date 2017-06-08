@@ -1,0 +1,36 @@
+
+ .nav {
+	height: 120px;
+	}
+ .nav-block{
+	display: inline-block;
+	vertical-align: middle;
+	}
+.nav_block__list {
+	width: 940px;
+	}
+a.nav-logo{
+	display: inline-block;
+	margin-left: 10px;
+	width: 195px;
+	height: 120px;
+	background-image: url(img/logo.png);
+	background-color: #fff;
+	}
+a.nav-search{
+	display: inline-block;
+	width: 27px;
+	height: 27px;
+	background-image: url(img/nav-search.png);
+	}
+
+/* ul стили nav'а*/
+ ul.nav-list {
+ 	margin-left: 9px;
+	font: 700 12px sans-serif;
+	color: #fff;
+	}
+ ul.nav-list li {
+ 	display: inline; 
+ 	margin: 0 18px; 
+	}
