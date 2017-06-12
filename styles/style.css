@@ -12,7 +12,10 @@
 
 	/* Background colors*/
 .bgcolor1 {
-	background: #00aeef;
+	background-color: #00aeef;
+	}
+.bgcolor2 {
+	background-color: #344659;
 	}
 
 	/* Links styles*/
@@ -60,14 +63,14 @@ ul {list-style-type: none;
 	font-weight: normal;
 	}
  @font-face {
- 	font-family: helvetica-bold; 
- 	src: url(fonts/helvetica-bold.ttf); 
+ 	font-family: "helvetica-bold"; 
+ 	src: url(fonts/helvetica-bold.ttf) format("truetype"); 
  	font-style: normal;
 	font-weight: normal;
 	}
 @font-face {
- 	font-family: helvetica; 
- 	src: url(fonts/helvetica.ttf); 
+ 	font-family: "helvetica"; 
+ 	src: url(fonts/helvetica.ttf) format("truetype"); 
 	font-style: normal;
 	font-weight: normal;
 	}
