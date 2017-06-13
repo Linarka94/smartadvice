@@ -54,11 +54,11 @@
  .slider-label {						/* slider labels*/
 	margin-top: 53px;				
 	}
- ul.slider-label__list li {
+ .slider-label__list li {
  	display: inline; 
  	margin: 0 6px;
    } 
- ul.slider-label__list li a{
+ .slider-label__list li a{
 	padding: 8px 12px;	
 	font-weight: 300;
 	font-size: 14px;

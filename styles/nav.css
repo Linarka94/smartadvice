@@ -25,12 +25,12 @@ a.nav-search{
 	}
 
 /* ul стили nav'а*/
- ul.nav-list {
+ .nav-list {
  	margin-left: 9px;
 	font: 700 12px sans-serif;
 	color: #fff;
 	}
- ul.nav-list li {
+ .nav-list li {
  	display: inline; 
  	margin: 0 18px; 
 	}
