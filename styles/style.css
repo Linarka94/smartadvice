@@ -10,10 +10,6 @@
  	position: relative;
  }
 
-	/* Background colors*/
-.bgcolor1 {
-	background-color: #00aeef;
-	}
 .bgcolor2 {
 	background-color: #344659;
 	}
@@ -25,15 +21,6 @@ ul {list-style-type: none;
 	margin: 0;
 	}
 
-
-
-
-	/* Hover styles*/
-.hover1 a:hover {
-	border-bottom-width: 2px;
-	border-bottom-color: #00aeef;
-	border-bottom-style: solid;
-	}
 
 .link2 a {
 	color: #fff;
