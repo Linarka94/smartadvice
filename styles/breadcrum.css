@@ -1,12 +1,19 @@
- .breadcrum {
- 	margin: 33px 0 0 11px;
+.div-bread {
+ 	margin-top: 33px;	
 	font-size: 16px;
 	font-family: helvetica;
 	color: #3c4759;	
-	}
- .breadcrum a{
+}
+.div-bread .row ol.list{
+ 	padding: 0;
+ 	padding-left: 2px;
+ 	background-color: transparent;
+}
+.div-bread .row ol.list > li > a{
 	font-size: 16px;
 	font-family: helvetica;
 	color: #00aeef;
-	text-decoration:none;
+	}
+.div-bread .row ol.list > li.active {
+	color: #3c4759;
 	}

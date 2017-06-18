@@ -1,21 +1,11 @@
- .page { 
- 	width: 100%;
-	margin: 0; 
-	}
- .page__line {
-	width: 1190px;
-	margin: 0 auto; 
-	}
  .relative-block {
  	position: relative;
  }
-
-.bgcolor2 {
-	background-color: #344659;
-	}
-
 	/* Links styles*/
 a {text-decoration: none;}
+a:hover {text-decoration: none;}
+a:focus {text-decoration: none;}
+
 ul {list-style-type: none;
 	padding: 0;
 	margin: 0;
@@ -45,7 +35,11 @@ content: " ";
 display: table; 
 clear: both; 
 }
-
+.clearfixib:after, .clearfixib:before { 
+content: " "; 
+display: inline-block; 
+clear: both; 
+}
 /* Fonts */
  @font-face {
  	font-family: helvetica-light; 
