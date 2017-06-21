@@ -9,7 +9,7 @@
 	vertical-align: top;
 	max-width: 370px;
 	margin: 0 15px;
-	margin-bottom: 83px;
+	margin-bottom: 42px;
 	padding: 0;
 
 }
@@ -47,7 +47,7 @@
 	display: inline-block;
 	vertical-align: middle;
 	height: 100%;
-	}
+}
 .article-info > li.views:before {
 	content: "";
 	display: inline-block;
@@ -58,13 +58,13 @@
 	height: 16px;
 	background: url(../img/article-views.png);
 	background-repeat: no-repeat;
-	}	
+}	
 .article-info > li.date {
 	display: inline-block;
 	vertical-align: middle; 
 	height: 100%;
 	margin-left: 15px;
-	}
+}
 .article-info > li.date:before {
 	content: "";
 	display: inline-block;
@@ -74,7 +74,7 @@
 	width: 16px;
 	height: 16px;
 	background: url(../img/article-date.png);
-	}	
+}	
  .article-text {
  	display: block;
  	margin: 0;
@@ -82,20 +82,13 @@
 	font-size: 16px;
 	font-family: helvetica-light; 
 	color: #637188; 
-	}	
-
-
-
-
-
-
-
-/* Выводим ховер блок статьи	*/
+}	
 .article-block:hover {
 	transform: scale(1.21622, 1.34781);
 	z-index: 1;
-	margin-top: 40;
+	margin-top: 38px;
 	margin-bottom: 0;
+	min-height: 449px;
 	background-color: #2a3443;
 }
 .article-block:hover .article-category {
@@ -108,22 +101,22 @@
 	font-size: 17px;
 	font-family: helvetica-light; 
 	color: #fff;
-	} 
+} 
 .article-block:hover .article_hover_button {
 	display: block;
 	transform: scale(0.822222, 0.73553);
  	position: absolute;
- 	left: 27.5%; top:191px;
- }
+ 	left: 27.5%; top:184px;
+}
 .article-block:hover .article_hover_button a{
- 	width: 167;
- 	height: 51;
+ 	width: 167px;
+ 	height: 51px;
  	padding: 15px 39px;
  	background-color: #00aeef; 
  	font-size: 18px;
 	font-family: helvetica; 
 	color: #fff;
- }
+}
 .article-block:hover .article-img:after{
 	content: "";
 	display: block;
@@ -134,77 +127,47 @@
 	background: -moz-linear-gradient(bottom, rgba(42,52,67,1) 0%, rgba(42,52,67,0) 100%); 
     background: -webkit-linear-gradient(bottom, rgba(42,52,67,1) 0%, rgba(42,52,67,0) 100%);
     background: -o-linear-gradient(bottom, rgba(42,52,67,1) 0%, rgba(42,52,67,0) 100%);
-	
-	} 
+} 
 .article-block:hover .article-title {
 	transform: scale(0.822222, 0.73553);
 	transform-origin: left;
 	height: 88px;
 	width: 121.623%;
-	margin-top: 2px;
+	margin-top: 6px;
 	padding: 0 30px;
 	text-align: center;	
-	font-size: 29px;
+	font-size: 30px;
 	font-family: helvetica-light; 
 	color: #fff;
-
-	}
+}
 .article-block:hover .article-info {
 	transform: scale(0.822222, 0.73553);
 	transform-origin: left;
-	width: 121.623%;
+	width: 105.5%;
 	margin-top: 10px;
-	margin-left: 30px;
+	margin-left: 24px;
 	font-size: 14px;
 	font-family: helvetica; 
 	color: #a3b0c9;
-	}
-.article-block:hover .article-info > li.views:before {
-	display: inline-block;
-	vertical-align: top;
-	content: "";
+}
+.article-block:hover ul.article-info > li.views:before {
+	margin-top: -2px;
 	background: url(../img/article-views-hover.png);
-	}	
-.article-block:hover .article-info > li.date:before {
+}	
+.article-block:hover ul.article-info > li.date:before {
+	margin-top: 0px;
 	background: url(../img/article-date-hover.png);
-	}	
-
+}	
 .article-block:hover .article-text {
 	transform: scale(0.822222, 0.73553);
 	transform-origin: left;
 	width: 121.623%;
-	margin-top: -4px;
+	min-height: 90px;
+	margin-top: 0px;
 	padding-left: 30px;
 	padding-right: 30px;
 	font-size: 17px;
 	font-family: helvetica;
 	font-weight: 300; 
 	color: #637188;
-	}			
-/*///////////////////////////////////////////////// Article Older - ссылочка на ранний контент*/
- .article-older {
- 	margin-bottom: 121px;
-}
- .article-older a{
- 	display: inline-block;
-	width: 1170px;
-	height: 60px;
-	margin:0 10px;
-	vertical-align: middle;
- 	text-align:center;
- 	box-sizing: border-box;
-	border-width: 1px;
-	border-style: solid;
-	border-color: #c8d3eb;
- 	background-color: #f7f8ff;
-	font-size: 14px;
-	font-family: helvetica-bold;
-	text-transform: uppercase;
-	color: #79879e;
-	}
- .article-older a:before{
- 	content: "";	
- 	display: inline-block;
-	vertical-align: middle;
- 	height: 100%;
-	}
+}		
