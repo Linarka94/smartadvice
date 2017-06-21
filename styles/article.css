@@ -34,8 +34,10 @@
 	height: 104px;
 	margin-top: 16px;
 	font-size: 26px;
+	line-height: 34px;
 	font-family: helvetica; 
 	color: #3c4759;
+
 }
 .article-info {
  	height: 16px;
