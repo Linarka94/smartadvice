@@ -1,11 +1,9 @@
-  .container-fluid.bgcolor {
+.footer-bg {
 	background-color: #344659;
-	}
-
- footer {
 	height: 349px;
-	}
- footer:before {
+	padding: 0;
+}
+.footer-bg:before {
  	display: block;
  	content: "";
 	height: 8px;
