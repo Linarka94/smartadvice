@@ -22,18 +22,14 @@
 	background-image: url(../img/navblock-logo.png);
 	background-color: #fff;
 	}
-.navblock ul.navbar-list li.navbar-list_item {
-	padding-left: 36px;
-	padding-top: 50px;
-	padding-bottom: 50px;
+.navblock ul.navbar-list {
+	padding-left: 12px;
 }
 .navblock ul.navbar-list li.navbar-list_item {
-	padding-left: 36px;
+	padding-left: 18px;
+	padding-right: 18px;
 	padding-top: 50px;
 	padding-bottom: 50px;
-}
-.navblock ul.navbar-list li.navbar-list_item:first-child {
-	padding-left: 30px;
 }
 .navblock ul.navbar-list > li > a:hover{
 	border-bottom-width: 2px;
