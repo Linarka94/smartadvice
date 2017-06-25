@@ -27,7 +27,7 @@
 	width: 370px;
 	height: 230px;
 } 
-.article_hover_button{
+.article_button{
  	display: none;
 }
 .article-title {
@@ -104,20 +104,28 @@
 	font-family: helvetica-light; 
 	color: #fff;
 } 
-.article-block:hover .article_hover_button {
+.article-block:hover .article_button {
 	display: block;
 	transform: scale(0.822222, 0.73553);
  	position: absolute;
- 	left: 27.5%; top:184px;
+ 	left: 27.5%; top:170px;
 }
-.article-block:hover .article_hover_button a{
- 	width: 167px;
- 	height: 51px;
- 	padding: 15px 39px;
+.article-block:hover .btn-readmore, 
+.article-block:hover .btn-readmore:hover, 
+.article-block:hover .btn-readmore:active {
+ 	padding: 0 39px;
+ 	padding-top: 17px;
+ 	padding-bottom: 13px;
+ 	border: none;
+ 	border-radius: 0;
+ 	background-image: none;
+ 	text-shadow: none;
+	outline: none;
  	background-color: #00aeef; 
  	font-size: 18px;
 	font-family: helvetica; 
 	color: #fff;
+
 }
 .article-block:hover .article-img:after{
 	content: "";
