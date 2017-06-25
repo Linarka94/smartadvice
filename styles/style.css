@@ -6,6 +6,8 @@ a {text-decoration: none;}
 a:hover {text-decoration: none;}
 a:focus {text-decoration: none;}
 
+button:focus {outline: none;}
+
 ul {list-style-type: none;
 	padding: 0;
 	margin: 0;

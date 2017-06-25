@@ -1,273 +1,337 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
+		<link rel="stylesheet" type="text/css" href="styles/bootstrap-theme.css">
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
 		<link rel="stylesheet" type="text/css" href="styles/header.css">
-		<link rel="stylesheet" type="text/css" href="styles/nav.css">
+		<link rel="stylesheet" type="text/css" href="styles/navblock.css">
 		<link rel="stylesheet" type="text/css" href="styles/slider.css">
 		<link rel="stylesheet" type="text/css" href="styles/filters.css">
 		<link rel="stylesheet" type="text/css" href="styles/breadcrum.css">
 		<link rel="stylesheet" type="text/css" href="styles/main-title.css">
 		<link rel="stylesheet" type="text/css" href="styles/article.css">
-		<link rel="stylesheet" type="text/css" href="styles/footer.css">
-		<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
-		<link rel="stylesheet" type="text/css" href="styles/bootstrap-theme.css">		
+		<link rel="stylesheet" type="text/css" href="styles/old-btn.css">
+		<link rel="stylesheet" type="text/css" href="styles/footer.css">	
 		<title>Smart-Advice</title>
+<!-- 
+html:	style="background-color: #ececec;" 	- gray
+css:	background-color: #ffffaa; 			- yellow
+ -->
 	</head>
-	<body class="page">
-		<header class="page__line header clearfix">
-			<div class="header-leftlist">		
-				<div class="header-list_item"><a href="#">MoneySmart</a></div>
-				<div class="header-list_item"><a href="#">Community</a></div>
-				<div class="header-list_item"><a href="#">Banking</a></div>
-			</div>
-			<div class="header-rightlist">	
-				<div class="header-list_item text">AR</div>
-				<div class="header-list_item link line"><a href="#">Login</a></div>
-				<div class="header-list_item link header__list__el_last-link"><a href="#">Join Now</a></div>
+	<body> 
+		<header class="container">
+			<div class="row">
+				<div class="col-lg-10 col-lg-offset-2 header">
+					<ul class="nav navbar-nav navbar-list">
+						<li class="navbar-list_item"><a href="#">MoneySmart</a></li>
+						<li class="navbar-list_item"><a href="#">Community</a></li>
+						<li class="navbar-list_item"><a href="#">Banking</a></li>
+					</ul>
+
+					<ul class="nav navbar-nav navbar-right navbar-list link">
+						<li class="navbar-list_item line"><a href="#">AR</a></li>
+						<li class="navbar-list_item"><a href="#">Login</a></li>
+						<li class="navbar-list_item"><a href="#">Join Now</a></li>
+					</ul>
+				</div>
 			</div>
 		</header>
-<!-- NAVIGATION BLOCK -->	
-		<nav class="page bgcolor">
-			<div class="page__line nav">
-				<div class="nav-block">
-					<a class="nav-logo" href="#"></a>
-				</div>
-				<div class="nav-block nav_block__list">
-					<ul class="nav-list link2">
-						<li><a href="#">Why Join</a></li>
-						<li><a href="#">About Community</a></li>
-						<li><a href="#">Smart Advice</a></li>
-						<li><a href="#">Deals & Offers</a></li>
-						<li><a href="#">Tools & Planners</a></li>
-						<li><a href="#">Get in touch</a></li>
-					</ul>
-				</div>	
-				<div class="nav-block">
-					<a class="nav-search" href="#"></a>
-				</div>
-			</div>
-		</nav>
-<!-- SLIDER BLOCK -->
-		<div class="page slider">
-			<div class="page__line">
-				<div class="slider-content">
-					<div>See what else is new...</div>
-					<div class="slider-content__second">Lorem ipsum dolor sit ametsed do eiusmod tempor incididunt ut labore et 
-					<br> dolore magna <b class="helvetica">77 Discussions</b>
-						<div class="slider-label">
-							<ul class="slider-label__list">
-								<li><a href="#">FINANCIAL</a></li>
-								<li><a href="#">SMART MONEY</a></li>
-								<li><a href="#">INVESTMENT</a></li>
-								<li><a href="#">LOAN</a></li>
-								<li><a href="#">BANKING</a></li>
-							</ul>
-						</div>
+
+		<nav class="container-fluid navblock-bg">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-2 navblock">
+						<ul class="nav navbar-nav navbar-logo">
+							<li><a class="navbar-logo_item" href="#"></a></li>
+						</ul>
+					</div>		
+					<div class="col-lg-10 navblock">
+						<ul class="nav navbar-nav navbar-list">
+							<li class="navbar-list_item"><a href="#">Why Join</a></li>
+							<li class="navbar-list_item"><a href="#">About Community</a></li>
+							<li class="navbar-list_item"><a href="#">Smart Advice</a></li>
+							<li class="navbar-list_item"><a href="#">Deals & Offers</a></li>
+							<li class="navbar-list_item"><a href="#">Tools & Planners</a></li>
+							<li class="navbar-list_item"><a href="#">Get in touch</a></li>
+						</ul>
+						<ul class="nav navbar-nav navbar-right navbar-search">
+							<li><a class="navbar-search_item" href="#"></a></li>
+						</ul>
 					</div>
 				</div>
 			</div>
+		</nav>	
+
+		<div class="container-fluid slider-bg">
+			<div class="container">
+				<div class="slider">
+					<h1>See what else is new...</h1>
+					<h2>
+						Lorem ipsum dolor sit ametsed do eiusmod tempor incididunt ut labore et 
+						dolore magna <b>77 Discussions</b>
+					</h2>
+					<ul class="slider-list">
+						<li><a href="#">FINANCIAL</a></li>
+						<li><a href="#">SMART MONEY</a></li>
+						<li><a href="#">INVESTMENT</a></li>
+						<li><a href="#">LOAN</a></li>
+						<li><a href="#">BANKING</a></li>
+					</ul>
+				</div>
+			</div>
 		</div>
-<!-- FILTERS BLOCK -->
-		<div class="page relative-block">
-			<div class="page__line filters">
-				<div class="filters__el filters__el_search">
+
+		<div class="container filters">
+			<div class="row">
+				<div class="col-sm-5 search">
 					<input type="text" value="What are you looking for?" onfocus="if (this.value == 'What are you looking for?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'What are you looking for?';}">
 				</div>
-				<div class="filters__el filters__el_date">By Date</div>
-				<div class="filters__el filters__el_sort">By Catigories</div>
-				<div class="filters__el filters__el_button"><a href="#"><img src="styles/img/filters-arrow-right.png"></a></div>
+				<div class="col-sm-3 date">
+					By Date
+				</div>
+				<div class="col-lg-2 col-lg-offset-1 col-sm-3 sort">
+					By Categoris
+				</div>
+				<div class="col-sm-1 button">
+					<button type="button" class="array"></button>
+				</div>
 			</div>
 		</div>
-<!-- BREADCRUM BLOCK -->
-		<div class="page__line">
-				<div class="breadcrum"><a href="#">Home</a>&emsp;/&emsp;Smart Advice</div>
-				<div class="main-title">Smart Advice</div>
-		</div>
-<!-- ARTICLE BLOCK -->
-		<article class="page__line">
-			<div class="article-block">
-				<div class="article-img"><img src="styles/img/article-feed1.png"></div>
-				<div class="article-cat">FINANCIAL</div>
-				<div class="article_hover_button"><a href="#">Read More</a></div>
-				<div class="article-title">The Foolish Fantasies of Fintech/ Bank Partnerships</div>
-				<div class="article-info">
-					<div class="article-info__views">2k Views</div>
-					<div class="article-info__date">14 Aug, 2016</div>
-				</div>
-				<div class="article-text">
-					Calls for banks to pair up with fintech companies are misguided, 
-					and what's happened so far doesn't remotely qualify as "partnerships."
-				</div>
-			</div>	
-			<div class="article-block">
-				<div class="article-img"><img src="styles/img/article-feed2.png"></div>
-				<div class="article-cat">FINANCIAL</div>
-				<div class="article_hover_button"><a href="#">Read More</a></div>
-				<div class="article-title">Marketers Stop Making Sense</div>
-				<div class="article-info">
-					<div class="article-info__views">2k Views</div>
-					<div class="article-info__date">14 Aug, 2016</div>
-				</div>
-				<div class="article-text">
-					Marketers should put their money in the channels they consider to be the most 
-					effective, right? But they don't. Which doesn't make much sense, does it?
-				</div>
-			</div>	
 
-			<div class="article-block">
-				<div class="article-img"><img src="styles/img/article-feed3.png"></div>
-				<div class="article-cat">FINANCIAL</div>
-				<div class="article_hover_button"><a href="#">Read More</a></div>
-				<div class="article-title">Marketers Stop Making Sense</div>
-				<div class="article-info">
-					<div class="article-info__views">2k Views</div>
-					<div class="article-info__date">14 Aug, 2016</div>
-				</div>
-				<div class="article-text">
-					Marketers should put their money in the channels they consider to be the most 
-					effective, right? But they don't. Which doesn't make much sense, does it?
-				</div>
+		<div class="container div-bread">
+			<div class="row">
+				<ol class="breadcrumb list">
+					<li><a href="#">Home</a></li>
+					<li class="active">SmartAdvice</li>
+				</ol>
 			</div>
-<!-- NEW LINE -->
-			<div class="article-block">
-				<div class="article-img"><img src="styles/img/article-feed4.png"></div>
-				<div class="article-cat">FINANCIAL</div>
-				<div class="article_hover_button"><a href="#">Read More</a></div>
-				<div class="article-title">Financial Health Is The New Marketing</div>
-				<div class="article-info">
-					<div class="article-info__views">2k Views</div>
-					<div class="article-info__date">14 Aug, 2016</div>
+		</div>
+
+		<div class="container main-title">
+				<h1>Smart Advice</h1>
+		</div>
+
+		<article class="container article">
+	<!-- LINE 1 -->
+			<div class="row">
+				<div class="col-lg-4 article-block">
+					<div class="article-img"><img src="img/article-feed1.png"></div>
+					<div class="article-category">FINANCIAL</div>
+					<div class="article_hover_button"><a href="#">Read More</a></div>
+					<div class="article-title">The Foolish Fantasies of Fintech/ Bank Partnerships</div>
+					<ul class="article-info">
+						<li class="views">2k Views</li>
+						<li class="date">14 Aug, 2016</li>
+					</ul>	
+					<p class="article-text">
+						Calls for banks to pair up with fintech companies are misguided, 
+						and what's happened so far doesn't remotely qualify as "partnerships."
+					</p>	
 				</div>
-				<div class="article-text">
-					Grading and monitoring consumers' financial health will become 
-					the new marketing in financial services.
+				<div class="col-lg-4 article-block">
+					<div class="article-img"><img src="img/article-feed2.png"></div>
+					<div class="article-category">FINANCIAL</div>
+					<div class="article_hover_button"><a href="#">Read More</a></div>
+					<div class="article-title">Does It Really Matter What Retail Banking Consumers Want?</div>
+					<ul class="article-info">
+						<li class="views">2k Views</li>
+						<li class="date">14 Aug, 2016</li>
+					</ul>	
+					<p class="article-text">
+						Financial marketers can rely too heavily on consumer research when crafting their strategy. Real innovation and differentiation results from a bold vision.
+					</p>			
 				</div>
-			</div>		
-			<div class="article-block">
-				<div class="article-img"><img src="styles/img/article-feed5.png"></div>
-				<div class="article-cat">FINANCIAL</div>
-				<div class="article_hover_button"><a href="#">Read More</a></div>
-				<div class="article-title">Life During Mobile Payments</div>
-				<div class="article-info">
-					<div class="article-info__views">2k Views</div>
-					<div class="article-info__date">14 Aug, 2016</div>
+				<div class="col-lg-4 article-block">
+					<div class="article-img"><img src="img/article-feed3.png"></div>
+					<div class="article-category">FINANCIAL</div>
+					<div class="article_hover_button"><a href="#">Read More</a></div>
+					<div class="article-title">Marketers Stop Making Sense</div>
+					<ul class="article-info">
+						<li class="views">2k Views</li>
+						<li class="date">14 Aug, 2016</li>
+					</ul>	
+					<p class="article-text">
+						Marketers should put their money in the channels they consider to be the most effective, right? But they don't. Which doesn't make much sense, does it?
+					</p>		
+				</div>	
+			</div>					
+	<!-- LINE 2 -->
+			<div class="row">
+				<div class="col-lg-4 article-block">
+					<div class="article-img"><img src="img/article-feed4.png"></div>
+					<div class="article-category">FINANCIAL</div>
+					<div class="article_hover_button"><a href="#">Read More</a></div>
+					<div class="article-title">Financial Health Is The New Marketing</div>
+					<ul class="article-info">
+						<li class="views">2k Views</li>
+						<li class="date">14 Aug, 2016</li>
+					</ul>	
+					<p class="article-text">
+						Grading and monitoring consumers' financial health will become 
+						the new marketing in financial services.
+					</p>	
 				</div>
-				<div class="article-text">
-					You know how much easier my life would be if I
-					speculate how great life could be as a result of
-					could just write books and go on radio shows and new technologies...
+				<div class="col-lg-4 article-block">
+					<div class="article-img"><img src="img/article-feed5.png"></div>
+					<div class="article-category">FINANCIAL</div>
+					<div class="article_hover_button"><a href="#">Read More</a></div>
+					<div class="article-title">Life During Mobile Payments</div>
+					<ul class="article-info">
+						<li class="views">2k Views</li>
+						<li class="date">14 Aug, 2016</li>
+					</ul>	
+					<p class="article-text">
+						You know how much easier my life would be if I
+						speculate how great life could be as a result of
+						could just write books and go on radio shows and new technologies...
+					</p>			
 				</div>
+				<div class="col-lg-4 article-block">
+					<div class="article-img"><img src="img/article-feed6.png"></div>
+					<div class="article-category">FINANCIAL</div>
+					<div class="article_hover_button"><a href="#">Read More</a></div>
+					<div class="article-title">Measuring Customer Loyalty In The 21st Century</div>
+					<ul class="article-info">
+						<li class="views">2k Views</li>
+						<li class="date">14 Aug, 2016</li>
+					</ul>	
+					<p class="article-text">
+						Banks and credit unions need a new metric to gauge customer/member loyalty. 
+						Learn why the Referral Performance Score is superior to today's measures.
+					</p>		
+				</div>	
 			</div>	
-			<div class="article-block">
-				<div class="article-img"><img src="styles/img/article-feed6.png"></div>
-				<div class="article-cat">FINANCIAL</div>
-				<div class="article_hover_button"><a href="#">Read More</a></div>
-				<div class="article-title">Measuring Customer Loyalty In The 21st Century</div>
-				<div class="article-info">
-					<div class="article-info__views">2k Views</div>
-					<div class="article-info__date">14 Aug, 2016</div>
+	<!-- LINE 3-->
+			<div class="row">
+				<div class="col-lg-4 article-block">
+					<div class="article-img"><img src="img/article-feed7.png"></div>
+					<div class="article-category">FINANCIAL</div>
+					<div class="article_hover_button"><a href="#">Read More</a></div>
+					<div class="article-title">The Confusing State of Bank Customer Service</div>
+					<ul class="article-info">
+						<li class="views">2k Views</li>
+						<li class="date">14 Aug, 2016</li>
+					</ul>	
+					<p class="article-text">
+						New survey data suggests banks' customer service is good, and that 
+						banks have no reason to mention the word "omnichannel" ever again.
+					</p>	
 				</div>
-				<div class="article-text">
-					Banks and credit unions need a new metric to gauge customer/member loyalty. 
-					Learn why the Referral Performance Score is superior to today's measures.
+				<div class="col-lg-4 article-block">
+					<div class="article-img"><img src="img/article-feed8.png"></div>
+					<div class="article-category">FINANCIAL</div>
+					<div class="article_hover_button"><a href="#">Read More</a></div>
+					<div class="article-title">What The Bank Customer Satisfaction Numbers Really Mean</div>
+					<ul class="article-info">
+						<li class="views">2k Views</li>
+						<li class="date">14 Aug, 2016</li>
+					</ul>	
+					<p class="article-text">
+						JD Power released the first wave of its 2015 bank customer satisfaction research.
+						My take: Big bank bashing is a thing of the past.
+					</p>			
 				</div>
-			</div>	
-<!-- NEW LINE -->
-			<div class="article-block">
-				<div class="article-img"><img src="styles/img/article-feed7.png"></div>
-				<div class="article-cat">FINANCIAL</div>
-				<div class="article_hover_button"><a href="#">Read More</a></div>
-				<div class="article-title">The Confusing State of Bank Customer Service</div>
-				<div class="article-info">
-					<div class="article-info__views">2k Views</div>
-					<div class="article-info__date">14 Aug, 2016</div>
-				</div>
-				<div class="article-text">
-					New survey data suggests banks' customer service is good, and that 
-					banks have no reason to mention the word "omnichannel" ever again.
-				</div>
-			</div>		
-			<div class="article-block">
-				<div class="article-img"><img src="styles/img/article-feed8.png"></div>
-				<div class="article-cat">FINANCIAL</div>
-				<div class="article_hover_button"><a href="#">Read More</a></div>
-				<div class="article-title">What The Bank Customer Satisfaction Numbers Really Mean</div>
-				<div class="article-info">
-					<div class="article-info__views">2k Views</div>
-					<div class="article-info__date">14 Aug, 2016</div>
-				</div>
-				<div class="article-text">
-					JD Power released the first wave of its 2015 bank customer satisfaction research.
-					My take: Big bank bashing is a thing of the past.
-				</div>
-			</div>	
-			<div class="article-block">
-				<div class="article-img"></div>
-				<div class="article-cat">FINANCIAL</div>
-				<div class="article_hover_button"><a href="#">Read More</a></div>
-				<div class="article-title">What Do You Do If The CEO Doesn’t ‘Get’ Marketing?</div>
-				<div class="article-info">
-					<div class="article-info__views">2k Views</div>
-					<div class="article-info__date">14 Aug, 2016</div>
-				</div>
-				<div class="article-text">
-					At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
-					praesentium voluptatum deleniti atque corrupti quos dolores.
-				</div>
+				<div class="col-lg-4 article-block">
+					<div class="article-img"></div>
+					<div class="article-category">FINANCIAL</div>
+					<div class="article_hover_button"><a href="#">Read More</a></div>
+					<div class="article-title">What Do You Do If The CEO Doesn’t ‘Get’ Marketing?</div>
+					<ul class="article-info">
+						<li class="views">2k Views</li>
+						<li class="date">14 Aug, 2016</li>
+					</ul>	
+					<p class="article-text">
+						At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
+						praesentium voluptatum deleniti atque corrupti quos dolores.
+					</p>		
+				</div>				
 			</div>		
 		</article>
-<!-- ARTICLE-OLDER BLOCK -->		
-		<div class="page">
-			<div class="page__line article-older">
-					<a href="#">View all</a>
-			</div>			
+
+		<div class="container old">
+			<button class="old-btn">View all</button>
 		</div>
-<!-- FOOTER BLOCK -->
-		<footer class="page bgcolor2">
-			<div class="page__line">
-				<div class="footer-content">
-					<div class="footer-content__el footer-content__el_home">
+
+		<footer class="container-fluid footer-bg">
+			<div class="container">
+				<div class="row footer">
+					<div class="col-lg-6 footer-list left">
 						Home<br />
-						<ul class="footer-content__list footer-content__list_home">
+						<ul class="footer-list_item home">
 							<li><a href="#">Why Join</a></li>
 							<li><a href="#">Community</a></li>
 							<li><a href="#">Smart Advice</a></li>
 						</ul>
-						<ul class="footer-content__list footer-content__list_home">
+						<ul class="footer-list_item home">
 							<li><a href="#">Deals & Offers</a></li>
 							<li><a href="#">Tools & Planners</a></li>
 							<li><a href="#">Get in touch</a></li>
 						</ul>
 					</div>
-					<div class="footer-content__el footer-content__el_followus">
+					<div class="col-lg-4 footer-list">
 						FOLLOW US<br />
-						<ul class="footer-content__list footer-content__list_followus">
-							<li class="footer-content__list-icon facebook"><a href="#">Facebook</a></li>
-							<li class="footer-content__list-icon twitter"><a href="#">Twitter</a></li>
-							<li class="footer-content__list-icon instagram"><a href="#">Instagram</a></li>
+						<ul class="footer-list_item followus">
+							<li class="footer-list_icon facebook"><a href="#">Facebook</a></li>
+							<li class="footer-list_icon twitter"><a href="#">Twitter</a></li>
+							<li class="footer-list_icon instagram"><a href="#">Instagram</a></li>
 						</ul>
-						<ul class="footer-content__list footer-content__list_followus">
-							<li class="footer-content__list-icon youtube"><a href="#">Youtube</a></li>
-							<li class="footer-content__list-icon gplus"><a href="#">Google Plus</a></li>
-							<li class="footer-content__list-icon in"><a href="#">Linked In</a></li>
+						<ul class="footer-list_item followus">
+							<li class="footer-list_icon youtube"><a href="#">Youtube</a></li>
+							<li class="footer-list_icon gplus"><a href="#">Google Plus</a></li>
+							<li class="footer-list_icon in"><a href="#">Linked In</a></li>
 						</ul>
 					</div>
-					<div class="footer-content__el footer-content__el_git">
+					<div class="col-lg-2 footer-list-right">
 						GET IN TOUCH<br />
-						<ul class="footer-content__list">
-							<li class="footer-content__list-icon mail"><a href="#">info@smartm.ae</a></li>
-							<li class="footer-faq"><a href="#">FAQS</a></li>
+						<ul class="footer-list_item">
+							<li class="footer-list_icon mail"><a href="#">info@smartm.ae</a></li>
+							<li class="faq"><a href="#">FAQS</a></li>
 						</ul>
 					</div>
 				</div>
-				<div class="footer-copyright">
-					<div class="footer-logo"><a class="footer-logo-a" href="#"></a></div>
-					<div class="footer-copyright-text">Copyright © 2016 MoneySmart &emsp;|&emsp; Brought together by</div>
-					<div class="footer-partner"><a class="footer-partner-a" href="#"></a></div>
-					<div class="footer-conditions"><a href="#">Term and Conditions</a>&emsp;|&emsp;<a href="#">Privacy Policy</a></div>
+				<div class="row footer copyright">
+					<div class="col-lg-7 copyright-list">
+						<div class="copyright-list_item logo">
+							<a class="logolink" href="#"></a>
+						</div>
+						<div class="copyright-list_item text">
+							Copyright © 2016 MoneySmart
+							&emsp;|&emsp; 
+							Brought together by
+						</div>
+						<div class="copyright-list_item partner">
+							<a class="logolink" href="#"></a>
+						</div>
+					</div>
+					<div class="col-lg-3 col-lg-offset-2 copyright-list right">
+							<a href="#">Term and Conditions</a>
+							&emsp;|&emsp;
+							<a href="#">Privacy Policy</a>
+					</div>
 				</div>
 			</div>
 		</footer>
 	</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
