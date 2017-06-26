@@ -47,7 +47,8 @@
 	font-size: 55px;
 } 	
 .slider h2{				/* slider secondary text*/
-	padding-top: 34px;				
+	padding-top: 34px;
+	margin-bottom: 63px;				
 	}
 .slider b {
 	font-family: helvetica-bold;
@@ -55,15 +56,13 @@
 	border-bottom-color: #fff;
 	border-bottom-style: solid;
 }
-.slider-list {						/* slider labels*/
-	margin-top: 70px;				
-}
 .slider-list li {
- 	display: inline; 
+ 	display: inline-block; 
  	margin: 0 6px;
-} 
+}
 .slider-list li a{
-	padding: 8px 12px;	
+	display: block;
+	padding: 6px 12px;	
 	font-size: 14px;
 	color: #fff;
 	border-width: 1px;
