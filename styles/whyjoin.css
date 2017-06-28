@@ -22,7 +22,7 @@
 }
 .whyjoin-reason h4.singup{
 	margin-top: 0;
-	margin-bottom: 28px;
+	margin-bottom: 80px;
 	text-align: center;
 	line-height: 24px;	
 	font-size: 16px;
@@ -38,3 +38,86 @@
 .whyjoin-reason h4.singup i{
 	font-family: helvetica-italic;
 }
+.whyjoin-reason-list_item {
+	margin-bottom: 90px;
+}
+.whyjoin-reason-list_item .icon {
+	display: block;	
+	margin: 0 auto;
+	margin-bottom: 12px;
+}
+.whyjoin-reason-list_item .user {
+	width: 56px;
+}
+.whyjoin-reason-list_item .account {
+	width: 43px;
+	margin-bottom: 20px;
+}
+.whyjoin-reason-list_item .financing {
+	width: 34px;
+	margin-bottom: 18px;
+}
+.whyjoin-reason-list_item .deals {
+	width: 33px;
+}
+.whyjoin-reason-list_item a.icon .color{
+	fill: #3c4759;
+	fill-rule: evenodd;
+}
+.whyjoin-reason-list_item:hover a.icon .color{
+	fill: #00aeef;
+	fill-rule: evenodd;
+}
+.whyjoin-reason-list_item a.titile{
+	display: block;
+	margin-bottom: 18px;
+	text-align: center;
+	font-size: 26px;
+	font-family: helvetica-light;
+	color: #637188;
+}
+.whyjoin-reason-list_item:hover a.titile{
+	display: block;
+	text-align: center;
+	font-size: 26px;
+	font-family: helvetica-light;
+	color: #00aeef;
+}
+.whyjoin-reason-list_item p.text{
+	display: block;
+	margin: 0 auto;
+	max-width: 280px;
+	text-align: center;
+	font-size: 16px;
+	font-family: helvetica-light;
+	color: #637188;
+}
+.whyjoin-reason-list_item p.join{
+	display: block;
+	margin: auto;
+	max-width: 310px;
+	text-align: center;
+	font-size: 30px;
+	font-family: helvetica-light;
+	color: #3c4759;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
