@@ -1,6 +1,7 @@
 <html>
 	<head>
 		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="styles/bootstrap.css">
 		<link rel="stylesheet" type="text/css" href="styles/bootstrap-theme.css">
 		<link rel="stylesheet" type="text/css" href="styles/style.css">
@@ -20,7 +21,7 @@ css:	background-color: #ffffaa; 			- yellow
  -->
 	</head>
 	<body> 
-		<header class="container">
+		<header class="container hidden-xs">
 			<div class="row">
 				<div class="col-lg-10 col-lg-offset-2 header">
 					<ul class="nav navbar-nav navbar-list">
@@ -40,25 +41,32 @@ css:	background-color: #ffffaa; 			- yellow
 
 		<nav class="container-fluid navblock-bg">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-2 navblock">
-						<ul class="nav navbar-nav navbar-logo">
-							<li><a class="navbar-logo_item" href="#"></a></li>
+				<div class="row navbar navblock">
+					<ul class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed toggle-style" data-toggle="collapse" data-target="#navbar">
+							<span class="icon-toggle"></span>
+							<span class="icon-toggle"></span>
+							<span class="icon-toggle"></span>
+						</button>
+					</ul>
+					<ul class="nav navbar-nav navbar-logo">
+						<li><a class="navbar-logo_item" href="#"></a></li>
+					</ul>
+					<ul class="navbar-collapseblock">
+						<ul class="collapse navbar-collapse" id="navbar"> 
+							<ul class="nav navbar-nav navbar-list">
+								<li class="navbar-list_item"><a href="/why-join.html">Why Join</a></li>
+								<li class="navbar-list_item"><a href="#">About Community</a></li>
+								<li class="navbar-list_item"><a href="#">Smart Advice</a></li>
+								<li class="navbar-list_item"><a href="#">Deals & Offers</a></li>
+								<li class="navbar-list_item"><a href="#">Tools & Planners</a></li>
+								<li class="navbar-list_item"><a href="#">Get in touch</a></li>
+							</ul>
 						</ul>
-					</div>		
-					<div class="col-lg-10 navblock">
-						<ul class="nav navbar-nav navbar-list">
-							<li class="navbar-list_item"><a href="/why-join.html">Why Join</a></li>
-							<li class="navbar-list_item"><a href="#">About Community</a></li>
-							<li class="navbar-list_item"><a href="#">Smart Advice</a></li>
-							<li class="navbar-list_item"><a href="#">Deals & Offers</a></li>
-							<li class="navbar-list_item"><a href="#">Tools & Planners</a></li>
-							<li class="navbar-list_item"><a href="#">Get in touch</a></li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right navbar-search">
-							<li><a class="navbar-search_item" href="#"></a></li>
-						</ul>
-					</div>
+					</ul>	
+					<ul class="nav navbar-nav navbar-right navbar-search">
+						<li><a class="navbar-search_item" href="#"></a></li>
+					</ul>
 				</div>
 			</div>
 		</nav>	
@@ -84,22 +92,22 @@ css:	background-color: #ffffaa; 			- yellow
 
 		<div class="container filters">
 			<div class="row">
-				<div class="col-sm-5 search">
+				<div class="col-sm-5 col-xs-10 search">
 					<input type="text" value="What are you looking for?" onfocus="if (this.value == 'What are you looking for?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'What are you looking for?';}">
 				</div>
-				<div class="col-sm-3 date">
+				<div class="col-sm-3 date hidden-xs">
 					By Date
 				</div>
-				<div class="col-lg-2 col-lg-offset-1 col-sm-3 sort">
-					By Categoris
+				<div class="col-lg-2 col-lg-offset-1 col-sm-3  col-xs-2 sort">
+					<p class="sort-text hidden-xs">By Categoris</p>
 				</div>
-				<div class="col-sm-1 button">
+				<div class="col-sm-1 button hidden-xs">
 					<button type="button" class="array"></button>
 				</div>
 			</div>
 		</div>
 
-		<div class="container div-bread">
+		<div class="container div-bread hidden-xs">
 			<div class="row">
 				<ol class="breadcrumb list">
 					<li><a href="#">Home</a></li>
@@ -113,10 +121,9 @@ css:	background-color: #ffffaa; 			- yellow
 		</div>
 
 		<article class="container article">
-	<!-- LINE 1 -->
 			<div class="row">
 				<div class="col-lg-4 article-block">
-					<div class="article-img"><img src="img/article-feed1.png"></div>
+					<div class="article-img"><img class="article-img_m" src="img/article-feed1.png"></div>
 					<div class="article-category">FINANCIAL</div>
 					<div class="article_button"><button class="btn btn-default btn-readmore" onclick="location.href='#' ">Read More</button></div>
 					<div class="article-title">The Foolish Fantasies of Fintech/ Bank Partnerships</div>
@@ -130,7 +137,7 @@ css:	background-color: #ffffaa; 			- yellow
 					</p>	
 				</div>
 				<div class="col-lg-4 article-block">
-					<div class="article-img"><img src="img/article-feed2.png"></div>
+					<div class="article-img"><img class="article-img_m" src="img/article-feed2.png"></div>
 					<div class="article-category">FINANCIAL</div>
 					<div class="article_button"><button class="btn btn-default btn-readmore" onclick="location.href='#' ">Read More</button></div>
 					<div class="article-title">Does It Really Matter What Retail Banking Consumers Want?</div>
@@ -143,7 +150,7 @@ css:	background-color: #ffffaa; 			- yellow
 					</p>			
 				</div>
 				<div class="col-lg-4 article-block">
-					<div class="article-img"><img src="img/article-feed3.png"></div>
+					<div class="article-img"><img class="article-img_m" src="img/article-feed3.png"></div>
 					<div class="article-category">FINANCIAL</div>
 					<div class="article_button"><button class="btn btn-default btn-readmore" onclick="location.href='#' ">Read More</button></div>
 					<div class="article-title">Marketers Stop Making Sense</div>
@@ -156,7 +163,6 @@ css:	background-color: #ffffaa; 			- yellow
 					</p>		
 				</div>	
 			</div>					
-	<!-- LINE 2 -->
 			<div class="row">
 				<div class="col-lg-4 article-block">
 					<div class="article-img"><img src="img/article-feed4.png"></div>
@@ -202,7 +208,6 @@ css:	background-color: #ffffaa; 			- yellow
 					</p>		
 				</div>	
 			</div>	
-	<!-- LINE 3-->
 			<div class="row">
 				<div class="col-lg-4 article-block">
 					<div class="article-img"><img src="img/article-feed7.png"></div>
@@ -312,6 +317,10 @@ css:	background-color: #ffffaa; 			- yellow
 				</div>
 			</div>
 		</footer>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
 	</body>
 </html>
 

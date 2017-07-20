@@ -16,11 +16,11 @@ css:	background-color: #ffffaa; 			- yellow
  -->
 	</head>
 	<body> 
-		<header class="container">
+		<header class="container hidden-xs">
 			<div class="row">
 				<div class="col-lg-10 col-lg-offset-2 header">
 					<ul class="nav navbar-nav navbar-list">
-						<li class="navbar-list_item"><a href="/">MoneySmart</a></li>
+						<li class="navbar-list_item"><a href="#">MoneySmart</a></li>
 						<li class="navbar-list_item"><a href="#">Community</a></li>
 						<li class="navbar-list_item"><a href="#">Banking</a></li>
 					</ul>
@@ -36,28 +36,35 @@ css:	background-color: #ffffaa; 			- yellow
 
 		<nav class="container-fluid navblock-bg">
 			<div class="container">
-				<div class="row">
-					<div class="col-lg-2 navblock">
-						<ul class="nav navbar-nav navbar-logo">
-							<li><a class="navbar-logo_item" href="/"></a></li>
+				<div class="row navbar navblock">
+					<ul class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed toggle-style" data-toggle="collapse" data-target="#navbar">
+							<span class="icon-toggle"></span>
+							<span class="icon-toggle"></span>
+							<span class="icon-toggle"></span>
+						</button>
+					</ul>
+					<ul class="nav navbar-nav navbar-logo">
+						<li><a class="navbar-logo_item" href="#"></a></li>
+					</ul>
+					<ul class="navbar-collapseblock">
+						<ul class="collapse navbar-collapse" id="navbar"> 
+							<ul class="nav navbar-nav navbar-list">
+								<li class="navbar-list_item"><a href="/why-join.html">Why Join</a></li>
+								<li class="navbar-list_item"><a href="#">About Community</a></li>
+								<li class="navbar-list_item"><a href="#">Smart Advice</a></li>
+								<li class="navbar-list_item"><a href="#">Deals & Offers</a></li>
+								<li class="navbar-list_item"><a href="#">Tools & Planners</a></li>
+								<li class="navbar-list_item"><a href="#">Get in touch</a></li>
+							</ul>
 						</ul>
-					</div>		
-					<div class="col-lg-10 navblock">
-						<ul class="nav navbar-nav navbar-list">
-							<li class="navbar-list_item"><a href="#">Why Join</a></li>
-							<li class="navbar-list_item"><a href="#">About Community</a></li>
-							<li class="navbar-list_item"><a href="#">Smart Advice</a></li>
-							<li class="navbar-list_item"><a href="#">Deals & Offers</a></li>
-							<li class="navbar-list_item"><a href="#">Tools & Planners</a></li>
-							<li class="navbar-list_item"><a href="#">Get in touch</a></li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right navbar-search">
-							<li><a class="navbar-search_item" href="#"></a></li>
-						</ul>
-					</div>
+					</ul>	
+					<ul class="nav navbar-nav navbar-right navbar-search">
+						<li><a class="navbar-search_item" href="#"></a></li>
+					</ul>
 				</div>
 			</div>
-		</nav>	
+		</nav>
 
 		<div class="container-fluid slider-bg slider-whyjoin-bg">
 			<div class="container">

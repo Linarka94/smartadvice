@@ -13,6 +13,9 @@
 	padding-top: 30px;
 	padding-bottom: 28px;
 }
+.filters .sort p.sort-text {
+	display: inline;
+}
 .filters .search input{
 	border:none;
 	font-size: 18px;
@@ -72,4 +75,41 @@
  .filters .button .array:focus {
 	border: none;
 	outline: none;
+}
+
+@media (max-width: 767px) {
+	.filters {
+	max-width: 640px;
+	margin: auto;
+	margin-top: -45px;
+	 }
+	.filters .search {
+	padding-top: 24px;
+}
+	.filters .search:before{
+	content: " ";
+	background: none;
+	width: 0;
+	height: 0;
+	margin: 0;
+}
+	.filters .search input{
+	margin-left: 20px;
+	border:none;
+	font-size: 30px;
+	font-family: helvetica;
+	color: #3c4759;
+	color: #3c4759;
+	width: 350px;
+	outline:0;
+}
+	 .filters .sort:before{
+	content: " ";
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+	width: 41px;
+	height: 31px;
+	background: url(../img/filters-category_m.png);			/* img size:21x28px, picture size 32x32px ->> padding: 2px 5px; from img */
+	}	
 }

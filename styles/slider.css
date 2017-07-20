@@ -79,16 +79,21 @@
 .slider-list li {
  	display: inline-block; 
  	margin: 0 6px;
+ 	padding-bottom: 15px;
 }
 .slider-list li a{
 	display: block;
-	padding: 6px 12px;	
+	padding: 0 12px;
+	padding-bottom: 4px;
+	padding-top: 8px;	
 	font-size: 14px;
 	color: #fff;
 	border-width: 1px;
 	border-style: solid;
 	border-color: #a7d6ed;
 	border-radius: 2px;
+	font-family: helvetica-bold;
+	font-size:16px;
 }
 .slider-arrowdown {
 	display: block;
@@ -118,4 +123,48 @@
 	border-width: 3px;
 	border-left: none;
 	border-top: none;
+}
+
+@media (max-width: 767px) {
+	.slider-bg {		
+	 	display: block;	
+	 	position: relative;				
+		height: 630px;
+		padding: 0;
+		background: -moz-linear-gradient(-45deg, rgba(0,174,239,1) 0%, rgba(26,66,124,1) 100%, rgba(26,66,124,1) 100%);
+	    background: -webkit-linear-gradient(-45deg, rgba(0,174,239,1) 0%, rgba(26,66,124,1) 100%, rgba(26,66,124,1) 100%);
+	    background: -o-linear-gradient(-45deg, rgba(0,174,239,1) 0%, rgba(26,66,124,1) 100%, rgba(26,66,124,1) 100%);
+		background-position:center;
+	}
+	.slider-bg:before {	
+	 	content: " ";	
+	 	display: block;	
+	 	position: relative;						
+		height: 630px;
+		background: -moz-linear-gradient(145deg, rgba(173,145,103,1) 0%, rgba(255,255,255,0) 85%);
+	    background: -webkit-linear-gradient(145deg, rgba(173,145,103,1) 0%, rgba(255,255,255,0) 85%);
+	    background: -o-linear-gradient(145deg, rgba(173,145,103,1) 0%, rgba(255,255,255,0) 85%);
+		background-position:center;
+	}
+	.slider-bg:after {	
+	 	content: " ";
+	 	position: absolute;	
+	 	display: block;					
+		height: 630px;
+		width: 100%;
+		top:0px;
+		background-image: url(../img/slider-bg.png);
+		opacity: 0.5;
+		background-position:center;
+		background-repeat: no-repeat;
+	}
+	.slider h1 {
+	margin-top: 91px;
+	font-size: 55px;
+	}
+	.slider h2{				/* slider secondary text*/
+	padding-top: 16px;
+	margin-bottom: 108px;				
+	}
+
 }
