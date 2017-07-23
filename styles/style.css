@@ -1,7 +1,5 @@
-body {
-	overflow-x: hidden;
-}
 	/* Links styles*/
+}
 }
 }
 a {text-decoration: none;}
@@ -38,4 +36,7 @@ ul {list-style-type: none;
  	src: url(../fonts/helvetica-italic.ttf); 
 	font-style: normal;
 	font-weight: normal;
+}
+.relative {
+	position: relative;
 }

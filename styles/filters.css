@@ -79,12 +79,13 @@
 
 @media (max-width: 767px) {
 	.filters {
-	max-width: 640px;
+	height: 131px;
+	width: 640px;
 	margin: auto;
 	margin-top: -45px;
 	 }
 	.filters .search {
-	padding-top: 24px;
+	padding-top: 44px;
 }
 	.filters .search:before{
 	content: " ";
@@ -102,6 +103,9 @@
 	color: #3c4759;
 	width: 350px;
 	outline:0;
+}
+		.filters .sort {
+	padding-top: 50px;
 }
 	 .filters .sort:before{
 	content: " ";

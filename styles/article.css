@@ -58,7 +58,11 @@
 		height: 16px;
 		background: url(../img/article-views.png);
 		background-repeat: no-repeat;
-	}	
+	}
+	.article-info > li.views > p.views_number, .article-info > li.views > p.views_text {
+		display: inline;
+		margin: 0;
+	} 
 	.article-info > li.date {
 		display: inline-block;
 		vertical-align: middle; 
@@ -182,12 +186,16 @@
 }
 @media (max-width: 767px) {
 	.article{
-	padding: 0;
+		padding: 0;
+	}
+	.article .row{
+		margin: 0;
 	}
 	.article-block {
-	max-width: 640px;
-	margin: auto;
-	padding: 0;
+		max-width: 640px;
+		margin: auto;
+		margin-bottom: 2px;
+		padding: 0;
 	}
 	.article-img {
 		position: relative;
@@ -197,16 +205,27 @@
 		width: 640px;
 		height: 400px;
 	}
-	.article-img_m {
+	.article-img .image-style {
 		width: 640px;
 		height: 400px;
 	}
+	.article-block .article-img:after{
+		content: "";
+		display: block;
+		position: absolute;
+		bottom: 0px;
+		width: 640px;
+		height:400px;
+		background: -moz-linear-gradient(bottom, rgba(42,52,67,1) 0%, rgba(42,52,67,0) 100%); 
+	    background: -webkit-linear-gradient(bottom, rgba(42,52,67,1) 0%, rgba(42,52,67,0) 100%);
+	    background: -o-linear-gradient(bottom, rgba(42,52,67,1) 0%, rgba(42,52,67,0) 100%);
+	} 
 	.article-category {
 	 	position: absolute;
-	 	right: 0px; top: 250px;
+	 	right: 0px; top: 276px;
 	 	padding:10px 15px;
 		background: #242c3a;
-		font-size: 16px;
+		font-size: 24px;
 		font-family: helvetica-light; 
 		color: #fff;
 	}  
@@ -224,10 +243,13 @@
 		color: #fff;
 	}
 	.article-info {
-	 	height: 16px;
-		font-size: 14px;
+		position: absolute;
+		bottom: 32px;
+		left: 30px;
+		font-size: 20px;
 		font-family: helvetica-light; 
-		color: #637188; 
+		color: #fff; 
+		text-transform: uppercase;
 	}
 	.article-info > li.views {
 		display: inline-block;
@@ -238,13 +260,18 @@
 		content: "";
 		display: inline-block;
 		vertical-align: middle;	
-		margin-top: 2px;
+		margin-top: -4px;
 		margin-right: 5px;
-		width: 16px;
-		height: 16px;
-		background: url(../img/article-views.png);
+		width: 30px;
+		height: 30px;
+		background: url(../img/article-views_m.png);
+		background-position: center;
 		background-repeat: no-repeat;
-	}	
+	}
+	.article-info > li.views > p.views_number, .article-info > li.views > p.views_text {
+		display: inline;
+		margin: 0;
+	} 
 	.article-info > li.date {
 		display: inline-block;
 		vertical-align: middle; 
@@ -257,9 +284,11 @@
 		vertical-align: top;
 		margin-right: 5px;
 		margin-top: 2px;
-		width: 16px;
-		height: 16px;
-		background: url(../img/article-date.png);
+		width: 30px;
+		height: 30px;
+		background: url(../img/article-date_m.png);
+
+		background-repeat: no-repeat;
 	}	
 	 .article-text {
 	 	display: none;
