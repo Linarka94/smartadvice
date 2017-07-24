@@ -80,9 +80,9 @@
 @media (max-width: 767px) {
 	.filters {
 	height: 131px;
-	width: 640px;
+	width: 660px;
 	margin: auto;
-	margin-top: -45px;
+	margin-top: -65px;
 	 }
 	.filters .search {
 	padding-top: 44px;

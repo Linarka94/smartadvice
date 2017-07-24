@@ -21,19 +21,18 @@ css:	background-color: #ffffaa; 			- yellow
  -->
 	</head>
 	<body> 
-		<header class="container hidden-xs">
+		<header class="container header hidden-xs">
 			<div class="row">
-				<div class="col-lg-10 col-lg-offset-2 header">
+				<div class="col-lg-10 col-lg-offset-2">
 					<ul class="nav navbar-nav navbar-list">
 						<li class="navbar-list_item"><a href="#">MoneySmart</a></li>
 						<li class="navbar-list_item"><a href="#">Community</a></li>
 						<li class="navbar-list_item"><a href="#">Banking</a></li>
 					</ul>
-
-					<ul class="nav navbar-nav navbar-right navbar-list link">
-						<li class="navbar-list_item line"><a href="#">AR</a></li>
-						<li class="navbar-list_item"><a href="#">Login</a></li>
-						<li class="navbar-list_item"><a href="#">Join Now</a></li>
+					<ul class="nav navbar-nav navbar-right navbar-list _login">
+						<li class="navbar-list_item _line"><a href="#">AR</a></li>
+						<li class="navbar-list_item"><a class="underlined" href="#">Login</a></li>
+						<li class="navbar-list_item"><a class="underlined" href="#">Join Now</a></li>
 					</ul>
 				</div>
 			</div>
@@ -41,32 +40,34 @@ css:	background-color: #ffffaa; 			- yellow
 
 		<nav class="container-fluid navblock-bg">
 			<div class="container">
-				<div class="row navbar navblock">
-					<ul class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed toggle-style" data-toggle="collapse" data-target="#navbar">
-							<span class="icon-toggle"></span>
-							<span class="icon-toggle"></span>
-							<span class="icon-toggle"></span>
-						</button>
-					</ul>
-					<ul class="nav navbar-nav navbar-logo">
-						<li><a class="navbar-logo_item" href="#"></a></li>
-					</ul>
-					<ul class="navbar-collapseblock">
-						<ul class="collapse navbar-collapse" id="navbar"> 
-							<ul class="nav navbar-nav navbar-list">
-								<li class="navbar-list_item"><a href="/why-join.html">Why Join</a></li>
-								<li class="navbar-list_item"><a href="#">About Community</a></li>
-								<li class="navbar-list_item"><a href="#">Smart Advice</a></li>
-								<li class="navbar-list_item"><a href="#">Deals & Offers</a></li>
-								<li class="navbar-list_item"><a href="#">Tools & Planners</a></li>
-								<li class="navbar-list_item"><a href="#">Get in touch</a></li>
-							</ul>
+				<div class="row">
+					<div class="navbar navblock">
+						<ul class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed _navblock-toggle" data-toggle="collapse" data-target="#navblock">
+								<span class="icon-toggle"></span>
+								<span class="icon-toggle"></span>
+								<span class="icon-toggle"></span>
+							</button>
 						</ul>
-					</ul>	
-					<ul class="nav navbar-nav navbar-right navbar-search">
-						<li><a class="navbar-search_item" href="#"></a></li>
-					</ul>
+						<ul class="nav navbar-nav navbar-logo">
+							<li><a class="navbar-logo_item" href="#"></a></li>
+						</ul>
+						<ul class="navbar-collapseblock">
+							<ul class="collapse navbar-collapse" id="navblock"> 
+								<ul class="nav navbar-nav navbar-list">
+									<li class="navbar-list_item"><a href="/why-join.html">Why Join</a></li>
+									<li class="navbar-list_item"><a href="#">About Community</a></li>
+									<li class="navbar-list_item"><a href="#">Smart Advice</a></li>
+									<li class="navbar-list_item"><a href="#">Deals & Offers</a></li>
+									<li class="navbar-list_item"><a href="#">Tools & Planners</a></li>
+									<li class="navbar-list_item"><a href="#">Get in touch</a></li>
+								</ul>
+							</ul>
+						</ul>	
+						<ul class="nav navbar-nav navbar-right navbar-search">
+							<li><a class="navbar-search_item" href="#"></a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
 		</nav>	
@@ -123,7 +124,10 @@ css:	background-color: #ffffaa; 			- yellow
 		<article class="container article">
 			<div class="row">
 				<div class="col-lg-4 article-block">
-					<div class="article-img"><img class="image-style" src="img/article-feed1.png"></div>
+					<div class="article-img">
+						<img class="image-style" src="img/article-feed1.png">
+						<a href="#" class="mainlink visible-xs"></a>
+					</div>
 					<div class="article-category">FINANCIAL</div>
 					<div class="article_button"><button class="btn btn-default btn-readmore" onclick="location.href='#' ">Read More</button></div>
 					<div class="article-title">The Foolish Fantasies of Fintech/ Bank Partnerships</div>
@@ -140,7 +144,10 @@ css:	background-color: #ffffaa; 			- yellow
 					</p>	
 				</div>
 				<div class="col-lg-4 article-block">
-					<div class="article-img"><img class="image-style" src="img/article-feed2.png"></div>
+					<div class="article-img">
+						<img class="image-style" src="img/article-feed2.png">
+						<a href="#" class="mainlink visible-xs"></a>
+					</div>
 					<div class="article-category">FINANCIAL</div>
 					<div class="article_button"><button class="btn btn-default btn-readmore" onclick="location.href='#' ">Read More</button></div>
 					<div class="article-title">Does It Really Matter What Retail Banking Consumers Want?</div>
@@ -153,7 +160,10 @@ css:	background-color: #ffffaa; 			- yellow
 					</p>			
 				</div>
 				<div class="col-lg-4 article-block">
-					<div class="article-img"><img class="image-style" src="img/article-feed3.png"></div>
+					<div class="article-img">
+						<img class="image-style" src="img/article-feed3.png">
+						<a href="#" class="mainlink visible-xs"></a>
+					</div>
 					<div class="article-category">FINANCIAL</div>
 					<div class="article_button"><button class="btn btn-default btn-readmore" onclick="location.href='#' ">Read More</button></div>
 					<div class="article-title">Marketers Stop Making Sense</div>
@@ -168,7 +178,10 @@ css:	background-color: #ffffaa; 			- yellow
 			</div>					
 			<div class="row">
 				<div class="col-lg-4 article-block">
-					<div class="article-img"><img class="image-style" src="img/article-feed4.png"></div>
+					<div class="article-img">
+						<img class="image-style" src="img/article-feed4.png">
+						<a href="#" class="mainlink visible-xs"></a>
+					</div>
 					<div class="article-category">FINANCIAL</div>
 					<div class="article_button"><button class="btn btn-default btn-readmore" onclick="location.href='#' ">Read More</button></div>
 					<div class="article-title">Financial Health Is The New Marketing</div>
@@ -182,7 +195,10 @@ css:	background-color: #ffffaa; 			- yellow
 					</p>	
 				</div>
 				<div class="col-lg-4 article-block">
-					<div class="article-img"><img class="image-style" src="img/article-feed5.png"></div>
+					<div class="article-img">
+						<img class="image-style" src="img/article-feed5.png">
+						<a href="#" class="mainlink visible-xs"></a>
+					</div>
 					<div class="article-category">FINANCIAL</div>
 					<div class="article_button"><button class="btn btn-default btn-readmore" onclick="location.href='#' ">Read More</button></div>
 					<div class="article-title">Life During Mobile Payments</div>
@@ -197,7 +213,10 @@ css:	background-color: #ffffaa; 			- yellow
 					</p>			
 				</div>
 				<div class="col-lg-4 article-block">
-					<div class="article-img"><img class="image-style" src="img/article-feed6.png"></div>
+					<div class="article-img">
+						<img class="image-style" src="img/article-feed6.png">
+						<a href="#" class="mainlink visible-xs"></a>
+					</div>
 					<div class="article-category">FINANCIAL</div>
 					<div class="article_button"><button class="btn btn-default btn-readmore" onclick="location.href='#' ">Read More</button></div>
 					<div class="article-title">Measuring Customer Loyalty In The 21st Century</div>
@@ -213,7 +232,10 @@ css:	background-color: #ffffaa; 			- yellow
 			</div>	
 			<div class="row">
 				<div class="col-lg-4 article-block">
-					<div class="article-img"><img class="image-style" src="img/article-feed7.png"></div>
+					<div class="article-img">
+						<img class="image-style" src="img/article-feed7.png">
+						<a href="#" class="mainlink visible-xs"></a>
+					</div>
 					<div class="article-category">FINANCIAL</div>
 					<div class="article_button"><button class="btn btn-default btn-readmore" onclick="location.href='#' ">Read More</button></div>
 					<div class="article-title">The Confusing State of Bank Customer Service</div>
@@ -227,7 +249,10 @@ css:	background-color: #ffffaa; 			- yellow
 					</p>	
 				</div>
 				<div class="col-lg-4 article-block">
-					<div class="article-img"><img class="image-style" src="img/article-feed8.png"></div>
+					<div class="article-img">
+						<img class="image-style" src="img/article-feed8.png">
+						<a href="#" class="mainlink visible-xs"></a>
+					</div>
 					<div class="article-category">FINANCIAL</div>
 					<div class="article_button"><button class="btn btn-default btn-readmore" onclick="location.href='#' ">Read More</button></div>
 					<div class="article-title">What The Bank Customer Satisfaction Numbers Really Mean</div>
@@ -241,7 +266,9 @@ css:	background-color: #ffffaa; 			- yellow
 					</p>			
 				</div>
 				<div class="col-lg-4 article-block">
-					<div class="article-img"></div>
+					<div class="article-img">
+						<a href="#" class="mainlink visible-xs"></a>
+					</div>
 					<div class="article-category">FINANCIAL</div>
 					<div class="article_button"><button class="btn btn-default btn-readmore" onclick="location.href='#' ">Read More</button></div>
 					<div class="article-title">What Do You Do If The CEO Doesn’t ‘Get’ Marketing?</div>
