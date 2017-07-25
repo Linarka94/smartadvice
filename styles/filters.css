@@ -9,12 +9,13 @@
 	color: #3c4759;
 	background-color: #fff;
 }	
-.filters .search, .filters .date, .filters .sort  {
+.filters .search,
+.filters .date, 
+.filters .sort {
+	display: inline-block;
+	margin: 0;
 	padding-top: 30px;
 	padding-bottom: 28px;
-}
-.filters .sort p.sort-text {
-	display: inline;
 }
 .filters .search input{
 	border:none;
@@ -37,17 +38,17 @@
 	height: 32px;
 	background: url(../img/filters-search.png); 			/* img size:22x22px, picture size 32x32px ->> padding: 5px; from img */
 }
- .filters .date:before{
+.filters .date:before{
 	content: " ";
 	display: inline-block;
 	vertical-align: middle;
-	margin-left: 14px;
 	margin-right: 9px;
+	margin-left: 14px;
 	width: 32px;
 	height: 32px;
 	background: url(../img/filters-calendar.png);			/* img size:32x28px, picture size 32x32px ->> padding: 2px 0; from img */
-	} 	
- .filters .sort:before{
+} 	
+.filters .sort:before{
 	content: " ";
 	display: inline-block;
 	vertical-align: middle;
@@ -56,11 +57,15 @@
 	width: 32px;
 	height: 32px;
 	background: url(../img/filters-category.png);			/* img size:21x28px, picture size 32x32px ->> padding: 2px 5px; from img */
-	}	
- .filters .button {
- 	padding: 0;
- } 
- .filters .button .array {
+	}
+.filters .sort-text {
+	display: inline;
+}
+.filters .commit-button {
+ 	margin-right: -15px;
+ 	margin-left: -15px;
+} 
+.filters .commit-button .array {
 	height: 80px;
 	width: 80px;
 	margin: 5px;
@@ -71,8 +76,8 @@
 	border-radius: 2px;
 	float: right;
 	border:none;
-	}
- .filters .button .array:focus {
+}
+.filters .commit-button .array:focus {
 	border: none;
 	outline: none;
 }
@@ -80,20 +85,20 @@
 @media (max-width: 767px) {
 	.filters {
 	height: 131px;
-	width: 660px;
+	width: 640px;
 	margin: auto;
 	margin-top: -65px;
 	 }
 	.filters .search {
 	padding-top: 44px;
-}
+	}
 	.filters .search:before{
 	content: " ";
 	background: none;
 	width: 0;
 	height: 0;
 	margin: 0;
-}
+	}
 	.filters .search input{
 	margin-left: 20px;
 	border:none;
@@ -103,11 +108,11 @@
 	color: #3c4759;
 	width: 350px;
 	outline:0;
-}
-		.filters .sort {
+	}
+	.filters .sort {
 	padding-top: 50px;
-}
-	 .filters .sort:before{
+	}
+	.filters .sort:before{
 	content: " ";
 	display: inline-block;
 	vertical-align: middle;

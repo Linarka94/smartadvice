@@ -93,17 +93,23 @@ css:	background-color: #ffffaa; 			- yellow
 
 		<div class="container filters">
 			<div class="row">
-				<div class="col-sm-5 col-xs-10 search">
-					<input type="text" value="What are you looking for?" onfocus="if (this.value == 'What are you looking for?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'What are you looking for?';}">
+				<div class="col-sm-5 col-xs-10">
+					<div class="search">
+						<input type="text" value="What are you looking for?" onfocus="if (this.value == 'What are you looking for?') {this.value = '';}" onblur="if (this.value == '') {this.value = 'What are you looking for?';}">
+					</div>
 				</div>
-				<div class="col-sm-3 date hidden-xs">
-					By Date
+				<div class="col-sm-3 hidden-xs">
+					<div class="date">By Date</div>
 				</div>
-				<div class="col-lg-2 col-lg-offset-1 col-sm-3  col-xs-2 sort">
-					<p class="sort-text hidden-xs">By Categoris</p>
+				<div class="col-lg-2 col-lg-offset-1 col-sm-3 col-xs-2">
+					<div class="sort">
+						<p class="sort-text hidden-xs">By Categories</p>
+					</div>
 				</div>
-				<div class="col-sm-1 button hidden-xs">
-					<button type="button" class="array"></button>
+				<div class="col-sm-1 hidden-xs">
+					<div class="commit-button">
+						<button type="button" class="array"></button>
+					</div>
 				</div>
 			</div>
 		</div>

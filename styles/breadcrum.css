@@ -4,16 +4,16 @@
 	font-family: helvetica;
 	color: #3c4759;	
 }
-.div-bread .row ol.list{
+.div-bread .list{
  	padding: 0;
  	padding-left: 2px;
  	background-color: transparent;
 }
-.div-bread .row ol.list > li > a{
+.div-bread .list > li > a{
 	font-size: 16px;
 	font-family: helvetica;
 	color: #00aeef;
 	}
-.div-bread .row ol.list > li.active {
+.div-bread .list > li.active {
 	color: #3c4759;
 	}
