@@ -3,14 +3,14 @@
 		padding: 0;
 		padding-top: 49px;
 	}
+	.article .col-lg-4{
+		min-height: 518px;
+	}
 	.article-block {
 		position: relative;
 		display: inline-block;
 		vertical-align: top;
 		max-width: 370px;
-		margin: 0 15px;
-		margin-bottom: 42px;
-		padding: 0;
 	}
 	.article-category {
 	 	position: absolute;
@@ -191,14 +191,17 @@
 	.article .row{
 		margin: 0;
 	}
+	.article .col-lg-4{
+		padding: 0;
+	}
 	.article-block {
+		position: relative;
 		max-width: 640px;
 		margin: auto;
 		margin-bottom: 2px;
-		padding: 0;
+		padding: 0 -15px;
 	}
 	.article-img {
-		position: relative;
 		background: #384355 url(../img/article-feedbg.png);
 		background-position: center;
 		background-repeat: no-repeat;
@@ -275,7 +278,8 @@
 		background-position: center;
 		background-repeat: no-repeat;
 	}
-	.article-info > li.views > p.views_number, .article-info > li.views > p.views_text {
+	.article-info > li.views > p.views_number, 
+	.article-info > li.views > p.views_text {
 		display: inline;
 		margin: 0;
 	} 

@@ -41,10 +41,12 @@
 	border-bottom-color: #fff;
 	border-bottom-style: solid;
 }
+.navblock .navbar-search{
+	margin-right: 0;
+}
 .navblock .navbar-search li{
 	padding-top: 46px;
 	padding-bottom: 46px;
-	padding-right: 15px;
 }
 .navblock .navbar-search > li > a.navbar-search_item{
 	width: 27px;

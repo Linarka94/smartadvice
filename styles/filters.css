@@ -81,7 +81,32 @@
 	border: none;
 	outline: none;
 }
-
+@media (min-width: 768px) and (max-width: 991px)  {
+	.filters .search {
+	display: inline-block;
+	margin-right: -15px;
+	margin-left: -15px;
+	padding-top: 30px;
+	padding-bottom: 28px;
+	}
+	.filters .date, 		
+	.filters .sort {
+	display: inline-block;
+	margin-right: -15px;
+	margin-left: -25px;
+	padding-top: 30px;
+	padding-bottom: 28px;
+	}
+	.filters .search:before{
+	content: " ";
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 15px;
+	width: 32px;
+	height: 32px;
+	background: url(../img/filters-search.png); 			/* img size:22x22px, picture size 32x32px ->> padding: 5px; from img */
+}
+}
 @media (max-width: 767px) {
 	.filters {
 	height: 131px;

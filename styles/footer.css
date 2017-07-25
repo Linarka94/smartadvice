@@ -1,32 +1,31 @@
 @media (min-width: 768px) {
-	.footer-bg {
+	.footer {
 		background-color: #3c4759;
 		padding: 0;
+		font-size: 14px;
+		font-family: helvetica-light;
+		color: #a3b0c9;
 	}
-	.footer-bg:before {
+	.footer:before {
 	 	display: block;
 	 	content: "";
 		height: 8px;
 		background: #00aeef;
 	}
-	.footer {
-		margin-top: 51px;
-		min-height: 210px;
-		font-size: 14px;
-		font-family: helvetica-light;
-		color: #a3b0c9;
-	}	
 	.footer-list {
+		margin-right: -15px;
+		margin-left: -15px;
 		padding: 0;
+		padding-top: 51px;
 	}
-	.footer .home {
-		max-width: 509px;
-	}
-	.footer .git {
+	.footer ._git {
 		float: right;
 		max-width: 126px;
 	}
-	.footer-list_item-title {
+	.footer ._followus {
+		padding-left:21px;
+	}
+	.footer-list > h2.title {
 		margin: 0;
 		font-size: 14px;
 		text-transform: uppercase;
@@ -38,27 +37,28 @@
 	.footer-list_item > li {								
 		padding-bottom: 20px;
 	}
-	.footer-list_item > li > a{
+	.footer-list_item > li > a {
 	 	font-size: 14px;
 		font-family: helvetica;
 		color: #a3b0c9;
 		font-weight: 300;
 	}
-	.footer-list ul.home-list {
+	._home > ul.footer-list_item {
 		padding-right: 98px;
 	}
-	.footer-list ul.followus-list {
+	._followus > ul.footer-list_item {
 		padding-right: 64px;
 	}	
-	.footer-list ul.followus-list > li {
+	._followus > ul.footer-list_item li {
 		padding-bottom: 18px;
 	}
-	.footer-list ul.followus-list > li > a{
+	._followus > ul.footer-list_item a{
 		display: inline-block;
 		vertical-align: middle;
 	}
 	/* ---> Icons */
-	.footer-list_icon:before{
+	._followus .item-icon:before,
+	._git .item-icon:before{
 		display: inline-block;
 		vertical-align: middle;
 		content: "";
@@ -67,36 +67,36 @@
 		margin-right: 5px;
 		margin-left: -2px;
 	}
-	.footer-list_icon.facebook:before{
+	._followus ._facebook:before{
 		background: url(../img/footer-facebook.png);
 	}
-	.footer-list_icon.twitter:before{
+	._followus ._twitter:before{
 		background: url(../img/footer-twitter.png);
 	}
-	.footer-list_icon.instagram:before{
+	._followus ._instagram:before{
 		background: url(../img/footer-instagram.png);
 	}
-	.footer-list_icon.gplus:before{
+	._followus ._gplus:before{
 		margin-right: 10px;
 		background: url(../img/footer-gplus.png);
 	}
-	.footer-list_icon.youtube:before{
+	._followus ._youtube:before{
 		margin-right: 10px;
 		background: url(../img/footer-youtube.png);
 	}
-	.footer-list_icon.in:before{
+	._followus ._in:before{
 		margin-right: 10px;
 		background: url(../img/footer-in.png);
 	}
-	.footer-list_icon.mail:before{
+	._git ._mail:before{
 		margin-left: -4px;
 		background: url(../img/footer-mail.png);
 	}
 	/* <--- Icons */
-	.footer-list_item li.faq {
+	._git .item-faq {
 		padding-top: 41px;
 		}	
-	.footer-list_item li.faq a{
+	._git .item-faq a{
 		display: inline-block;
 		vertical-align: middle;
 		color: #fff;
@@ -108,67 +108,67 @@
 		font-weight: 300;
 		}	
 	.copyright {
-		margin-top: 0;
-		min-height: 80px;
-	 	text-transform: none;
-	}
-	.copyright-list {
 		display: inline-block;
 		vertical-align: bottom;
-		padding: 0;
+		margin-right: -15px;
+		margin-left: -15px;
+		margin-bottom: 36px;
 		color: #a3b0c9;
 	 	font-size: 15px;
 		font-family: helvetica;
 		font-weight: 300;
 	}
-	.copyright-list a{
+	.copyright a{
 		color: #a3b0c9;
 	 	font-size: 15px;
 		font-family: helvetica;
 		text-align:right;
 		font-weight: 300;
 	}
-	.copyright .conditions{
-		margin-top: 30px;
-		text-align: right;
-	}	
-	.copyright-list_item {
+	._list .copyright-item {
 		display: inline-block;
 		vertical-align: bottom;
 	}
-	.copyright-list .logo {
+	._list ._logo {
 		width:122px;
 	}
-	.copyright-list .logo a.logolink {
+	._list ._logo > a.logolink {
 		display: block;
-		width:95px;
+		width:94px;
 		height: 44px;
 		background-image: url(../img/footer-logo.png);
 	}
-	.copyright-list .text {
+	._list ._text {
 		width: 390px;
 		color: #a3b0c9;
 	 	font-size: 15px;
 		font-family: helvetica;
 		font-weight: 300;
 	}
-	.copyright-list .text p.pcopyright, 
-	.copyright-list .text p.pline, 
-	.copyright-list .text p.pbrought {
+	._list ._text .p_copyright, 
+	._list ._text .p_line, 
+	._list ._text .p_brought {
 		display: inline;
 		margin: 0;
 		padding: 0;
 	}
-	.copyright-list .partner {
-		margin-bottom: 6px;
-	}
-	.copyright-list .partner a.logolink {
+	._list ._partner > a.logolink {
 		display: block;
 		width:145px;
 		height: 27px;
-		margin-bottom: -5px;
+		margin-bottom: -2px;
 		background-image: url(../img/footer-partner.png);
 	}
+	._conditions {
+		margin-top: 23px;
+	}
+	._conditions .text{
+		display: inline;
+		margin: 0;
+		margin-left: 15px;
+		text-align: right;
+	}
+
 }
 @media (max-width: 767px) {
 	.footer-bg {
@@ -331,7 +331,7 @@
 		margin-bottom: 20px;
 		width:145px;
 		height: 27px;
-		background-image: url(../img/footer-partner_m.png);
+		background-image: url(../img/footer-partner.png);
 	}
 	.copyright .conditions {
 		margin: 0;
