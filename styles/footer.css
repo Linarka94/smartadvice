@@ -15,6 +15,7 @@
 	.footer-list {
 		margin-right: -15px;
 		margin-left: -15px;
+		margin-bottom: 70px;
 		padding: 0;
 		padding-top: 51px;
 	}
@@ -95,6 +96,7 @@
 	/* <--- Icons */
 	._git .item-faq {
 		padding-top: 41px;
+		padding-bottom: 0;
 		}	
 	._git .item-faq a{
 		display: inline-block;
@@ -125,44 +127,44 @@
 		text-align:right;
 		font-weight: 300;
 	}
-	._list .copyright-item {
+	.left-list .copyright-item {
 		display: inline-block;
 		vertical-align: bottom;
 	}
-	._list ._logo {
+	.left-list ._logo {
 		width:122px;
 	}
-	._list ._logo > a.logolink {
+	.left-list ._logo > a.logolink {
 		display: block;
 		width:94px;
 		height: 44px;
 		background-image: url(../img/footer-logo.png);
 	}
-	._list ._text {
+	.left-list ._text {
 		width: 390px;
 		color: #a3b0c9;
 	 	font-size: 15px;
 		font-family: helvetica;
 		font-weight: 300;
 	}
-	._list ._text .p_copyright, 
-	._list ._text .p_line, 
-	._list ._text .p_brought {
+	.left-list ._text .p_copyright, 
+	.left-list ._text .p_line, 
+	.left-list ._text .p_brought {
 		display: inline;
 		margin: 0;
 		padding: 0;
 	}
-	._list ._partner > a.logolink {
+	.left-list ._partner > a.logolink {
 		display: block;
 		width:145px;
 		height: 27px;
 		margin-bottom: -2px;
 		background-image: url(../img/footer-partner.png);
 	}
-	._conditions {
+	.right-list {
 		margin-top: 23px;
 	}
-	._conditions .text{
+	.right-list .text{
 		display: inline;
 		margin: 0;
 		margin-left: 15px;
