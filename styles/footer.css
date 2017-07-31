@@ -173,20 +173,24 @@
 
 }
 @media (max-width: 767px) {
-	.footer-bg {
+	.footer {
 		min-width: 640px;
 		background-color: #333e50;
 		padding: 0;
 	}
-	.footer-bg .container {
+	.footer .container {
 		padding: 0;
 	}
-	.footer {
+	.footer .row {
+		margin: 0;
+	}
+	.footer section {	
 		width: 640px;
 		margin: auto;
+		padding: 0;
+		float: none;
 		font-family: helvetica-light;
-		color: #fff;
-	}		
+	}	
 	.footer-list {
 		margin-bottom: 4px;
 		padding-top: 40px;
@@ -194,13 +198,16 @@
 		padding-left: 70px;
 		background-color: #3c4759;
 	}
-	.footer-list:first-child {
+	.footer ._home {
 		padding-top: 70px;
 	}
-	.footer-list_item-title {
+	.footer ._home > h2.title,
+	.footer ._followus > h2.title,
+	.footer ._git > h2.title {
 		margin: 0;
 	 	text-transform: uppercase;
 		font-size: 20px;
+		color: #fff;
 	}
 	.footer-list_item {
 		display: inline-block;
@@ -214,31 +221,26 @@
 	}
 	.footer-list_item > li > a{
 	 	font-size: 24px;
-		font-family: helvetica;
 		color: #a3b0c9;
-		font-weight: 300;
 	}
-	.footer-list_item {
+	._home .footer-list_item {
 		padding-right: 130px;
+	}
+	._followus .footer-list_item {
+		padding-right: 142px;
+	}
+	._followus .footer-list_item > li {
+		padding-bottom: 27px;
+	}
+	._followus .footer-list_item > li > a{
+		display: inline-block;
+		vertical-align: middle;
 	}
 	.footer-list_item:last-child {
 		padding-right: 0px;
 	}
-	.footer-list ul.followus-list {
-		padding-right: 142px;
-	}	
-	.footer-list ul.followus-list:last-child {
-		padding-right: 0px;
-	}
-	.footer-list ul.followus-list > li {
-		padding-bottom: 27px;
-	}
-	.footer-list ul.followus-list > li > a{
-		display: inline-block;
-		vertical-align: middle;
-	}
 	/* ---> Icons */
-	.footer-list_icon:before{
+	.footer-list_item .item-icon:before{
 		display: inline-block;
 		vertical-align: middle;
 		content: "";
@@ -248,36 +250,36 @@
 		margin-left: -2px;
 		background-repeat: no-repeat;
 	}
-	.footer-list_icon.facebook:before{
+	._followus .item-icon._facebook:before{
 		background: url(../img/footer-facebook.png);
 	}
-	.footer-list_icon.twitter:before{
+	._followus .item-icon._twitter:before{
 		background: url(../img/footer-twitter_m.png);
 	}
-	.footer-list_icon.instagram:before{
+	._followus .item-icon._instagram:before{
 		background: url(../img/footer-instagram_m.png);
 	}
-	.footer-list_icon.gplus:before{
+	._followus .item-icon._gplus:before{
 		width: 28px;
 		height: 18px;
 		margin-right: 6px;
 		background: url(../img/footer-gplus_m.png);
 	}
-	.footer-list_icon.youtube:before{
+	._followus .item-icon._youtube:before{
 		background: url(../img/footer-youtube_m.png);
 	}
-	.footer-list_icon.in:before{
+	._followus .item-icon._in:before{
 		margin-top: -6px;
 		background: url(../img/footer-in_m.png);
 	}
-	.footer-list_icon.mail:before{
+	._git .item-icon._mail:before{
 		margin-top: -8px;
 		height: 22px;
 		width: 26px;
 		background: url(../img/footer-mail_m.png);
 	}
 	/* <--- Icons */
-	.footer-list_item li.faq a{
+	._git .item-faq a{
 		display: inline-block;
 		vertical-align: middle;
 		color: #fff;
@@ -291,43 +293,45 @@
 	.copyright {
 		margin-top: 0;
 		padding-top: 65px;
-	}
-	.copyright-list {
-		padding: 0;
 		color: #a3b0c9;
 	 	font-size: 16px;
 		font-family: helvetica;
 		font-weight: 300;
 	}
-	.copyright-list a{
+	.copyright a{
 		color: #a3b0c9;
 	 	font-size: 16px;
 		font-family: helvetica;
-		text-align:right;
 		font-weight: 300;
 	}
-	.copyright-list .logo a.logolink {
+	.left-list {
+		color: #a3b0c9;
+	 	font-size: 16px;
+		font-family: helvetica;
+		font-weight: 300;
+	}
+	.copyright-item._logo a.logolink {
 		margin: auto;
 		display: block;
 		width:175px;
 		height: 82px;
 		background-image: url(../img/footer-logo_m.png);
 	}
-	.copyright-list .text {
+	.copyright-item._text {
 		padding-top: 25px;
 		color: #a3b0c9;
 	 	font-size: 15px;
 		font-family: helvetica;
 		font-weight: 300;
 	}
-	.copyright-list .text p.pcopyright, 
-	.copyright-list .text p.pbrought {
+	.copyright-item._text .p_copyright, 
+	.copyright-item._text .p_brought {
 		margin: 0;
 		margin-bottom: 20px;
 		text-align: center;
 	}
 
-	.copyright-list .partner a.logolink {
+	.copyright-item._partner a.logolink {
 		display: block;
 		margin: auto;
 		margin-bottom: 20px;
@@ -335,7 +339,10 @@
 		height: 27px;
 		background-image: url(../img/footer-partner.png);
 	}
-	.copyright .conditions {
+	.copyright.right-list {
+		padding-top:0;
+	}
+	.copyright.right-list .text {
 		margin: 0;
 		margin-bottom: 20px;
 		text-align: center;

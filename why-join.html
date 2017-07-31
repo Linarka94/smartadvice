@@ -9,26 +9,22 @@
 		<link rel="stylesheet" type="text/css" href="styles/slider.css">
 		<link rel="stylesheet" type="text/css" href="styles/whyjoin.css">
 		<link rel="stylesheet" type="text/css" href="styles/footer.css">	
-		<title>Smart-Advice</title>
-<!-- 
-html:	style="background-color: #ececec;" 	- gray
-css:	background-color: #ffffaa; 			- yellow
- -->
+		<title>Smart-Advice</title>	
 	</head>
+	
 	<body> 
-		<header class="container hidden-xs">
+		<header class="container header hidden-xs">
 			<div class="row">
-				<div class="col-lg-10 col-lg-offset-2 header">
+				<div class="col-lg-10 col-lg-offset-2">
 					<ul class="nav navbar-nav navbar-list">
 						<li class="navbar-list_item"><a href="#">MoneySmart</a></li>
 						<li class="navbar-list_item"><a href="#">Community</a></li>
 						<li class="navbar-list_item"><a href="#">Banking</a></li>
 					</ul>
-
-					<ul class="nav navbar-nav navbar-right navbar-list link">
-						<li class="navbar-list_item line"><a href="#">AR</a></li>
-						<li class="navbar-list_item"><a href="#">Login</a></li>
-						<li class="navbar-list_item"><a href="#">Join Now</a></li>
+					<ul class="nav navbar-nav navbar-right navbar-list _login">
+						<li class="navbar-list_item _line"><a href="#">AR</a></li>
+						<li class="navbar-list_item"><a class="underlined" href="#">Login</a></li>
+						<li class="navbar-list_item"><a class="underlined" href="#">Join Now</a></li>
 					</ul>
 				</div>
 			</div>
@@ -36,35 +32,37 @@ css:	background-color: #ffffaa; 			- yellow
 
 		<nav class="container-fluid navblock-bg">
 			<div class="container">
-				<div class="row navbar navblock">
-					<ul class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed toggle-style" data-toggle="collapse" data-target="#navbar">
-							<span class="icon-toggle"></span>
-							<span class="icon-toggle"></span>
-							<span class="icon-toggle"></span>
-						</button>
-					</ul>
-					<ul class="nav navbar-nav navbar-logo">
-						<li><a class="navbar-logo_item" href="#"></a></li>
-					</ul>
-					<ul class="navbar-collapseblock">
-						<ul class="collapse navbar-collapse" id="navbar"> 
-							<ul class="nav navbar-nav navbar-list">
-								<li class="navbar-list_item"><a href="/why-join.html">Why Join</a></li>
-								<li class="navbar-list_item"><a href="#">About Community</a></li>
-								<li class="navbar-list_item"><a href="#">Smart Advice</a></li>
-								<li class="navbar-list_item"><a href="#">Deals & Offers</a></li>
-								<li class="navbar-list_item"><a href="#">Tools & Planners</a></li>
-								<li class="navbar-list_item"><a href="#">Get in touch</a></li>
-							</ul>
+				<div class="row">
+					<div class="navbar navblock">
+						<ul class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed _navblock-toggle" data-toggle="collapse" data-target="#navblock">
+								<span class="icon-toggle"></span>
+								<span class="icon-toggle"></span>
+								<span class="icon-toggle"></span>
+							</button>
 						</ul>
-					</ul>	
-					<ul class="nav navbar-nav navbar-right navbar-search">
-						<li><a class="navbar-search_item" href="#"></a></li>
-					</ul>
+						<ul class="nav navbar-nav navbar-logo">
+							<li><a class="navbar-logo_item" href="#"></a></li>
+						</ul>
+						<ul class="navbar-collapseblock">
+							<ul class="collapse navbar-collapse" id="navblock"> 
+								<ul class="nav navbar-nav navbar-list">
+									<li class="navbar-list_item"><a href="/why-join.html">Why Join</a></li>
+									<li class="navbar-list_item"><a href="#">About Community</a></li>
+									<li class="navbar-list_item"><a href="#">Smart Advice</a></li>
+									<li class="navbar-list_item"><a href="#">Deals & Offers</a></li>
+									<li class="navbar-list_item"><a href="#">Tools & Planners</a></li>
+									<li class="navbar-list_item"><a href="#">Get in touch</a></li>
+								</ul>
+							</ul>
+						</ul>	
+						<ul class="nav navbar-nav navbar-right navbar-search">
+							<li><a class="navbar-search_item" href="#"></a></li>
+						</ul>
+					</div>
 				</div>
 			</div>
-		</nav>
+		</nav>		
 
 		<div class="container-fluid slider-bg slider-whyjoin-bg">
 			<div class="container">
@@ -204,65 +202,80 @@ css:	background-color: #ffffaa; 			- yellow
 			</div>		
 		</div>	
 
-		<footer class="container-fluid footer-bg">
+		<footer class="container-fluid footer">
 			<div class="container">
-				<div class="row footer">
-					<div class="col-lg-6 footer-list left">
-						Home<br />
-						<ul class="footer-list_item home">
-							<li><a href="#">Why Join</a></li>
-							<li><a href="#">Community</a></li>
-							<li><a href="#">Smart Advice</a></li>
-						</ul>
-						<ul class="footer-list_item home">
-							<li><a href="#">Deals & Offers</a></li>
-							<li><a href="#">Tools & Planners</a></li>
-							<li><a href="#">Get in touch</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-4 footer-list">
-						FOLLOW US<br />
-						<ul class="footer-list_item followus">
-							<li class="footer-list_icon facebook"><a href="#">Facebook</a></li>
-							<li class="footer-list_icon twitter"><a href="#">Twitter</a></li>
-							<li class="footer-list_icon instagram"><a href="#">Instagram</a></li>
-						</ul>
-						<ul class="footer-list_item followus">
-							<li class="footer-list_icon youtube"><a href="#">Youtube</a></li>
-							<li class="footer-list_icon gplus"><a href="#">Google Plus</a></li>
-							<li class="footer-list_icon in"><a href="#">Linked In</a></li>
-						</ul>
-					</div>
-					<div class="col-lg-2 footer-list-right">
-						GET IN TOUCH<br />
-						<ul class="footer-list_item">
-							<li class="footer-list_icon mail"><a href="#">info@smartm.ae</a></li>
-							<li class="faq"><a href="#">FAQS</a></li>
-						</ul>
-					</div>
+				<div class="row">
+					<section class="col-lg-5 col-sm-6 col-xs-12">
+						<div class="footer-list _home">
+							<h2 class="title">Home</h2>
+							<ul class="footer-list_item">
+								<li><a href="#">Why Join</a></li>
+								<li><a href="#">Community</a></li>
+								<li><a href="#">Smart Advice</a></li>
+							</ul>
+							<ul class="footer-list_item">
+								<li><a href="#">Deals & Offers</a></li>
+								<li><a href="#">Tools & Planners</a></li>
+								<li><a href="#">Get in touch</a></li>
+							</ul>
+						</div>
+					</section>
+					<section class="col-lg-5 col-sm-3 col-xs-12">
+						<div class="footer-list _followus">
+							<h2 class="title">FOLLOW US</h2>
+							<ul class="footer-list_item">
+								<li class="item-icon _facebook"><a href="#">Facebook</a></li>
+								<li class="item-icon _twitter"><a href="#">Twitter</a></li>
+								<li class="item-icon _instagram"><a href="#">Instagram</a></li>
+							</ul>
+							<ul class="footer-list_item">
+								<li class="item-icon _youtube"><a href="#">Youtube</a></li>
+								<li class="item-icon _gplus"><a href="#">Google Plus</a></li>
+								<li class="item-icon _in"><a href="#">Linked In</a></li>
+							</ul>
+						</div>
+					</section>
+					<section class="col-lg-2 col-sm-3 col-xs-12">
+						<div class="footer-list _git">
+							<h2 class="title">GET IN TOUCH</h2>
+							<ul class="footer-list_item">
+								<li class="item-icon _mail"><a href="#">info@smartm.ae</a></li>
+								<li class="item-faq"><a href="#">FAQS</a></li>
+							</ul>
+						</div>
+					</section>
 				</div>
-				<div class="row footer copyright">
-					<div class="col-lg-7 copyright-list">
-						<div class="copyright-list_item logo">
-							<a class="logolink" href="/"></a>
-						</div>
-						<div class="copyright-list_item text">
-							Copyright © 2016 MoneySmart
-							&emsp;|&emsp; 
-							Brought together by
-						</div>
-						<div class="copyright-list_item partner">
-							<a class="logolink" href="#"></a>
+				<div class="row">
+					<div class="col-lg-7 col-xs-12">
+						<div class="copyright left-list">
+							<div class="copyright-item _logo">
+								<a class="logolink" href="#"></a>
+							</div>
+							<div class="copyright-item _text">
+								<p class="p_copyright">Copyright © 2016 MoneySmart</p>
+								<p class="p_line hidden-xs">&emsp;|&emsp;</p>
+								<p class="p_brought">Brought together by</p>
+							</div>
+							<div class="copyright-item _partner">
+								<a class="logolink" href="#"></a>
+							</div>
 						</div>
 					</div>
-					<div class="col-lg-3 col-lg-offset-2 copyright-list right">
-							<a href="#">Term and Conditions</a>
-							&emsp;|&emsp;
-							<a href="#">Privacy Policy</a>
+					<div class="col-lg-3 col-lg-offset-2 col-xs-12">
+						<div class="copyright right-list">
+							<p class="text">
+								<a href="#">Term and Conditions</a>
+								&emsp;|&emsp;
+								<a href="#">Privacy Policy</a>
+							</p>
+						</div>
 					</div>
 				</div>
 			</div>
 		</footer>
+
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>	
 	</body>
 </html>
 
