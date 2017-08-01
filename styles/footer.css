@@ -1,4 +1,4 @@
-@media (min-width: 768px) {
+@media (min-width: 1200px){
 	.footer {
 		background-color: #3c4759;
 		padding: 0;
@@ -44,12 +44,12 @@
 		color: #a3b0c9;
 		font-weight: 300;
 	}
-	._home > ul.footer-list_item {
+	._home .footer-list_item {
 		padding-right: 98px;
 	}
-	._followus > ul.footer-list_item {
+	._followus .footer-list_item {
 		padding-right: 64px;
-	}	
+	}
 	._followus > ul.footer-list_item li {
 		padding-bottom: 18px;
 	}
@@ -133,6 +133,7 @@
 	}
 	.left-list ._logo {
 		width:122px;
+		margin-bottom: 5px;
 	}
 	.left-list ._logo > a.logolink {
 		display: block;
@@ -170,8 +171,35 @@
 		margin-left: 15px;
 		text-align: right;
 	}
-
 }
+@media (max-width: 1199px) and (min-width: 768px){
+	.footer ._followus {
+		padding-left:0;
+	}
+	._home .footer-list_item {
+		padding-right: 50px;
+	}
+	._followus .footer-list_item {
+		padding-right: 40px;
+	}
+	.footer-list_item:last-child {
+		padding-right: 0px;
+	}	
+	.copyright.left-list {
+		display: block;
+		width: 670px;
+		margin: auto;
+		margin-bottom: 20px;
+	}
+	.copyright.right-list {
+		display: block;
+		width: 305px;
+		margin: auto;
+		margin-bottom: 36px;
+	}
+}
+
+
 @media (max-width: 767px) {
 	.footer {
 		min-width: 640px;
