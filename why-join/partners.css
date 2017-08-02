@@ -1,151 +1,8 @@
-.whyjoin-reason {
-	margin-top:55px;
-}
-.whyjoin-reason h4 {
-	margin-bottom: 28px;
-	margin-top: 0px;
-	text-align: center;
-	line-height: 24px;	
-	font-size: 16px;
-	font-family: helvetica-light;
-	color: #637188;
-}
-.whyjoin-reason h3 {
-	margin: 0 auto;
-	margin-bottom: 30px;
-	max-width: 850px;
-	text-align: center;
-	line-height: 30px;		
-	font-family: helvetica-light;
-	color: #637188;
-}
-.whyjoin-reason h4.singup{
-	margin-top: 0;
-	margin-bottom: 80px;
-	text-align: center;
-	line-height: 24px;	
-	font-size: 16px;
-	font-family: helvetica;
-	color: #637188;
-}
-.whyjoin-reason h4.singup a{
-	color: #00aeef;
-	border-bottom-style: solid;
-	border-bottom-color: #00aeef;
-	border-bottom-width: 2px; 
-}
-.whyjoin-reason h4.singup i{
-	font-family: helvetica-italic;
-}
-.whyjoin-reason-item {
+.whyjoin-product {
 	margin-bottom: 90px;
 }
-.whyjoin-reason-item._left {
-	float:left;
-}
-.whyjoin-reason-item._right {
-	float:right;
-}
-.whyjoin-reason-item .icon {
-	display: block;	
-	margin: 0 auto;
-	margin-bottom: 12px;
-}
-.whyjoin-reason-item .user {
-	width: 56px;
-}
-.whyjoin-reason-item .account {
-	width: 43px;
-	margin-bottom: 20px;
-}
-.whyjoin-reason-item .financing {
-	width: 34px;
-	margin-bottom: 18px;
-}
-.whyjoin-reason-item .deals {
-	width: 33px;
-}
-.whyjoin-reason-item a.icon .color{
-	fill: #3c4759;
-	fill-rule: evenodd;
-}
-.whyjoin-reason-item:hover a.icon .color{
-	fill: #00aeef;
-	fill-rule: evenodd;
-}
-.whyjoin-reason-item a.titile{
-	display: block;
-	margin-bottom: 18px;
-	text-align: center;
-	font-size: 26px;
-	font-family: helvetica-light;
-	color: #637188;
-}
-.whyjoin-reason-item:hover a.titile{
-	display: block;
-	text-align: center;
-	font-size: 26px;
-	font-family: helvetica-light;
-	color: #00aeef;
-}
-.whyjoin-reason-item p.text{
-	display: block;
-	margin: 0 auto;
-	max-width: 282px;
-	text-align: center;
-	font-size: 16px;
-	font-family: helvetica-light;
-	color: #637188;
-}
-.whyjoin-reason-item p.join{
-	display: block;
-	margin: auto;
-	margin-bottom: 20px;
-	max-width: 310px;
-	text-align: center;
-	font-size: 30px;
-	font-family: helvetica-light;
-	color: #3c4759;
-}
-.whyjoin-reason-item .btn-join, 
-.whyjoin-reason-item .btn-join:hover, 
-.whyjoin-reason-item .btn-join:active {
- 	display: block;
- 	margin: 0 auto;
- 	padding: 0 97px;
- 	padding-top: 17px;
- 	padding-bottom: 13px;
- 	border: none;
- 	border-radius: 0;
- 	background-image: none;
- 	background-color: #00aeef; 
- 	text-shadow: none;
-	outline: none;
- 	font-size: 18px;
-	font-family: helvetica; 
-	color: #fff;
-}
-
-@media (max-width: 767px) {
-	.whyjoin-reason-item._left,
-	.whyjoin-reason-item._right {
-		float:none;
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
 .whyjoin-product h1 {
-	margin-top: 95px;
+	margin: 0;
 	margin-bottom: 20px;
 	padding: 0 15px;
 	color: #3c4759;
@@ -217,50 +74,25 @@
 	font-family: helvetica; 
 	color: #fff;
 }
-.whyjoin-info{
-	padding: 0;
-}
-.whyjoin-info:before{
-	content: "";
-	display: block;
-	margin-bottom: 90px;
-	width: 100%;
-	height: 1px;
-	background-color: #e2e4e6;
-}
-.whyjoin-info_item .icon {
-	display: block;
-	margin: auto;
-	margin-bottom: 15px;
-	width: 32px;
-	height: 32px;
-}
-.whyjoin-info_item .question {
-	background-image: url(../img/whyjoin-info-question.png);
-}
-.whyjoin-info_item .folder {
-	background-image: url(../img/whyjoin-info-folder.png);
-}
-.whyjoin-info_item .resources {
-	background-image: url(../img/whyjoin-info-resources.png);
-}
-.whyjoin-info_item .title {
-	display: block;
-	margin-bottom: 7px;
-	text-align: center;
-	font-size: 24px;
-	font-family: helvetica;
-	color: #00aeef;
-}
-.whyjoin-info_item .text {
-	display: block;
-	margin: auto;
-	margin-bottom: 91px;
-	max-width: 350px;
-	text-align: center;
-	font-size: 16px;
-	font-family: helvetica;
-	color: #637188;
-}
 
-
+@media (max-width: 767px) {
+.whyjoin-product .btn-product, 
+.whyjoin-product .btn-product:hover, 
+.whyjoin-product .btn-product:active {
+ 	display: block;
+ 	max-width: 258px;
+ 	margin: auto;
+ 	padding: 0 60px;
+ 	padding-top: 17px;
+ 	padding-bottom: 13px;
+ 	border: none;
+ 	border-radius: 0;
+ 	background-image: none;
+ 	background-color: #00aeef; 
+ 	text-shadow: none;
+	outline: none;
+ 	font-size: 18px;
+	font-family: helvetica; 
+	color: #fff;
+}
+}
