@@ -1,6 +1,5 @@
 .whyjoin-reason {
 	margin-top:55px;
-	padding: 0;
 }
 .whyjoin-reason h4 {
 	margin-bottom: 28px;
@@ -41,10 +40,10 @@
 .whyjoin-reason-item {
 	margin-bottom: 90px;
 }
-.whyjoin-reason-item .left {
+.whyjoin-reason-item._left {
 	float:left;
 }
-.whyjoin-reason-item .right {
+.whyjoin-reason-item._right {
 	float:right;
 }
 .whyjoin-reason-item .icon {
@@ -126,6 +125,25 @@
 	font-family: helvetica; 
 	color: #fff;
 }
+
+@media (max-width: 767px) {
+	.whyjoin-reason-item._left,
+	.whyjoin-reason-item._right {
+		float:none;
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
 .whyjoin-product h1 {
 	margin-top: 95px;
 	margin-bottom: 20px;
