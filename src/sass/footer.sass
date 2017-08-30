@@ -19,10 +19,10 @@
 			padding: 0
 			padding-top: 51px
 
-		h2.title 
-			margin: 0
-			font-size: 14px
-			text-transform: uppercase
+			h2.title 
+				margin: 0
+				font-size: 14px
+				text-transform: uppercase
 
 			.footer-list_item 
 				display: inline-block
@@ -31,15 +31,11 @@
 				li 								
 					padding-bottom: 20px
 	
-					a 
-						font-size: 14px
-						font-family: helvetica
-						color: #a3b0c9
-						font-weight: 300
-
-
-
-
+				a 
+					font-size: 14px
+					font-family: helvetica
+					color: #a3b0c9
+					font-weight: 300
 
 		._home 
 			.footer-list_item 
@@ -115,7 +111,6 @@
 					font-weight: 300
 			
 		.copyright 
-			display: inline-block
 			vertical-align: bottom
 			margin-right: -15px
 			margin-left: -15px
@@ -169,27 +164,31 @@
 				background-image: url(assets/img/footer-partner.png)
 	
 		.right-list 
-			margin-top: 23px
+			padding-top: 23px
+			margin-right: -15px
+			margin-left: -15px
 	
 			.text
-				display: inline
+				display: block
 				margin: 0
-				margin-left: 15px
 				text-align: right
 			
 
 @media (max-width: 1199px) and (min-width: 768px)
-	.footer ._followus 
-		padding-left: 0
+	.footer 
 	
-	._home .footer-list_item 
-		padding-right: 50px
+		._home 
+			.footer-list_item 
+				padding-right: 50px
 	
-	._followus .footer-list_item 
-		padding-right: 40px
+		._followus 
+			padding-left: 0
+
+			.footer-list_item 
+				padding-right: 40px
 	
-	.footer-list_item:last-child 
-		padding-right: 0px
+		.footer-list_item:last-child 
+			padding-right: 0px
 		
 	.copyright.left-list 
 		display: block
@@ -239,12 +238,12 @@
 			.footer-list_item 
 				display: inline-block
 				margin-top: 24px
-		
+				
 				li 								
 					padding-bottom: 27px
 		
-					&:last-child 								
-					padding-bottom: 40px
+					&:last-child 
+						padding-bottom: 40px
 		
 					a
 						font-size: 24px
@@ -259,6 +258,9 @@
 					margin-right: 10px
 					margin-left: -2px
 					background-repeat: no-repeat
+
+				&:last-child 
+						padding-right: 0px
 	
 		._home 
 			padding-top: 70px
@@ -276,10 +278,7 @@
 					a
 						display: inline-block
 						vertical-align: middle
-		
-				&:last-child 
-					padding-right: 0px
-	
+
 			.item-icon._facebook:before
 				background: url(assets/img/footer-facebook.png)
 		
@@ -348,31 +347,31 @@
 				height: 82px
 				background-image: url(assets/img/footer-logo_m.png)
 		
-			._text 
-				padding-top: 25px
-				color: #a3b0c9
-				font-size: 15px
-				font-family: helvetica
-				font-weight: 300
+		._text 
+			padding-top: 25px
+			color: #a3b0c9
+			font-size: 15px
+			font-family: helvetica
+			font-weight: 300
 		
-				.p_copyright, 
-				.p_brought 
-					margin: 0
-					margin-bottom: 20px
-					text-align: center
+			.p_copyright, 		
+			.p_brought 
+				margin: 0
+				margin-bottom: 20px
+				text-align: center
 		
 
-			._partner a.logolink 
-				display: block
-				margin: auto
-				margin-bottom: 20px
-				width: 145px
-				height: 27px
-				background-image: url(assets/img/footer-partner.png)
+		._partner a.logolink 
+			display: block
+			margin: auto
+			margin-bottom: 20px
+			width: 145px
+			height: 27px
+			background-image: url(assets/img/footer-partner.png)
 		
 		.right-list 
 			padding-top: 0
-		
+
 			.text 
 				margin: 0
 				margin-bottom: 20px

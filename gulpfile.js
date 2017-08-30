@@ -35,7 +35,7 @@ gulp.task('pug', function () {
 gulp.task('sass', function () {	
 	return gulp.src([
 			'src/sass/libs.sass',
-			'src/sass/**/*.sass'
+			'src/sass/**/**/*.sass'
 			])
 			.pipe(concat('styles.sass'))
 			.pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
@@ -77,7 +77,7 @@ gulp.task('replace', function () {
 });
 
 gulp.task('watch', ['clean', 'browser-sync', 'pug', 'sass', 'scripts', 'img', 'replace'], function() {
-	gulp.watch('src/pug/**/*.pug', ['pug'])
+	gulp.watch('src/pug/**/**/*.pug', ['pug'])
 	gulp.watch('public/*.html', browserSync.reload)
 	gulp.watch('src/sass/**/*.sass', ['sass'])
 	gulp.watch('src/js/**/*.js', ['scripts'])
