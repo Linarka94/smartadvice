@@ -1,4 +1,8 @@
 .slider-whyjoin
+	height: 500px
+
+	&:before
+		height: 500px
 
 	h1.why-join 
 		padding-top: 183px
@@ -47,5 +51,15 @@
 			border-left: none
 			border-top: none
 
-	&:after 	
+	&:after 
+		height: 500px
+		top: 0px
 		background-image: url(assets/img/slider-whyjoin-bg.png)
+
+@media (max-width: 767px)
+	.slider-whyjoin
+		h2.why-join
+			margin-bottom: 0px
+
+		.slider-arrowdown 
+			display: none
