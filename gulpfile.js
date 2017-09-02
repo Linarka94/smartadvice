@@ -81,6 +81,8 @@ gulp.task('watch', ['clean', 'browser-sync', 'pug', 'sass', 'scripts', 'img', 'r
 	gulp.watch('public/*.html', browserSync.reload)
 	gulp.watch('src/sass/**/*.sass', ['sass'])
 	gulp.watch('src/js/**/*.js', ['scripts'])
+	gulp.watch('src/img/**/*.png', ['img'])
+
 });
 
 // gulp.task('csslibs', function () {

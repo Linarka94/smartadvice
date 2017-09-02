@@ -1,0 +1,59 @@
+.detail
+	height: 768px
+
+	&:before 
+		height: 768px
+
+	&:after
+		height: 768px
+		background-image: url(assets/img/detail/slider-bg.png)
+	.slider
+		h1 
+			margin: 0
+			margin-bottom: 66px
+			padding-top: 180px
+			font-size: 48px
+			line-height: 53px
+			font-family: helvetica-bold
+		
+		.detail-share
+			margin-bottom: 132px
+
+		.slider-list li 
+			padding: 0
+			margin-bottom: 147px
+			
+			a 
+				font-family: helvetica
+				font-size: 14px
+				border-color: rgba(255,255,255, 0.6)
+
+
+		.slider-arrowdown 
+			display: block
+			margin: 0 auto
+			width: 0px 
+
+			&:before 
+				content: ""
+				display: block
+				width: 34px
+				height: 34px
+				transform: rotate(45deg)
+				border-style: solid
+				border-color: #fff
+				border-width: 3px
+				border-left: none
+				border-top: none
+
+			&:hover:before 
+				content: ""
+				display: block
+				width: 34px
+				height: 34px
+				transform: rotate(45deg)
+				border-style: solid
+				border-color: #00aeef
+				border-width: 3px
+				border-left: none
+				border-top: none

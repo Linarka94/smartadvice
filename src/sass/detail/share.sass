@@ -1,0 +1,41 @@
+$share-icons: ( facebook: 5px, twitter: 10px, in: 9px, rss: 8px ); 
+%share-link-icon
+	display: block
+	width: 18px
+	height: 16px
+	padding-right: 10px
+	padding-left: 10px
+	background-position: center
+	background-repeat: no-repeat
+
+
+.detail-share
+	width: 224px
+	margin: auto
+	font-family: helvetica-bold
+	color: #fff
+
+	.share-item
+		display: inline-block
+		vertical-align: middle
+
+	._text
+		text-transform: uppercase
+		padding-right: 10px
+		padding-left: 10px
+
+
+	@each $social, $padding in $share-icons 
+		._#{$social}
+			padding-right: $padding
+			padding-left: $padding
+
+			.icon
+				@extend %share-link-icon
+				background-image: url("/assets/img/detail/#{$social}.png")
+
+
+
+
+
+
