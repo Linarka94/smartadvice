@@ -32,9 +32,14 @@ $share-icons: ( facebook: 5px, twitter: 10px, in: 9px, rss: 8px );
 
 			.icon
 				@extend %share-link-icon
-				background-image: url("/assets/img/detail/#{$social}.png")
+				background-image: url("/assets/img/svg/#{$social}.svg")
 
-
+	.facebook-color,
+	.twitter-color,
+	.in-color,
+	.rss-color
+		fill: #ffffff
+		fill-rule: evenodd 
 
 
 

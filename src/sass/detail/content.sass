@@ -52,17 +52,51 @@ b
 
 	.list
 		p 
-			margin-bottom: 0
+			margin-bottom: 25px
+			line-height: 14px
+
+			span
+				text-transform: uppercase
+				font-size: 12px
+				font-family: helvetica-bold
+				color: #8d9bb4
+
+
 		ul 
 			display: inline-block
-			margin-right: 200px
+			margin-right: 170px
 			margin-left: 10px
+			margin-bottom: 55px
 
 			&:last-child
 				margin-right: 0
+
+			li
+				margin-bottom: 20px
+
+				&:before
+					content: ""
+					display: inline-block
+					width: 10px
+					height: 10px
+					margin-right: 7px
+					background-image: url("assets/img/detail/list-icon.png")
+
+				&:last-child
+					margin-bottom: 0
+
 	
 	._left
 		margin-right: 0
 	
 	._right
 		margin-left: 0
+
+	.detail-share
+		._text
+			font-size: 12px
+			color: #3c4759
+
+		@each $social in (facebook, twitter, in, rss)
+			._#{$social} .icon
+				background-image: url("/assets/img/svg/#{$social}_dark.svg")
