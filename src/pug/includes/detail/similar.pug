@@ -1,0 +1,56 @@
+mixin articleOutput(M_image, M_category, M_title, M_views, M_date, M_text)
+	div.article-img
+		if (M_image)
+			img(class="image-style" src!="assets/img/"+M_image)
+		a(href="#" class="mainlink visible-xs")
+	div.article-category #{M_category}
+	div.article_button
+		button(class="btn btn-default btn-readmore" onclick="location.href='#'") Read More
+	div.article-title #{M_title}
+	ul.article-info
+		li.views
+			p.views_number #{M_views}
+			p.views_text.hidden-xs Views
+		
+		li.date #{M_date}
+	p.article-text #{M_text}
+
+div.similar
+	div.container
+		div.row
+			div.col-xs-12
+				h2 Similar Smart Advice
+
+	div.container
+		div.row
+			div.col-xs-12
+				p Lorem ipsum dolor sit amet, labore et dolore magna aliqua <b>commodo consequat.</b> Excepteur sint occaecat <u>cupidatat non proident</u>.
+
+	div.container
+		div.row
+			div.col-lg-offset-0.col-lg-4.col-md-offset-1.col-md-5.col-sm-6
+				div.article-block
+					+articleOutput(	'article-feed7.png',
+									'Financial',
+									"The Confusing State of Bank Customer Service",
+									'2k',
+									'14 Aug, 2016',
+									"New survey data suggests banks\' customer service is good, and that banks have no reason to mention the word \'omnichannel\' ever again.")
+
+			div.col-lg-4.col-md-5.col-sm-6
+				div.article-block
+					+articleOutput(	'article-feed8.png',
+									'Financial',
+									"What The Bank Customer Satisfaction Numbers Really Mean",
+									'2k',
+									'14 Aug, 2016',
+									"JD Power released the first wave of its 2015 bank customer satisfaction research. My take: Big bank bashing is a thing of the past.")
+
+			div.col-lg-offset-0.col-lg-4.col-md-offset-1.col-md-5.col-sm-6
+				div.article-block
+					+articleOutput(	'',
+									'Financial',
+									"What Do You Do If The CEO Doesn’t ‘Get’ Marketing?",
+									'2k',
+									'14 Aug, 2016',
+									"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores.")
