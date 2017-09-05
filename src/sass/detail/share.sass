@@ -1,4 +1,4 @@
-$share-icons: ( facebook: 5px, twitter: 10px, in: 9px, rss: 8px ); 
+$share-icons: ( facebook: (8px, 16px), twitter: (17px, 14px), in: (16px, 14px), rss: (15px, 15px) ); 
 %share-link-icon
 	display: block
 	width: 18px
@@ -18,28 +18,26 @@ $share-icons: ( facebook: 5px, twitter: 10px, in: 9px, rss: 8px );
 	.share-item
 		display: inline-block
 		vertical-align: middle
+		margin-left: 10px
+		margin-right: 10px
+
+		a
+			display: flex
 
 	._text
+		margin-top: 2px
 		text-transform: uppercase
-		padding-right: 10px
-		padding-left: 10px
 
 
-	@each $social, $padding in $share-icons 
-		._#{$social}
-			padding-right: $padding
-			padding-left: $padding
+	
+	@each $social, $size in $share-icons 
+		.icon-#{$social}
+			width: nth($size, 1)
+			height: nth($size, 2)
+			fill: #ffffff
+			fill-rule: evenodd
 
-			.icon
-				@extend %share-link-icon
-				background-image: url("/assets/img/svg/#{$social}.svg")
 
-	.facebook-color,
-	.twitter-color,
-	.in-color,
-	.rss-color
-		fill: #ffffff
-		fill-rule: evenodd 
 
 
 

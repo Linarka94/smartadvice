@@ -12,6 +12,8 @@
 			margin: 0
 			margin-bottom: 66px
 			padding-top: 180px
+			padding-right: 30px
+			padding-left: 30px
 			font-size: 48px
 			line-height: 53px
 			font-family: helvetica-bold
@@ -19,14 +21,17 @@
 		.detail-share
 			margin-bottom: 132px
 
-		.slider-list li 
-			padding: 0
+		.slider-list
 			margin-bottom: 147px
-			
-			a 
-				font-family: helvetica
-				font-size: 14px
-				border-color: rgba(255,255,255, 0.6)
+			li 
+				padding-bottom: 15px
+				
+				a 
+					padding-top: 6px
+					padding-bottom: 6px
+					font-family: helvetica
+					font-size: 14px
+					border-color: rgba(255,255,255, 0.6)
 
 
 		.slider-arrowdown 
@@ -57,3 +62,25 @@
 				border-width: 3px
 				border-left: none
 				border-top: none
+
+@media(max-width: 767px)
+	.detail
+		&:after
+			top: 0
+		.slider
+			h1 
+				margin-bottom: 170px
+				padding-top: 100px
+			
+			.detail-share
+				width: 410px
+				margin-bottom: 60px
+
+				.share-item
+					font-size: 20px
+		
+			.slider-list
+				margin-bottom: 60px
+				margin-right: auto
+				margin-left: auto
+				width: 570px
