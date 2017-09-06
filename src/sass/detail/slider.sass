@@ -78,7 +78,15 @@
 
 				.share-item
 					font-size: 20px
-		
+
+					@each $social, $size in ( facebook: (8px, 16px), twitter: (17px, 14px), in: (16px, 14px), rss: (15px, 15px) )
+						.icon-#{$social}
+							width: nth($size, 1) + nth($size, 1)
+							height: nth($size, 2) + nth($size, 2)
+
+				._text
+					margin-top: 5px
+
 			.slider-list
 				margin-bottom: 60px
 				margin-right: auto

@@ -4,7 +4,7 @@
 	font-family: helvetica
 	font-size: 16px
 
-	h3
+	h2
 		margin-right: -15px
 		margin-left: -15px
 		margin-bottom: 40px
@@ -131,5 +131,35 @@
 		color: #fff			
 
 
+@media(max-width: 767px)
+	%extend-item
+		width: 610px
+		margin-left: auto
+		margin-right: auto
+		padding-right: 15px
+		padding-left: 15px
 
+	.comments
+		font-size: 20px
+		
+		h2
+			@extend %extend-item
+
+		.comments-item
+			@extend %extend-item
+		
+			.comments-item_logo
+				height: 135px
+
+			.comments-item_text
+				height: 85px
+				overflow: hidden
+		
+		.btn-signup, 
+		.btn-signup:hover, 
+		.btn-signup:active 
+			padding: 0 196px
+			padding-top: 23px
+			padding-bottom: 23px
+			font-size: 24px
 
