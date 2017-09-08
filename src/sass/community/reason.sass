@@ -1,35 +1,28 @@
+$svg-icons:	( knowledge-exchange: (56px, 37px), saving-tips: (37px, 39px), product-review: (42px, 36px), expert-advice: (41px, 37px), webinar: (32px, 30px) );
+
 .community
-	b 
-		font-family: helvetica-bold
-
 	.whyjoin-reason-item
-		.title
-			color: #3c4759
-
+		.title,
 		.text
 			color: #3c4759
 
-		.knowledge,
-		.savingtips,
-		.productreview,
-		.expertreview,
-		.webinar
-			height: 38px
+		@each $key, $value in $svg-icons
+			$svg-width: nth($value, 1)
+			$svg-height: nth($value, 2)
 
-		.knowledge
-			width: 56px
+			.#{$key}
+				width: $svg-width
+				height: 38px
 
-		.savingtips
-			width: 37px
+			.icon-community_#{$key}
+				fill: #3c4759
+				width: $svg-width
+				height: $svg-height
 
-		.productreview 
-			width: 42px
+			&:hover
+				.icon-community_#{$key}
+					fill: #00aeef	
 
-		.expertreview
-			width: 41px
-
-		.webinar
-			width: 32px
 
 @media (min-width: 769px) and (max-width: 991px)
 	.community
@@ -41,7 +34,7 @@
 				padding-bottom: 13px
 
 @media (max-width: 768px)
-	$svg-icons:	( knowledge: (89px, 60px), savingtips: (71px, 75px), productreview: (71px, 61px), expertreview: (71px, 65px), webinar: (55px, 52px) );
+	$svg-icons:	( knowledge-exchange: (89px, 60px), saving-tips: (71px, 75px), product-review: (71px, 61px), expert-advice: (71px, 65px), webinar: (55px, 52px) );
 	%title
 		max-width: 370px
 		margin: auto
@@ -62,9 +55,9 @@
 					width: $svg-width
 					height: $svg-height
 
-					.svg-properties
-						width: $svg-width
-						height: $svg-height
+				.icon-community_#{$key}
+					width: $svg-width
+					height: $svg-height
 
 			.title
 				@extend %title

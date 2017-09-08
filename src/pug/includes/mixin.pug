@@ -1,0 +1,57 @@
+mixin productOutput(pageName, iconClassName, linkTitle, iconDescription)
+	a(class!="icon " + iconClassName href="#")
+		svg(class!="icon-" + pageName + "_" + iconClassName)
+			use(xlink:href!="#icon-" + pageName + "_" + iconClassName)
+	a(class="title" href="#") #{linkTitle}
+	p.text #{iconDescription}
+
+mixin commentsOutput(userId, userName, commentText, commentTimePass, likesValue, dislikesValue)
+	ul.comments-item
+		li.comments-item_logo
+			a(class!="user"+userId href="#")
+
+		li.comments-item_name #{userName}
+
+		li.comments-item_text #{commentText}
+
+		li.comments-item_info
+			div.info_time
+				svg.icon-watch
+					use(xlink:href="#icon-watch") 
+				| #{commentTimePass} ago
+			div.info_rating
+				a(class="like" href="#") 
+					svg.icon-like
+						use(xlink:href="#icon-like")
+					| #{likesValue}
+				a(class="dislike" href="#") 
+					svg.icon-dislike
+						use(xlink:href="#icon-dislike")
+					| #{dislikesValue}
+
+mixin articleOutput(M_image, M_category, M_title, M_views, M_date, M_text)
+	div.article-img
+		if (M_image)
+			img(class="image-style" src!="assets/img/"+M_image)
+		a(href="#" class="mainlink visible-xs")
+	div.article-category #{M_category}
+	div.article_button
+		button(class="btn btn-default btn-readmore" onclick="location.href='/detail.html'") Read More
+	div.article-title #{M_title}
+	ul.article-info
+		li.views
+			svg.icon-views
+				use(xlink:href="#icon-views")
+			p.views_number #{M_views}
+			p.views_text.hidden-xs Views
+		li.date 
+			svg.icon-watch
+				use(xlink:href="#icon-watch")
+			| #{M_date}
+	p.article-text #{M_text}
+
+mixin shareIconsOutput(iconName)
+	li(class!="share-item _" + iconName )
+		a(href="#")
+			svg(class!="icon-" + iconName )
+				use(xlink:href!="#icon-" + iconName )

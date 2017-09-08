@@ -1,52 +1,33 @@
+include ../mixin.pug
+
 div.container.comments
 	div.row
 		div.col-xs-12
 			h2 Top Comments
-			ul.comments-item
-				li.comments-item_logo
-					a(class="user1" href="#")
-
-				li.comments-item_name Blake Vasquez
-
-				li.comments-item_text You will undoubtedly have dreams. Whether you dream of having the perfect house with the perfect car, or you dream of settling down to have a family, even if you dream of retiring by the time you’re 40, the one key to success is doing something about it. 
-
-				li.comments-item_info
-					div.info_time 5 minutes ago
-					div.info_rating
-						a(class="like" href="#") 4k
-						a(class="dislike" href="#") 340
-
 	div.row
 		div.col-xs-12
-			ul.comments-item
-				li.comments-item_logo
-					a(class="user2" href="#")
-
-				li.comments-item_name Flora Tyler
-
-				li.comments-item_text You will undoubtedly have dreams. Whether you dream of having the perfect house with the perfect car, or you dream of settling down to have a family, even if you dream of retiring by the time you’re 40, the one key to success is doing something about it. 
-
-				li.comments-item_info
-					div.info_time 5 minutes ago
-					div.info_rating
-						a(class="like" href="#") 32.909
-						a(class="dislike" href="#") 340
-
+			+commentsOutput( '1',
+					'Blake Vasquez',
+					"You will undoubtedly have dreams. Whether you dream of having the perfect house with the perfect car, or you dream of settling down to have a family, even if you dream of retiring by the time you’re 40, the one key to success is doing something about it.",
+					'5 minutes',
+					'4k',
+					'340')
 	div.row
 		div.col-xs-12
-			ul.comments-item
-				li.comments-item_logo
-					a(class="user3" href="#")
-
-				li.comments-item_name Mario Weaver
-
-				li.comments-item_text You will undoubtedly have dreams. Whether you dream of having the perfect house with the perfect car, or you dream of settling down to have a family, even if you dream of retiring by the time you’re 40, the one key to success is doing something about it. 
-
-				li.comments-item_info
-					div.info_time 5 minutes ago
-					div.info_rating
-						a(class="like" href="#") 4k
-						a(class="dislike" href="#") 340
+			+commentsOutput( '2',
+					'Flora Tyler',
+					"You will undoubtedly have dreams. Whether you dream of having the perfect house with the perfect car, or you dream of settling down to have a family, even if you dream of retiring by the time you’re 40, the one key to success is doing something about it.",
+					'5 minutes',
+					'32.909',
+					'340')
+	div.row
+		div.col-xs-12
+			+commentsOutput( '3',
+					'Mario Weaver',
+					"You will undoubtedly have dreams. Whether you dream of having the perfect house with the perfect car, or you dream of settling down to have a family, even if you dream of retiring by the time you’re 40, the one key to success is doing something about it.",
+					'5 minutes',
+					'4k',
+					'340')
 	div.row
 		div.col-xs-12
 			button(class="btn-signup" onclick="location.href='#'") Sign up to comment

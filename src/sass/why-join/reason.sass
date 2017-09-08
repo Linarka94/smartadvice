@@ -1,51 +1,49 @@
+$svg-icons:	( user: (56px, 37px), account: (43px, 29px), financing: (34px, 34px), deals: (33px, 31px) );
+
 %why-join-reason_propeties
 	display: block
 	text-align: center
-	color: #637188
-
-.whyjoin-reason-item._left 
-	float: left
-
-.whyjoin-reason-item._right 
-	float: right
+	font-size: 16px
+	color: #3c4759
 
 .whyjoin-reason-item 
 	margin-bottom: 95px
 	font-family: helvetica
 	.icon 
-		display: block	
+		display: block
 		margin: 0 auto
 		margin-bottom: 12px
-	
-		.color
-			fill: #3c4759
-			fill-rule: evenodd
 
-	.user 
-		width: 56px
+	@each $key, $value in $svg-icons
+		$svg-width: nth($value, 1)
+		$svg-height: nth($value, 2)
 
-	.account 
-		width: 43px
-		margin-bottom: 20px
+		.#{$key}
+			width: $svg-width
+			height: 37px
 
-	.financing 
-		width: 34px
-		margin-bottom: 18px
+		.icon-whyjoin_#{$key}
+			fill: #637188
+			width: $svg-width
+			height: $svg-height
 
-	.deals 
-		width: 33px
+		&:hover
+			.icon-whyjoin_#{$key}
+				fill: #00aeef
 
 	.title
 		@extend %why-join-reason_propeties
 		margin-bottom: 18px
 		font-size: 26px
-		color: #3c4759
 
+	&:hover 
+		.title
+			color: #00aeef
 	.text
 		@extend %why-join-reason_propeties
 		margin: 0 auto
 		max-width: 300px
-		font-size: 16px
+		color: #637188
 
 	.join
 		@extend %why-join-reason_propeties
@@ -53,7 +51,6 @@
 		margin-bottom: 20px
 		max-width: 310px
 		font-size: 30px
-		color: #3c4759
 
 	.btn-join, 
 	.btn-join:hover, 
@@ -72,24 +69,33 @@
 		font-size: 18px
 		color: #fff
 
-	&:hover 
-		.icon .color
-			fill: #00aeef
-			fill-rule: evenodd
-
-		.title
-			@extend %why-join-reason_propeties
-			font-size: 26px
-			color: #00aeef
-
 
 @media (max-width: 767px) 
-	.whyjoin-reason-item._left,
-	.whyjoin-reason-item._right 
-		float: none
+	$svg-icons:	( user: (84px, 55px), account: (65px, 44px), financing: (51px, 51px), deals: (51px, 46px) );
 
-	.whyjoin-product .btn-product
-		margin: auto
-		
-		&:hover
+	.whyjoin-reason-item
+		.icon
+		@each $key, $value in $svg-icons
+			$svg-width: nth($value, 1)
+			$svg-height: nth($value, 2)
+
+			.#{$key}
+				width: $svg-width
+				height: 55px
+
+			.icon-whyjoin_#{$key}
+				width: $svg-width
+				height: $svg-height
+		.text
+			font-size: 20px
+		.join	
+			margin-bottom: 50px
+		.btn-join
 			margin: auto
+			padding-left: 262px
+			padding-right: 262px
+		
+			&:hover
+				margin: auto
+				padding-left: 262px
+				padding-right: 262px

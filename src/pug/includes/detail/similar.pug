@@ -1,19 +1,4 @@
-mixin articleOutput(M_image, M_category, M_title, M_views, M_date, M_text)
-	div.article-img
-		if (M_image)
-			img(class="image-style" src!="assets/img/"+M_image)
-		a(href="#" class="mainlink visible-xs")
-	div.article-category #{M_category}
-	div.article_button
-		button(class="btn btn-default btn-readmore" onclick="location.href='#'") Read More
-	div.article-title #{M_title}
-	ul.article-info
-		li.views
-			p.views_number #{M_views}
-			p.views_text.hidden-xs Views
-		
-		li.date #{M_date}
-	p.article-text #{M_text}
+include ../mixin.pug
 
 div.similar
 	div.container
@@ -29,7 +14,7 @@ div.similar
 	div.container
 		div.row
 			div.col-lg-offset-0.col-lg-4.col-md-offset-1.col-md-5.col-sm-6
-				div.article-block
+				div.article-block.first_item
 					+articleOutput(	'article-feed7.png',
 									'Financial',
 									"The Confusing State of Bank Customer Service",

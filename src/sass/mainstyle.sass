@@ -3,6 +3,21 @@
 	src: url('assets/fonts/#{$fontname}.ttf')
 	font-style: normal
 	font-weight: normal
+/* Fonts */
+@font-face 
+	+font-face(helvetica-light)
+@font-face 
+	+font-face(helvetica-bold)
+@font-face 
+	+font-face(helvetica)
+@font-face 
+	+font-face(helvetica-italic)
+
+i
+	font-family: helvetica-italic
+
+b
+	font-family: helvetica-bold
 
 a
 	text-decoration: none
@@ -19,9 +34,6 @@ ul
 	list-style-type: none
 	padding: 0
 	margin: 0
-
-.relative 
-	position: relative
 	
 .clearfix:after
 	content: "."
@@ -30,14 +42,18 @@ ul
 	clear: both
 	visibility: hidden
 
+._left 
+	float: left
 
+._right 
+	float: right
 
-/* Fonts */
-@font-face 
-	+font-face(helvetica-light)
-@font-face 
-	+font-face(helvetica-bold)
-@font-face 
-	+font-face(helvetica)
-@font-face 
-	+font-face(helvetica-italic)
+@media (max-width: 767px)
+	p 
+		width: 580px
+		margin-right: auto
+		margin-left: auto
+
+	._left,
+	._right 
+		float: none

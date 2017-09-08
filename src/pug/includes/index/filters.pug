@@ -3,11 +3,21 @@ div.container.filters
 		div.col-sm-5.col-xs-10
 			div.search
 				input(type="text" placeholder="What are you looking for?")
+		
 		div.col-sm-3.hidden-xs
-			div.date By Date
+			button.date 
+				svg.icon-calendar
+					use(xlink:href="#icon-calendar")
+				p.sort-text By Date
+		
 		div.col-lg-2.col-lg-offset-1.col-sm-3.col-xs-2
-			div.sort
+			button.sort
+				svg.icon-filter
+					use(xlink:href="#icon-filter")
 				p.sort-text.hidden-xs By Categories
+		
 		div.col-sm-1.hidden-xs
 			div.commit-button
-				button(type="button" class="array")
+				button(type="button" class="arrow")
+					svg.icon-arrow
+						use(xlink:href="#icon-arrow")

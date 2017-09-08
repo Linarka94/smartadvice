@@ -29,23 +29,19 @@
 			display:  block
 			float: left
 
-			.user1
+			%user
 				display: block 
 				width: 96px
 				height: 96px
 				margin-right: 30px
 				border-radius: 48px
 				background-color: #3c4759
-				background-image: url("/assets/img/comments/usericon1.png")
 
-			.user2
-				@extend .user1
-				background-image: url("/assets/img/comments/usericon2.png")
+			@for $i from 1 through 3
+				.user#{$i}
+					@extend %user
+					background-image: url("/assets/img/comments/usericon#{$i}.png")
 
-			.user3
-				@extend .user1
-				background-image: url("/assets/img/comments/usericon3.png")
-		
 		.comments-item_name
 			margin-bottom: 15px
 			font-size: 24px
@@ -60,57 +56,50 @@
 
 			.info_time
 				display: inline-block
-				&:before
-					content: ""
+
+				.icon-watch
 					display: inline-block
+					vertical-align: sub
 					height: 16px
 					width: 16px
-					margin-right: 4px
-					vertical-align: text-bottom
-					background-image: url("assets/img/svg/watch.svg")
+					fill: #637188
+					margin-right: 5px
 
 			.info_rating
 				display: inline-block
 				float: right
 
-
+				%icon-like
+					display: inline-block
+					vertical-align: sub
+					fill: #637188
+					width: 22px
+					height: 21px
+					margin-right: 5px
+				
 				.like
 					display: inline-block
-					width: 90px
 					color: #3c4759
-
-					&:before
-						content: ""
-						display: inline-block
-						height: 21px
-						width: 22px
-						margin-right: 9px
-						vertical-align: text-bottom
-						background-image: url("assets/img/svg/like.svg")
-						
+					width: 80px
+					.icon-like
+						@extend %icon-like
 
 					&:hover
-						&:before
-							background-image: url("assets/img/svg/like-active.svg")
+						.icon-like
+							fill: #00aeef
 
 				.dislike
 					display: inline-block
 					color: #3c4759
-					
-					&:before
-						content: ""
-						display: inline-block
-						height: 21px
-						width: 22px
-						margin-top: -1px
-						margin-right: 9px
+					.icon-dislike
+						@extend %icon-like
 						vertical-align: text-top
-						background-image: url("assets/img/svg/dislike.svg")
-
+						height: 25px
 
 					&:hover
-						&:before
-							background-image: url("assets/img/svg/dislike-active.svg")
+						.icon-dislike
+							fill: #00aeef
+
 
 	.btn-signup, 
 	.btn-signup:hover, 

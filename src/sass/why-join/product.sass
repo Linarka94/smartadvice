@@ -13,23 +13,33 @@
 		font-size: 16px
 		color: #637188
 
-	.icon
-		display: block
-		margin: auto
-		margin-bottom: 20px
-		width: 170px
-		height: 170px
-		background-color: #3c4759
+	.whyjoin-product_item 
 
-		&:before 
-			content: ""
+		.icon
 			display: block
+			margin: auto
+			margin-bottom: 20px
 			width: 170px
 			height: 170px
-			background-position: center
-			background-repeat: no-repeat
+			background-color: #3c4759
+		
+			.icon-calculator,
+			.icon-basket,
+			.icon-layers,
+			.icon-wallet,
+			.icon-box
+				fill: #fff
+				width: 32px
+				height: 32px
+				margin: 69px
 
-	.whyjoin-product_item 
+			.icon-basket
+				fill: #fff
+				width: 32px
+				height: 32px
+				margin: 69px				
+
+			
 		.title
 			display: block
 			margin: auto
@@ -39,20 +49,7 @@
 			font-size: 20px
 			color: #3c4759
 
-		.calc:before 
-			background-image: url(assets/img/whyjoin-products-calculator.png)
-
-		.basket:before 
-			background-image: url(assets/img/whyjoin-products-basket.png)
-
-		.layers:before 
-			background-image: url(assets/img/whyjoin-products-layers.png)
-
-		.wallet:before 
-			background-image: url(assets/img/whyjoin-products-wallet.png)
-
-		.box:before 
-			background-image: url(assets/img/whyjoin-products-box.png)
+		
 
 	.btn-product, 
 	.btn-product:hover, 
@@ -74,20 +71,46 @@
 
 
 @media (max-width: 767px) 
-	.btn-product, 
-	.btn-product:hover, 
-	.btn-product:active 
-		display: block
-		max-width: 258px
-		margin: auto
-		padding: 0 60px
-		padding-top: 17px
-		padding-bottom: 13px
-		border: none
-		border-radius: 0
-		background-image: none
-		background-color: #00aeef 
-		text-shadow: none
-		outline: none
-		font-size: 18px
-		color: #fff
+	.whyjoin-product 
+		h1
+			width: 580px
+			margin-left: auto
+			margin-right: auto
+		.text
+			font-size: 20px
+			text-align: justify
+		.whyjoin-product_item
+			.icon
+				height: 250px
+				width: 250px
+				.icon-calculator,
+				.icon-basket,
+				.icon-layers,
+				.icon-wallet,
+				.icon-box
+					fill: #fff
+					width: 60px
+					height: 60px
+					margin: 95px
+			.title
+				width: 250px
+				font-size: 26px
+
+
+		.btn-product, 
+		.btn-product:hover, 
+		.btn-product:active 
+			display: block
+			max-width: 580px
+			margin: auto
+			padding: 0 221px
+			padding-top: 17px
+			padding-bottom: 13px
+			border: none
+			border-radius: 0
+			background-image: none
+			background-color: #00aeef 
+			text-shadow: none
+			outline: none
+			font-size: 18px
+			color: #fff
