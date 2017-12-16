@@ -77,6 +77,14 @@ gulp.task('replace', function () {
 	.pipe(browserSync.reload({stream: true}))
 });
 
+gulp.task('production', ['clean', 'pug', 'sass', 'scripts', 'img', 'replace'] function() {
+  connect.server({
+    root: 'public',
+    port: process.env.PORT || 3000
+    livereload: false
+  });
+});
+
 gulp.task('watch', ['clean', 'browser-sync', 'pug', 'sass', 'scripts', 'img', 'replace'], function() {
 	gulp.watch('src/pug/**/**/*.pug', ['pug'])
 	gulp.watch('public/*.html', browserSync.reload)
