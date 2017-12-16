@@ -25,5 +25,8 @@
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^5.0.1",
     "pug": "^2.0.0-rc.3"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1"
   }
 }
