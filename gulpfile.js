@@ -1,16 +1,17 @@
-var gulp 			= require('gulp'),
-	sass 			= require('gulp-sass'),
-	pug 			= require('gulp-pug'),
-	browserSync 	= require('browser-sync'),
-	concat			= require('gulp-concat'),
-	uglify			= require('gulp-uglifyjs')
-	cssnano			= require('gulp-cssnano'),
-	rename			= require('gulp-rename'),
-	del 			= require('del'),
-	imageMin 		= require('gulp-imagemin'),
-	pngQuant 		= require('imagemin-pngquant'),
-	cache 			= require('gulp-cache'),
-	autoprefixer 	= require('gulp-autoprefixer');
+var gulp = require('gulp'),
+	sass = require('gulp-sass'),
+	pug = require('gulp-pug'),
+	browserSync = require('browser-sync'),
+	concat = require('gulp-concat'),
+	uglify = require('gulp-uglifyjs')
+	cssnano = require('gulp-cssnano'),
+	rename = require('gulp-rename'),
+	del = require('del'),
+	imageMin = require('gulp-imagemin'),
+	pngQuant = require('imagemin-pngquant'),
+	cache = require('gulp-cache'),
+	autoprefixer = require('gulp-autoprefixer');
+let connect = require('gulp-connect');
 
 gulp.task('clean', function () {
 	return del.sync('public');
@@ -77,10 +78,10 @@ gulp.task('replace', function () {
 	.pipe(browserSync.reload({stream: true}))
 });
 
-gulp.task('production', ['clean', 'pug', 'sass', 'scripts', 'img', 'replace'] function() {
+gulp.task('production', ['clean', 'pug', 'sass', 'scripts', 'img', 'replace'], function() {
   connect.server({
     root: 'public',
-    port: process.env.PORT || 3000
+    port: process.env.PORT || 3000,
     livereload: false
   });
 });
