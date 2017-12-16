@@ -57,13 +57,13 @@ gulp.task('scripts', function () {
 
 gulp.task('img', function () {
 	return gulp.src('src/img/**/*')
-	.pipe(cache(imageMin({
-		interlaced: true,
-		progressive: true,
-		svgoPlugins: [{removeViewBox: false}],
-		une: [pngQuant()],
-		verbose: true
-	})))
+	// .pipe(cache(imageMin({
+	// 	interlaced: true,
+	// 	progressive: true,
+	// 	svgoPlugins: [{removeViewBox: false}],
+	// 	une: [pngQuant()],
+	// 	verbose: true
+	// })))
 	.pipe(gulp.dest('public/assets/img'));
 });
 
