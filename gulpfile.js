@@ -16,3 +16,8 @@ gulp
       	gulp.start('watch')
       }
   });
+
+  gulp.task('buildRemote', function(){
+      gulp.start('server-prod');
+      gulp.start('images');
+  });
