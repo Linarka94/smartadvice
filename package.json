@@ -9,9 +9,7 @@
   },
   "author": "burusha16",
   "license": "ISC",
-  "devDependencies": {
-    "gulp-command": "^0.1.2"
-  },
+  "devDependencies": {},
   "dependencies": {
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
@@ -28,6 +26,7 @@
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^5.0.1",
     "pug": "^2.0.0-rc.3",
-    "require-dir": "^0.3.2"  
+    "require-dir": "^0.3.2",
+    "yargs": "^10.0.3"
   }
 }
