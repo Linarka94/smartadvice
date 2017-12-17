@@ -8,11 +8,6 @@ gulp.task('build', function() {
   (argv.p) ? gulp.start('server-prod') : gulp.start('server-dev');
   gulp.start('images');
   if (argv.w) {
-  	gulp.start('watch')
+    gulp.start('watch')
   }
 });
-
-  gulp.task('buildRemote', function(){
-      gulp.start('server-prod');
-      gulp.start('images');
-  });

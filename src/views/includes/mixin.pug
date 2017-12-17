@@ -55,3 +55,8 @@ mixin shareIconsOutput(iconName)
 		a(href="#")
 			svg(class!="icon-" + iconName )
 				use(xlink:href!="#icon-" + iconName )
+
+mixin favicon() 
+	link(rel="icon" type="image/png" href="assets/img/favicon/32.png" sizes="32x32")
+	link(rel="icon" type="image/png" href="assets/img/favicon/16.png" sizes="16x16")
+	link(rel="apple-touch-icon" href="/assets/img/favicon/180.png" sizes="180x180")

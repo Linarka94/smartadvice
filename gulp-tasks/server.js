@@ -3,7 +3,7 @@ let connect = require('gulp-connect');
 let gulp = require('gulp');
 
 
-gulp.task('server-dev', ['removePublic', 'fonts', 'scriptsVendor', 'scripts', 'stylesVendor', 'styles', 'views'], () => {
+gulp.task('server-dev', ['removePublic', 'fonts', 'scriptsVendor', 'eslint', 'scripts', 'stylesVendor', 'styles', 'views'], () => {
 	browserSync({
 		server: {
 			baseDir: 'public'

@@ -5,11 +5,17 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "gulp buildRemote"
+    "start": "gulp build -p"
   },
   "author": "burusha16",
   "license": "ISC",
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-node": "^5.2.1",
+    "eslint-plugin-promise": "^3.6.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "gulp-eslint": "^4.0.0"
+  },
   "dependencies": {
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
