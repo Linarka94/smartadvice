@@ -10,12 +10,14 @@
   "author": "burusha16",
   "license": "ISC",
   "devDependencies": {
+    "gulp-command": "^0.1.2",
+  },
+  "dependencies": {
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^4.0.0",
     "gulp-cache": "^0.4.6",
-    "gulp-command": "^0.1.2",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.0.0",
     "gulp-if": "^2.0.2",
@@ -26,7 +28,6 @@
     "gulp-uglifyjs": "^0.6.2",
     "imagemin-pngquant": "^5.0.1",
     "pug": "^2.0.0-rc.3",
-    "require-dir": "^0.3.2"
-  },
-  "dependencies": {}
+    "require-dir": "^0.3.2"  
+  }
 }
