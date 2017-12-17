@@ -1,6 +1,6 @@
 let gulp = require('gulp');
 let requireDir = require('require-dir');
-let gulpCommand = require('gulp-command')(gulp);
+// let gulpCommand = require('gulp-command')(gulp);
 
 requireDir('./gulp-tasks');
 
