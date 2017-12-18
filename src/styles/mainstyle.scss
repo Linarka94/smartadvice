@@ -5,13 +5,13 @@
   font-weight: normal;
 }
 
-@font-face 
+@font-face
   @include font-face(helvetica-light)
-@font-face 
+@font-face
   @include font-face(helvetica-bold)
-@font-face 
+@font-face
   @include font-face(helvetica)
-@font-face 
+@font-face
   @include font-face(helvetica-italic)
 
 i {

@@ -17,7 +17,7 @@ $svg-icons:  ( user: (56px, 37px), account: (43px, 29px), financing: (34px, 34px
   @each $key, $value in $svg-icons {
     $svg-width: nth($value, 1);
     $svg-height: nth($value, 2);
-  
+
     .#{$key} {
       width: $svg-width;
       height: 37px;
@@ -56,8 +56,8 @@ $svg-icons:  ( user: (56px, 37px), account: (43px, 29px), financing: (34px, 34px
     max-width: 310px;
     font-size: 30px;
   }
-  .btn-join, 
-  .btn-join:hover, 
+  .btn-join,
+  .btn-join:hover,
   .btn-join:active {
     display: block;
     margin: 0 auto;
@@ -67,7 +67,7 @@ $svg-icons:  ( user: (56px, 37px), account: (43px, 29px), financing: (34px, 34px
     border: none;
     border-radius: 0;
     background-image: none;
-    background-color: #00aeef ;
+    background-color: #00aeef;
     text-shadow: none;
     outline: none;
     font-size: 18px;
@@ -94,17 +94,17 @@ $svg-icons:  ( user: (56px, 37px), account: (43px, 29px), financing: (34px, 34px
       }
     }
     }
-    .text{
+    .text {
       font-size: 20px;
     }
-    .join { 
+    .join {
       margin-bottom: 50px;
     }
     .btn-join {
       margin: auto;
       padding-left: 262px;
       padding-right: 262px;
-    
+
       &:hover {
         margin: auto;
         padding-left: 262px;

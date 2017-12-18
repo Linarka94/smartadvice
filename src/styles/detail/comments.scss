@@ -28,7 +28,7 @@
     .comments-item_logo {
       display: block;
       float: left;
-      
+
       %user {
         display: block;
         width: 96px;
@@ -50,12 +50,12 @@
       color: #3c4759;
     }
     .comments-item_text {
-      margin-bottom: 40px 
+      margin-bottom: 40px;
     }
     .comments-item_info {
       margin-left: 126px;
       font-size: 14px;
-    
+
       .info_time {
         display: inline-block;
 
@@ -71,7 +71,7 @@
       .info_rating {
         display: inline-block;
         float: right;
-      
+
         %icon-like {
           display: inline-block;
           vertical-align: sub;
@@ -104,7 +104,7 @@
             height: 25px;
           }
           &:hover {
-            .icon-dislike{
+            .icon-dislike {
               fill: #00aeef;
             }
           }
@@ -112,8 +112,8 @@
       }
     }
   }
-  .btn-signup, 
-  .btn-signup:hover, 
+  .btn-signup,
+  .btn-signup:hover,
   .btn-signup:active {
     display: block;
     margin: auto;
@@ -128,10 +128,10 @@
     text-shadow: none;
     outline: none;
     font-size: 18px;
-    color: #fff;    
+    color: #fff;
   }
 }
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   %extend-item {
     width: 610px;
     margin-left: auto;
@@ -141,14 +141,14 @@
   }
   .comments {
     font-size: 20px;
-    
+
     h2 {
       @extend %extend-item;
     }
 
     .comments-item {
       @extend %extend-item;
-    
+
       .comments-item_logo {
         height: 135px;
       }
@@ -157,9 +157,9 @@
         height: 85px;
         overflow: hidden;
       }
-    }  
-    .btn-signup, 
-    .btn-signup:hover, 
+    }
+    .btn-signup,
+    .btn-signup:hover,
     .btn-signup:active {
       padding: 0 196px;
       padding-top: 23px;
