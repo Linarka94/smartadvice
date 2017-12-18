@@ -1,0 +1,69 @@
+@mixin font-face($fontname) {
+  font-family: '#{$fontname}';
+  src: url('assets/fonts/#{$fontname}.ttf');
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face 
+  @include font-face(helvetica-light)
+@font-face 
+  @include font-face(helvetica-bold)
+@font-face 
+  @include font-face(helvetica)
+@font-face 
+  @include font-face(helvetica-italic)
+
+i {
+  font-family: helvetica-italic;
+}
+b {
+  font-family: helvetica-bold;
+}
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: none;
+  }
+  &:focus {
+    text-decoration: none;
+  }
+}
+button {
+  &:focus {
+    outline: none;
+  }
+}
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.clearfix {
+  &:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+}
+._left {
+  float: left;
+}
+._right {
+  float: right;
+}
+@media (max-width: 767px) {
+  p {
+    width: 580px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  ._left {
+    float: none;
+  }
+  ._right {
+    float: none;
+  }
+}

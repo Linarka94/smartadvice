@@ -1,0 +1,22 @@
+.main-title.community {
+  margin: 0;
+  margin-bottom: 20px;
+  padding: 0;
+  margin: auto;
+}
+@media (max-width: 768px) {
+  .div-bread.community {
+    width: 580px;
+    font-size: 20px;
+    .list {
+      li {
+        >a {
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  .main-title.community {
+    max-width: 580px;
+  }
+}

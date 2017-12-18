@@ -1,0 +1,145 @@
+.slider-bg {
+  display: block;
+  position: relative;
+  height: 500px;
+  padding: 0;
+  background-color: #1d427c;
+  background: -moz-linear-gradient(-165deg, #00aeef 0%, #1a427c 100%);
+  background: -webkit-linear-gradient(-165deg, #00aeef 0%, #1a427c 100%);
+  background: -o-linear-gradient(-165deg, #00aeef 0%, #1a427c 100%);
+  background-position: center;
+  &:before {
+    content: " ";
+    display: block;
+    position: relative;
+    height: 500px;
+    background: -moz-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, rgba(0, 174, 239, 0.9) 50%, rgba(255, 255, 255, 0) 75%), -moz-linear-gradient(145deg, #ad9167 0%, rgba(255, 255, 255, 0) 100%);
+    background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, rgba(0, 174, 239, 0.9) 50%, rgba(255, 255, 255, 0) 75%), -webkit-linear-gradient(145deg, #ad9167 0%, rgba(255, 255, 255, 0) 100%);
+    background: -o-linear-gradient(-45deg, rgba(255, 255, 255, 0) 25%, rgba(0, 174, 239, 0.9) 50%, rgba(255, 255, 255, 0) 75%), -o-linear-gradient(145deg, #ad9167 0%, rgba(255, 255, 255, 0) 100%);
+    background-position: center;
+  }
+  &:after {
+    content: " ";
+    position: absolute;
+    display: block;
+    height: 500px;
+    width: 100%;
+    top: 0px;
+    background-image: url(assets/img/slider-bg.png);
+    opacity: 0.5;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .slider {
+    max-width: 1020px;
+    position: absolute;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    font-family: helvetica-light;
+    color: #fff;
+    text-align: center;
+    z-index: 1;
+    h1 {
+      padding-top: 93px;
+      font-size: 55px;
+    }
+    h2 {
+      padding-top: 34px;
+      margin-bottom: 63px;
+      b {
+        font-family: helvetica-bold;
+        border-bottom-width: 2px;
+        border-bottom-color: #fff;
+        border-bottom-style: solid;
+      }
+    }
+    .slider-list {
+      li {
+        display: inline-block;
+        margin: 0 6px;
+        padding-bottom: 15px;
+        a {
+          display: block;
+          padding: 0 12px;
+          padding-bottom: 6px;
+          padding-top: 6px;
+          font-size: 14px;
+          color: #fff;
+          border-width: 1px;
+          border-style: solid;
+          border-color: #a7d6ed;
+          border-radius: 2px;
+          font-family: helvetica-light;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 767px) {
+  .slider-bg {
+    display: block;
+    position: relative;
+    min-width: 640px;
+    height: 630px;
+    padding: 0;
+    background: -moz-linear-gradient(-45deg, #00aeef 0%, #1a427c 100%, #1a427c 100%);
+    background: -webkit-linear-gradient(-165deg, #00aeef 0%, #1a427c 150%);
+    background: -o-linear-gradient(-45deg, #00aeef 0%, #1a427c 100%, #1a427c 100%);
+    background-position: center;
+    &:before {
+      content: " ";
+      display: block;
+      position: relative;
+      height: 630px;
+      background: -moz-linear-gradient(145deg, #ad9167 0%, rgba(255, 255, 255, 0) 85%);
+      background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 239, 0.5) 50%, rgba(255, 255, 255, 0) 70%), -webkit-linear-gradient(145deg, #ad9167 0%, rgba(255, 255, 255, 0) 57%);
+      background: -o-linear-gradient(145deg, #ad9167 0%, rgba(255, 255, 255, 0) 85%);
+      background-position: center;
+    }
+    &:after {
+      content: " ";
+      position: absolute;
+      display: block;
+      min-width: 640px;
+      height: 630px;
+      width: 100%;
+      top: 25px;
+      background-image: url(assets/img/slider-bg_m.png);
+      opacity: 0.5;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  .slider-whyjoin-bg {
+    height: 500px;
+    &:before {
+      height: 500px;
+    }
+    &:after {
+      height: 500px;
+      top: 0;
+      background-image: url(assets/img/slider-whyjoin-bg.png);
+    }
+  }
+  .slider {
+    width: 640px;
+    h1 {
+      margin-top: 91px;
+      font-size: 55px;
+    }
+    h2 {
+      padding-top: 16px;
+      padding-right: 50px;
+      padding-left: 50px;
+      margin-bottom: 108px;
+    }
+  }
+  .slider-list {
+    padding: 0 40px;
+  }
+}

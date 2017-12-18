@@ -1,183 +1,183 @@
 b 
-	font-family: helvetica-bold
+  font-family: helvetica-bold
 
 .content
-	padding-top: 90px
-	font-family: helvetica
-	font-size: 16px
-	color: #637188
-	
-	.content-item
-		margin-right: -15px
-		margin-left: -15px
-		
-		.first-child
-			&:first-letter
-				float: left
-				margin-top: 10px
-				margin-left: -5px
-				padding-right: 10px
-				font-size: 90px
-				line-height: 60px
-		p 	
-			margin-bottom: 55px
-			line-height: 26px
+  padding-top: 90px
+  font-family: helvetica
+  font-size: 16px
+  color: #637188
+  
+  .content-item
+    margin-right: -15px
+    margin-left: -15px
+    
+    .first-child
+      &:first-letter
+        float: left
+        margin-top: 10px
+        margin-left: -5px
+        padding-right: 10px
+        font-size: 90px
+        line-height: 60px
+    p   
+      margin-bottom: 55px
+      line-height: 26px
 
-		.video-player
-			display: block
-			width: 100%
-			max-width: 870px
-			height: 600px
-			margin: auto
-			margin-bottom: 55px
-			background-image: url("assets/img/detail/video-player.png")
+    .video-player
+      display: block
+      width: 100%
+      max-width: 870px
+      height: 600px
+      margin: auto
+      margin-bottom: 55px
+      background-image: url("assets/img/detail/video-player.png")
 
-		.image1
-			width: 100%
-			height: 300px
-			background-image: url("assets/img/detail/image1.png")
+    .image1
+      width: 100%
+      height: 300px
+      background-image: url("assets/img/detail/image1.png")
 
-		.quotes
-			margin-bottom: 55px
-			padding-top: 55px
-			padding-bottom: 55px
-			border-color: #e2e4e6
-			border-style: solid
-			border-width: 1px
-			border-right: none
-			border-left: none
-			
-			p 
-				width: 970px
-				margin: 0
-				margin-left: auto
-				margin-right: auto
-				font-family: helvetica-light
-				font-size: 36px
-				line-height: 42px
+    .quotes
+      margin-bottom: 55px
+      padding-top: 55px
+      padding-bottom: 55px
+      border-color: #e2e4e6
+      border-style: solid
+      border-width: 1px
+      border-right: none
+      border-left: none
+      
+      p 
+        width: 970px
+        margin: 0
+        margin-left: auto
+        margin-right: auto
+        font-family: helvetica-light
+        font-size: 36px
+        line-height: 42px
 
-	.list
-		p 
-			margin-bottom: 25px
-			line-height: 14px
+  .list
+    p 
+      margin-bottom: 25px
+      line-height: 14px
 
-			span
-				text-transform: uppercase
-				font-size: 12px
-				font-family: helvetica-bold
-				color: #8d9bb4
+      span
+        text-transform: uppercase
+        font-size: 12px
+        font-family: helvetica-bold
+        color: #8d9bb4
 
 
-		ul 
-			display: inline-block
-			margin-right: 170px
-			margin-left: 10px
-			margin-bottom: 55px
+    ul 
+      display: inline-block
+      margin-right: 170px
+      margin-left: 10px
+      margin-bottom: 55px
 
-			&:last-child
-				margin-right: 0
+      &:last-child
+        margin-right: 0
 
-			li
-				margin-bottom: 20px
+      li
+        margin-bottom: 20px
 
-				&:before
-					content: ""
-					display: inline-block
-					width: 10px
-					height: 10px
-					margin-right: 7px
-					background-image: url("assets/img/detail/list-icon.png")
+        &:before
+          content: ""
+          display: inline-block
+          width: 10px
+          height: 10px
+          margin-right: 7px
+          background-image: url("assets/img/detail/list-icon.png")
 
-				&:last-child
-					margin-bottom: 0
+        &:last-child
+          margin-bottom: 0
 
-	
-	._mleft
-		margin-right: 0
-	
-	._mright
-		margin-left: 0
+  
+  ._mleft
+    margin-right: 0
+  
+  ._mright
+    margin-left: 0
 
-	.detail-share
-		.share-item
-			vertical-align: top
-		._text
-			font-size: 12px
-			color: #8d9bb4
+  .detail-share
+    .share-item
+      vertical-align: top
+    ._text
+      font-size: 12px
+      color: #8d9bb4
 
-		@each $social in (facebook, twitter, in, rss)  
-			.icon-#{$social}
-				fill: #3c4759
+    @each $social in (facebook, twitter, in, rss)  
+      .icon-#{$social}
+        fill: #3c4759
 
 @media(max-width: 767px)
-	.content
-		font-size: 24px
+  .content
+    font-size: 24px
 
-		.content-item
-			width: 610px
-			margin-left: auto
-			margin-right: auto
-			padding-right: 15px
-			padding-left: 15px
-			
-			.first-child
-				&:first-letter
-					font-size: 72px
-					font-family: helvetica-bold
-			p 
-				line-height: 35px
-				text-align: justify
+    .content-item
+      width: 610px
+      margin-left: auto
+      margin-right: auto
+      padding-right: 15px
+      padding-left: 15px
+      
+      .first-child
+        &:first-letter
+          font-size: 72px
+          font-family: helvetica-bold
+      p 
+        line-height: 35px
+        text-align: justify
 
-			.video-player
-				width: 580px
-				height: 400px
-				margin: auto
-				margin-bottom: 55px
-				background-image: url("assets/img/detail/video-player_m.png")
-			
-			.quotes
-				p 
-					width: 580px
-					height: 200px
-					overflow: hidden 
-					font-size: 48px
-					line-height: 64px
+      .video-player
+        width: 580px
+        height: 400px
+        margin: auto
+        margin-bottom: 55px
+        background-image: url("assets/img/detail/video-player_m.png")
+      
+      .quotes
+        p 
+          width: 580px
+          height: 200px
+          overflow: hidden 
+          font-size: 48px
+          line-height: 64px
 
-			.image1
-				width: 580px
-				height: 260px
-				background-image: url("assets/img/detail/image1_m.png")
+      .image1
+        width: 580px
+        height: 260px
+        background-image: url("assets/img/detail/image1_m.png")
 
-		.list
-			p
-				span
-					font-size: 18px
-			ul 
-				margin-right: 0px
-				color: #3c4759
+    .list
+      p
+        span
+          font-size: 18px
+      ul 
+        margin-right: 0px
+        color: #3c4759
 
-				li
-					
-					&:before
-						content: ""
-						display: inline-block
-						width: 10px
-						height: 10px
-						margin-bottom: 3px
-						margin-right: 7px
-						background-image: url("assets/img/detail/list-icon.png")
+        li
+          
+          &:before
+            content: ""
+            display: inline-block
+            width: 10px
+            height: 10px
+            margin-bottom: 3px
+            margin-right: 7px
+            background-image: url("assets/img/detail/list-icon.png")
 
-		.detail-share
-			width: 382px
-			.share-item
-				margin-right: 20px
-				margin-left: 20px
-			._text
-				margin-top: 3px
-				font-size: 20px
+    .detail-share
+      width: 382px
+      .share-item
+        margin-right: 20px
+        margin-left: 20px
+      ._text
+        margin-top: 3px
+        font-size: 20px
 
 
-			@each $social, $size in ( facebook: (8px, 16px), twitter: (17px, 14px), in: (16px, 14px), rss: (15px, 15px) )
-				.icon-#{$social}
-					width: nth($size, 1) + nth($size, 1)
-					height: nth($size, 2) + nth($size, 2)
+      @each $social, $size in ( facebook: (8px, 16px), twitter: (17px, 14px), in: (16px, 14px), rss: (15px, 15px) )
+        .icon-#{$social}
+          width: nth($size, 1) + nth($size, 1)
+          height: nth($size, 2) + nth($size, 2)

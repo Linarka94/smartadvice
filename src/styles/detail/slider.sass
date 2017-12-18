@@ -1,94 +1,94 @@
 .detail
-	height: 768px
+  height: 768px
 
-	&:before 
-		height: 768px
+  &:before 
+    height: 768px
 
-	&:after
-		height: 768px
-		background-image: url(assets/img/detail/slider-bg.png)
-	.slider
-		h1 
-			margin: 0
-			margin-bottom: 66px
-			padding-top: 180px
-			padding-right: 30px
-			padding-left: 30px
-			font-size: 48px
-			line-height: 53px
-			font-family: helvetica-bold
-		
-		.detail-share
-			margin-bottom: 132px
+  &:after
+    height: 768px
+    background-image: url(assets/img/detail/slider-bg.png)
+  .slider
+    h1 
+      margin: 0
+      margin-bottom: 66px
+      padding-top: 180px
+      padding-right: 30px
+      padding-left: 30px
+      font-size: 48px
+      line-height: 53px
+      font-family: helvetica-bold
+    
+    .detail-share
+      margin-bottom: 132px
 
-		.slider-list
-			margin-bottom: 147px
-			li 
-				padding-bottom: 15px
-				
-				a 
-					padding-top: 6px
-					padding-bottom: 6px
-					font-family: helvetica
-					font-size: 14px
-					border-color: rgba(255,255,255, 0.6)
+    .slider-list
+      margin-bottom: 147px
+      li 
+        padding-bottom: 15px
+        
+        a 
+          padding-top: 6px
+          padding-bottom: 6px
+          font-family: helvetica
+          font-size: 14px
+          border-color: rgba(255,255,255, 0.6)
 
 
-		.slider-arrowdown 
-			display: block
-			margin: 0 auto
-			width: 0px 
+    .slider-arrowdown 
+      display: block
+      margin: 0 auto
+      width: 0px 
 
-			&:before 
-				content: ""
-				display: block
-				width: 34px
-				height: 34px
-				transform: rotate(45deg)
-				border-style: solid
-				border-color: #fff
-				border-width: 3px
-				border-left: none
-				border-top: none
+      &:before 
+        content: ""
+        display: block
+        width: 34px
+        height: 34px
+        transform: rotate(45deg)
+        border-style: solid
+        border-color: #fff
+        border-width: 3px
+        border-left: none
+        border-top: none
 
-			&:hover:before 
-				content: ""
-				display: block
-				width: 34px
-				height: 34px
-				transform: rotate(45deg)
-				border-style: solid
-				border-color: #00aeef
-				border-width: 3px
-				border-left: none
-				border-top: none
+      &:hover:before 
+        content: ""
+        display: block
+        width: 34px
+        height: 34px
+        transform: rotate(45deg)
+        border-style: solid
+        border-color: #00aeef
+        border-width: 3px
+        border-left: none
+        border-top: none
 
 @media(max-width: 767px)
-	.detail
-		&:after
-			top: 0
-		.slider
-			h1 
-				margin-bottom: 170px
-				padding-top: 100px
-			
-			.detail-share
-				width: 410px
-				margin-bottom: 60px
+  .detail
+    &:after
+      top: 0
+    .slider
+      h1 
+        margin-bottom: 170px
+        padding-top: 100px
+      
+      .detail-share
+        width: 410px
+        margin-bottom: 60px
 
-				.share-item
-					font-size: 20px
+        .share-item
+          font-size: 20px
 
-					@each $social, $size in ( facebook: (8px, 16px), twitter: (17px, 14px), in: (16px, 14px), rss: (15px, 15px) )
-						.icon-#{$social}
-							width: nth($size, 1) + nth($size, 1)
-							height: nth($size, 2) + nth($size, 2)
+          @each $social, $size in ( facebook: (8px, 16px), twitter: (17px, 14px), in: (16px, 14px), rss: (15px, 15px) )
+            .icon-#{$social}
+              width: nth($size, 1) + nth($size, 1)
+              height: nth($size, 2) + nth($size, 2)
 
-				._text
-					margin-top: 5px
+        ._text
+          margin-top: 5px
 
-			.slider-list
-				margin-bottom: 60px
-				margin-right: auto
-				margin-left: auto
-				width: 570px
+      .slider-list
+        margin-bottom: 60px
+        margin-right: auto
+        margin-left: auto
+        width: 570px
