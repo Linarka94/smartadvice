@@ -8,10 +8,10 @@ let sass = require('gulp-sass');
 
 gulp.task('styles', function() {	
   return gulp.src([
-    'src/styles/**/**/*.sass', 
-    '!src/styles/libs.sass'
+    'src/styles/**/**/*.scss', 
+    '!src/styles/libs.scss'
     ])
-    .pipe(concat('styles.sass'))
+    .pipe(concat('styles.scss'))
     .pipe(gulpif( argv.p, sass({outputStyle: 'compressed'}).on('error', sass.logError)) )
     .pipe(gulpif( !argv.p, sass().on('error', sass.logError)) )
     .pipe(autoprefixer(['last 15 versions', '> 1%', 'ie 8', 'ie 7'], {cascade: true}))
@@ -20,7 +20,7 @@ gulp.task('styles', function() {
 });
 
 gulp.task('stylesVendor', function() {  
-  return gulp.src('src/styles/libs.sass')
+  return gulp.src('src/styles/libs.scss')
     .pipe(concat('libs.min.sass'))
     .pipe(sass({outputStyle: 'compressed'}).on('error', sass.logError))
     .pipe(gulp.dest('public'))

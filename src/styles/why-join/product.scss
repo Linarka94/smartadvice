@@ -1,0 +1,217 @@
+.whyjoin-product {
+  margin-bottom: 90px;
+  h1 {
+    margin: 0;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    color: #3c4759;
+  }
+  .text {
+    margin-bottom: 54px;
+    padding: 0 15px;
+    font-size: 16px;
+    color: #637188;
+  }
+  .whyjoin-product_item {
+    .icon {
+      display: block;
+      margin: auto;
+      margin-bottom: 20px;
+      width: 170px;
+      height: 170px;
+      background-color: #3c4759;
+      .icon-calculator {
+        fill: #fff;
+        width: 32px;
+        height: 32px;
+        margin: 69px;
+      }
+      .icon-basket {
+        fill: #fff;
+        width: 32px;
+        height: 32px;
+        margin: 69px;
+        fill: #fff;
+        width: 32px;
+        height: 32px;
+        margin: 69px;
+      }
+      .icon-layers {
+        fill: #fff;
+        width: 32px;
+        height: 32px;
+        margin: 69px;
+      }
+      .icon-wallet {
+        fill: #fff;
+        width: 32px;
+        height: 32px;
+        margin: 69px;
+      }
+      .icon-box {
+        fill: #fff;
+        width: 32px;
+        height: 32px;
+        margin: 69px;
+      }
+    }
+    .title {
+      display: block;
+      margin: auto;
+      margin-bottom: 50px;
+      width: 170px;
+      text-align: center;
+      font-size: 20px;
+      color: #3c4759;
+    }
+  }
+  .btn-product {
+    display: block;
+    margin-bottom: 90px;
+    margin-left: 15px;
+    padding: 0 60px;
+    padding-top: 17px;
+    padding-bottom: 13px;
+    border: none;
+    border-radius: 0;
+    background-image: none;
+    background-color: #00aeef;
+    text-shadow: none;
+    outline: none;
+    font-size: 18px;
+    color: #fff;
+    &:hover {
+      display: block;
+      margin-bottom: 90px;
+      margin-left: 15px;
+      padding: 0 60px;
+      padding-top: 17px;
+      padding-bottom: 13px;
+      border: none;
+      border-radius: 0;
+      background-image: none;
+      background-color: #00aeef;
+      text-shadow: none;
+      outline: none;
+      font-size: 18px;
+      color: #fff;
+    }
+    &:active {
+      display: block;
+      margin-bottom: 90px;
+      margin-left: 15px;
+      padding: 0 60px;
+      padding-top: 17px;
+      padding-bottom: 13px;
+      border: none;
+      border-radius: 0;
+      background-image: none;
+      background-color: #00aeef;
+      text-shadow: none;
+      outline: none;
+      font-size: 18px;
+      color: #fff;
+    }
+  }
+}
+@media (max-width: 767px) {
+  .whyjoin-product {
+    h1 {
+      width: 580px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .text {
+      font-size: 20px;
+      text-align: justify;
+    }
+    .whyjoin-product_item {
+      .icon {
+        height: 250px;
+        width: 250px;
+        .icon-calculator {
+          fill: #fff;
+          width: 60px;
+          height: 60px;
+          margin: 95px;
+        }
+        .icon-basket {
+          fill: #fff;
+          width: 60px;
+          height: 60px;
+          margin: 95px;
+        }
+        .icon-layers {
+          fill: #fff;
+          width: 60px;
+          height: 60px;
+          margin: 95px;
+        }
+        .icon-wallet {
+          fill: #fff;
+          width: 60px;
+          height: 60px;
+          margin: 95px;
+        }
+        .icon-box {
+          fill: #fff;
+          width: 60px;
+          height: 60px;
+          margin: 95px;
+        }
+      }
+      .title {
+        width: 250px;
+        font-size: 26px;
+      }
+    }
+    .btn-product {
+      display: block;
+      max-width: 580px;
+      margin: auto;
+      padding: 0 221px;
+      padding-top: 17px;
+      padding-bottom: 13px;
+      border: none;
+      border-radius: 0;
+      background-image: none;
+      background-color: #00aeef;
+      text-shadow: none;
+      outline: none;
+      font-size: 18px;
+      color: #fff;
+      &:hover {
+        display: block;
+        max-width: 580px;
+        margin: auto;
+        padding: 0 221px;
+        padding-top: 17px;
+        padding-bottom: 13px;
+        border: none;
+        border-radius: 0;
+        background-image: none;
+        background-color: #00aeef;
+        text-shadow: none;
+        outline: none;
+        font-size: 18px;
+        color: #fff;
+      }
+      &:active {
+        display: block;
+        max-width: 580px;
+        margin: auto;
+        padding: 0 221px;
+        padding-top: 17px;
+        padding-bottom: 13px;
+        border: none;
+        border-radius: 0;
+        background-image: none;
+        background-color: #00aeef;
+        text-shadow: none;
+        outline: none;
+        font-size: 18px;
+        color: #fff;
+      }
+    }
+  }
+}
