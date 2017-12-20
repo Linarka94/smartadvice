@@ -1,34 +1,32 @@
-nav.container-fluid.navblock-bg
+nav.navblock
   div.container
     div.row
-      div.navbar.navblock
-        ul.navbar-header
-          button(type="button" class="navbar-toggle collapsed _navblock-toggle" data-toggle="collapse" data-target="#navblock")
-            span.icon-toggle
-            span.icon-toggle
-            span.icon-toggle
-        ul.nav.navbar-nav.navbar-logo
-          li
-            a(class="navbar-logo_item" href="/")
+      div.navbar
+        div.navbar-header
+          button(type="button" class="navbar-toggle collapsed navbar-toggles" data-toggle="collapse" data-target="#navblock")
+            span.navbar-toggles-item
+            span.navbar-toggles-item
+            span.navbar-toggles-item
+        div.navbar-logo
+          a(class="navbar-logo-item" href="/")
 
         ul.navbar-collapseblock
           ul(id="navblock" class="collapse navbar-collapse")
             ul.nav.navbar-nav.navbar-list
-              li.navbar-list_item
+              li.navbar-list-item
                 a(href="/why-join.html") Why Join
-              li.navbar-list_item.hidden-sm.hidden-md
+              li.navbar-list-item.hidden-sm.hidden-md
                 a(href="/community.html") About Community
-              li.navbar-list_item.hidden-sm.hidden-md
+              li.navbar-list-item.hidden-sm.hidden-md
                 a(href="#") Smart Advice
-              li.navbar-list_item
+              li.navbar-list-item
                 a(href="#") Deals & Offers
-              li.navbar-list_item
+              li.navbar-list-item
                 a(href="#") Tools & Planners
-              li.navbar-list_item.hidden-sm
+              li.navbar-list-item.hidden-sm
                 a(href="#") Get in touch
 
         ul.nav.navbar-nav.navbar-right.navbar-search
-          li
-            a(href="#")
-              svg.icon-search
-                use(xlink:href="#icon-search")
+          a(href="#")
+            svg.icon-search
+              use(xlink:href="#icon-search")
