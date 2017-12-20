@@ -1,18 +1,22 @@
 @mixin font-face($fontname) {
-  font-family: '#{$fontname}';
+  font-family: #{$fontname};
   src: url('assets/fonts/#{$fontname}.ttf');
   font-style: normal;
   font-weight: normal;
 }
 
-@font-face
-  @include font-face(helvetica-light)
-@font-face
-  @include font-face(helvetica-bold)
-@font-face
-  @include font-face(helvetica)
-@font-face
-  @include font-face(helvetica-italic)
+@font-face {
+  @include font-face(helvetica-light);
+}
+@font-face{
+  @include font-face(helvetica-bold);
+}
+@font-face{
+  @include font-face(helvetica);
+}
+@font-face{
+  @include font-face(helvetica-italic);
+}
 
 i {
   font-family: helvetica-italic;
