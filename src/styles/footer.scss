@@ -19,12 +19,12 @@
       padding: 0;
       padding-top: 51px;
 
-      h2.title {
+      &-title {
         margin: 0;
         font-size: 14px;
         text-transform: uppercase;
       }
-      .footer-list_item {
+      &-item {
         display: inline-block;
         margin-top: 14px;
         li {
@@ -39,7 +39,7 @@
       }
     }
     ._home {
-      .footer-list_item {
+      .footer-list-item {
         padding-right: 98px;
       }
     }
@@ -56,7 +56,7 @@
         }
       }
       padding-left: 21px;
-      .footer-list_item {
+      .footer-list-item {
         padding-right: 64px;
         li {
           padding-bottom: 18px;
@@ -114,7 +114,7 @@
       }
       float: right;
       max-width: 126px;
-      .footer-list_item {
+      .footer-list-item {
         ._mail {
           &:before {
             margin-left: -4px;
@@ -138,6 +138,7 @@
         }
       }
     }
+    
     .copyright {
       vertical-align: bottom;
       margin-right: -15px;
@@ -218,17 +219,17 @@
 @media (max-width: 1199px) and (min-width: 768px) {
   .footer {
     ._home {
-      .footer-list_item {
+      .footer-list-item {
         padding-right: 50px;
       }
     }
     ._followus {
       padding-left: 0;
-      .footer-list_item {
+      .footer-list-item {
         padding-right: 40px;
       }
     }
-    .footer-list_item {
+    .footer-list-item {
       &:last-child {
         padding-right: 0px;
       }
@@ -277,7 +278,7 @@
         font-size: 20px;
         color: #fff;
       }
-      .footer-list_item {
+      .footer-list-item {
         display: inline-block;
         margin-top: 24px;
         li {
@@ -309,12 +310,12 @@
     }
     ._home {
       padding-top: 70px;
-      .footer-list_item {
+      .footer-list-item {
         padding-right: 130px;
       }
     }
     ._followus {
-      .footer-list_item {
+      .footer-list-item {
         padding-right: 142px;
         li {
           padding-bottom: 27px;

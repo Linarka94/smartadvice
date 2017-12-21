@@ -10,13 +10,14 @@
 }
 @media (max-width: 767px) {
   .main-title {
-    max-width: 640px;
+    width: 100%;
     margin: auto;
+    margin-bottom: 42px;
     padding: 0;
-    padding: 0;
-    padding-top: 65px;
-    padding-left: 30px;
-    margin: 0;
-    margin-bottom: 60px;
+    padding-top: 42px;
+    padding-left: 21px;
+    h1 {
+      font-size: 32px;
+    }
   }
 }
