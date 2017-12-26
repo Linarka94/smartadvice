@@ -1,31 +1,31 @@
 include ../mixin.pug
 
-div.whyjoin-reason
+div.reasons
   div.container
     div.row
       div.col-sm-4.col-xs-12
-        div.whyjoin-reason-item._left
+        div.reasons-item._left
           +productOutput(  'whyjoin', 'user', 'Community',
                   'Get the support of a wide active community and exchange your ideas and advice with other members around the globe.')
 
       div.col-sm-4.col-xs-12
-        div.whyjoin-reason-item
+        div.reasons-item
           +productOutput(  'whyjoin', 'account', 'Accounts',
                   'Enjoy a wide range of convenient banking products and great services with ADIB moneysmart accounts.')
 
       div.col-sm-4.col-xs-12
-        div.whyjoin-reason-item._right
+        div.reasons-item._right
           +productOutput(  'whyjoin', 'financing', 'Financing',
                   'Whether you’re want to buy a new car or take an amazing holiday, moneysmart offers a wide range of financing options for all your needs.')
 
     div.row
       div.col-sm-4.col-xs-12
-        div.whyjoin-reason-item._left
+        div.reasons-item._left
           +productOutput(  'whyjoin', 'deals', 'Deals & Offers',
                   'Benefit from countless exclusive offers and enjoy the best shopping, dining, and entertainment experiences in the region!')
 
       div.col-sm-4.col-xs-12
-        div.whyjoin-reason-item
-          p.join Be a member of smart  money 
+        div.reasons-join
+          p.reasons-join-text Be a member of smart  money 
             u community
-          button(class="btn-join" onclick="location.href='#'") Join Now
+          button(class="reasons-join-button" onclick="location.href='#'") Join Now

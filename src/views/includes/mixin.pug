@@ -1,9 +1,9 @@
 mixin productOutput(pageName, iconClassName, linkTitle, iconDescription)
-  a(class!="icon " + iconClassName href="#")
-    svg(class!="icon-" + pageName + "_" + iconClassName)
-      use(xlink:href!="#icon-" + pageName + "_" + iconClassName)
-  a(class="title" href="#") #{linkTitle}
-  p.text #{iconDescription}
+  a(class!="reasons-item-icon _prop-icon-" + iconClassName href="#")
+    svg(class!="icon-" + iconClassName)
+      use(xlink:href!="#icon-" + iconClassName)
+  a(class="reasons-item-title" href="#") #{linkTitle}
+  p.reasons-item-text #{iconDescription}
 
 mixin commentsOutput(userId, userName, commentText, commentTimePass, likesValue, dislikesValue)
   ul.comments-item

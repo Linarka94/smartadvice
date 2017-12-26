@@ -53,7 +53,7 @@
     h2 {
       padding-top: 34px;
       margin-bottom: 63px;
-      b { 
+      b {
         border-bottom-width: 2px;
         border-bottom-color: #fff;
         border-bottom-style: solid;
@@ -94,7 +94,7 @@
     background: -moz-linear-gradient(-45deg, #00aeef 0%, #1a427c 100%, #1a427c 100%);
     background: -webkit-linear-gradient(-165deg, #00aeef 0%, #1a427c 150%);
     background: -o-linear-gradient(-45deg, #00aeef 0%, #1a427c 100%, #1a427c 100%);
-    background-size: 640px 630px;
+    background-size: 100% 630px;
     background-position: center;
     &:before {
       content: " ";
@@ -104,7 +104,7 @@
       background: -moz-linear-gradient(145deg, #ad9167 0%, rgba(255, 255, 255, 0) 85%);
       background: -webkit-linear-gradient(-45deg, rgba(255, 255, 255, 0) 0%, rgba(0, 174, 239, 0.5) 50%, rgba(255, 255, 255, 0) 70%), -webkit-linear-gradient(145deg, #ad9167 0%, rgba(255, 255, 255, 0) 57%);
       background: -o-linear-gradient(145deg, #ad9167 0%, rgba(255, 255, 255, 0) 85%);
-      background-size: 640px 630px;
+      background-size: 100% 630px;
       background-position: center;
     }
     &:after {
@@ -116,24 +116,12 @@
       width: 100%;
       top: 25px;
       background-image: url(assets/img/slider-bg_m.png);
-      background-size: 640px 630px;
+      background-size: 100% 630px;
       opacity: 0.5;
       background-position: center;
       background-repeat: no-repeat;
     }
 
-    &-whyjoin-bg {
-      height: 346px;
-      &:before {
-        height: 346px;
-      }
-      &:after {
-        height: 346px;
-        top: 0;
-        background-image: url(assets/img/slider-whyjoin-bg.png);
-        background-size: 640px 500px;
-      }
-    }
     &-body {
       width: 100%;
       h1 {

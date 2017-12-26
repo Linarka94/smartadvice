@@ -1,24 +1,24 @@
-$svg-icons:  ( knowledge-exchange: (56px, 37px), saving-tips: (37px, 39px), product-review: (42px, 36px), expert-advice: (41px, 37px), webinar: (32px, 30px) );
+$svg-icons:  ( exchange: (56px, 37px), saving-tips: (37px, 39px), product-review: (42px, 36px), expert-advice: (41px, 37px), webinar: (32px, 30px) );
 .community {
-  .whyjoin-reason-item {
-    .title,
-    .text {
+  .reasons-item {
+    &-title,
+    &-text {
       color: #3c4759;
     }
     @each $key, $value in $svg-icons {
       $svg-width: nth($value, 1);
       $svg-height: nth($value, 2);
-      .#{$key} {
+      ._prop-icon-#{$key} {
         width: $svg-width;
         height: 38px;
       }
-      .icon-community_#{$key} {
+      .icon-#{$key} {
         fill: #3c4759;
         width: $svg-width;
         height: $svg-height;
       }
       &:hover {
-        .icon-community_#{$key} {
+        .icon-#{$key} {
           fill: #00aeef;
         }
       }
@@ -28,64 +28,69 @@ $svg-icons:  ( knowledge-exchange: (56px, 37px), saving-tips: (37px, 39px), prod
 
 @media (min-width: 769px) and (max-width: 991px) {
   .community {
-    .whyjoin-reason-item {
-      .btn-join,
-      .btn-join:hover {
-        padding: 0 62px;
-        padding-top: 17px;
-        padding-bottom: 13px;
-      }
+    .reasons-join-button {
+      padding: 0 62px;
+      padding-top: 17px;
+      padding-bottom: 13px;
     }
   }
 }
 
 @media (max-width: 768px) {
   $svg-icons:  ( knowledge-exchange: (89px, 60px), saving-tips: (71px, 75px), product-review: (71px, 61px), expert-advice: (71px, 65px), webinar: (55px, 52px) );
-  %title {
-    max-width: 370px;
+  
+  %reasons-item-title {
     margin: auto;
-    margin-bottom: 40px;
-    font-size: 48px;
-    line-height: 56px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    line-height: 34px;
   }
+
   .community {
-    .whyjoin-reason-item {
-      @each $key, $value in $svg-icons {
-        $svg-width: nth($value, 1);
-        $svg-height: nth($value, 2);
-        .#{$key} {
-          width: $svg-width;
-          height: $svg-height;
+    .reasons {
+      &-item {
+        &:hover {
+          .reasons-item-title {
+            @extend %reasons-item-title;
+          }
         }
-        .icon-community_#{$key} {
-          width: $svg-width;
-          height: $svg-height;
+        
+        &-title {
+          @extend %reasons-item-title;
+        }
+
+        &-text {
+          font-size: 20px;
+        }
+
+        &:last-child {
+          margin-bottom: 65px;
+        }
+
+        @each $key, $value in $svg-icons {
+          $svg-width: nth($value, 1);
+          $svg-height: nth($value, 2);
+          ._prop-icon-#{$key} {
+            width: $svg-width / 1.4444;
+            height: $svg-height  / 1.4444;
+          }
+          .icon-#{$key} {
+            width: $svg-width  / 1.4444;
+            height: $svg-height  / 1.4444;
+          }
         }
       }
-      .title {
-        @extend %title;
-      }
-      &:hover {
-        .title {
-          @extend %title;
+      &-join {
+        &-text {
+          margin-bottom: 30px;
         }
-      }
-      .text {
-        max-width: 370px;
-        font-size: 24px;
-      }
-      .join {
-        margin-bottom: 45px;
-      }
-      .btn-join,
-      .btn-join:hover {
-        padding: 0 252px;
-        padding-top: 25px;
-        padding-bottom: 21px;
-        font-size: 24px;
-      }
-      &:last-child {
-        margin-bottom: 65px;
+        
+        &-button {
+          padding: 0 30%;
+          padding-top: 25px;
+          padding-bottom: 21px;
+          font-size: 20px;
+        }
       }
     }
   }

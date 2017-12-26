@@ -117,7 +117,6 @@
 @media (max-width: 767px) {
   .whyjoin-product {
     h1 {
-      width: 580px;
       margin-left: auto;
       margin-right: auto;
     }
@@ -127,49 +126,27 @@
     }
     .whyjoin-product_item {
       .icon {
-        height: 250px;
-        width: 250px;
-        .icon-calculator {
-          fill: #fff;
-          width: 60px;
-          height: 60px;
-          margin: 95px;
-        }
-        .icon-basket {
-          fill: #fff;
-          width: 60px;
-          height: 60px;
-          margin: 95px;
-        }
-        .icon-layers {
-          fill: #fff;
-          width: 60px;
-          height: 60px;
-          margin: 95px;
-        }
-        .icon-wallet {
-          fill: #fff;
-          width: 60px;
-          height: 60px;
-          margin: 95px;
-        }
+        height: 175px;
+        width: 175px;
+        .icon-calculator,
+        .icon-basket,
+        .icon-layers,
+        .icon-wallet,
         .icon-box {
           fill: #fff;
-          width: 60px;
-          height: 60px;
-          margin: 95px;
+          width: 42px;
+          height: 42px;
+          margin: 67px;
         }
       }
       .title {
-        width: 250px;
-        font-size: 26px;
+        font-size: 20px;
       }
     }
     .btn-product {
       display: block;
-      max-width: 580px;
       margin: auto;
-      padding: 0 221px;
+      padding: 0 20%;
       padding-top: 17px;
       padding-bottom: 13px;
       border: none;
@@ -182,25 +159,8 @@
       color: #fff;
       &:hover {
         display: block;
-        max-width: 580px;
         margin: auto;
-        padding: 0 221px;
-        padding-top: 17px;
-        padding-bottom: 13px;
-        border: none;
-        border-radius: 0;
-        background-image: none;
-        background-color: #00aeef;
-        text-shadow: none;
-        outline: none;
-        font-size: 18px;
-        color: #fff;
-      }
-      &:active {
-        display: block;
-        max-width: 580px;
-        margin: auto;
-        padding: 0 221px;
+        padding: 0 20%;
         padding-top: 17px;
         padding-bottom: 13px;
         border: none;

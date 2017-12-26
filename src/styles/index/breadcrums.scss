@@ -1,21 +1,22 @@
-.div-bread {
+.breadcrumbs {
   padding-top: 33px;
   font-size: 16px;
   font-family: helvetica;
   color: #3c4759;
-  .list {
+  
+  &-list {
     padding: 0;
     padding-left: 2px;
     background-color: transparent;
-    li {
-      > a {
-        font-size: 16px;
-        font-family: helvetica;
-        color: #00aeef;
-      }
-    }
-    li.active {
+    
+    &-active {
       color: #3c4759;
+    }
+    
+    a {
+      font-size: 16px;
+      font-family: helvetica;
+      color: #00aeef;
     }
   }
 }

@@ -22,7 +22,7 @@
     margin-bottom: 65px;
     font-size: 18px;
   }
-  .testimonials-item {
+  &-item {
     padding: 0;
     p {
       position: relative;
@@ -66,6 +66,7 @@
     }
   }
 }
+
 @media (min-width: 992px) and (max-width: 1199px) {
   .testimonials {
     .testimonials-item {
@@ -75,6 +76,7 @@
     }
   }
 }
+
 @media (min-width: 769px) and (max-width: 991px) {
   .testimonials {
     .testimonials-item {
@@ -84,27 +86,39 @@
     }
   }
 }
+
 @media (max-width: 768px) {
   .testimonials {
     display: block;
-    width: 580px;
     margin: auto;
     &:before {
       margin-bottom: 48px;
     }
-    h2 {
-      text-align: left;
-    }
-    h3 {
-      text-align: left;
-    }
     .testimonials-item {
+      p {
+        width: 100%;
+        margin-bottom: 80px;
+        padding-right: 20px;
+        font-size: 20px;
+        &:before {
+          content: "";
+          position: absolute;
+          width: 28px;
+          height: 26px;
+          top: -12px;
+          left: 10px;
+          background-image: url("assets/img/community/quotes.png");
+          background-size: 28px 26px;
+        }
+      }
       p.right {
         float: none;
       }
-      p {
-        width: 580px;
-        font-size: 20px;
+      span {
+        font-size: 16px;
+        a {
+          font-size: 16px;
+        }
       }
     }
   }

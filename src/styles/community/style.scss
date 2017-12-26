@@ -5,18 +5,9 @@
   margin: auto;
 }
 @media (max-width: 768px) {
-  .div-bread.community {
-    width: 580px;
-    font-size: 20px;
-    .list {
-      li {
-        > a {
-          font-size: 20px;
-        }
-      }
-    }
-  }
   .main-title.community {
-    max-width: 580px;
+    margin-bottom: 42px;
+    padding-left: 21px;
+    padding-top: 42px;
   }
 }

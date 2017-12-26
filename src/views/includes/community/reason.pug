@@ -1,36 +1,36 @@
 include ../mixin.pug
 
-div.whyjoin-reason.community
+div.reasons.community
   div.container
     div.row
       div.col-sm-4.col-xs-12
-        div.whyjoin-reason-item._left
-          +productOutput(  'community', 'knowledge-exchange', 'Knowledge Exchange',
+        div.reasons-item._left
+          +productOutput(  'community', 'exchange', 'Knowledge Exchange',
                   'The Emerald Buddha is a figurine of a sitting Budha, that is the is the palladium of the Kingdom of Thailand.')
 
       div.col-sm-4.col-xs-12
-        div.whyjoin-reason-item
+        div.reasons-item
           +productOutput(  'community', 'saving-tips', 'Saving Tips',
                   'The Emerald Buddha is a figurine of a sitting Budha, that is the is the palladium of the Kingdom of Thailand.')
 
       div.col-sm-4.col-xs-12
-        div.whyjoin-reason-item._right
+        div.reasons-item._right
           +productOutput(  'community', 'product-review', 'Product Reviews',
                   'The Emerald Buddha is a figurine of a sitting Budha, that is the is the palladium of the Kingdom of Thailand.')
-
+    div.row
       div.col-sm-4.col-xs-12
-        div.whyjoin-reason-item._left
+        div.reasons-item._left
           +productOutput(  'community', 'expert-advice', 'Expert Reviews',
                   'The Emerald Buddha is a figurine of a sitting Budha, that is the is the palladium of the Kingdom of Thailand.')
 
       div.col-sm-4.col-xs-12
-        div.whyjoin-reason-item
+        div.reasons-item
           +productOutput(  'community', 'webinar', 'Webinars',
                   'The Emerald Buddha is a figurine of a sitting Budha, that is the is the palladium of the Kingdom of Thailand.')
 
       div.col-sm-4.col-xs-12
-        div.whyjoin-reason-item._right
-          p.join Be a member of smart  money 
+        div.reasons-join._right
+          p.reasons-join-text Be a member of smart  money 
             u 
               b community
-          button(class="btn-join" onclick="location.href='#'") Join Now
+          button(class="reasons-join-button" onclick="location.href='#'") Join Now

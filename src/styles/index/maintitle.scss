@@ -1,4 +1,4 @@
-.main-title {
+.pagetitle {
   padding: 0;
   h1 {
     padding: 0;
@@ -9,7 +9,7 @@
   }
 }
 @media (max-width: 767px) {
-  .main-title {
+  .pagetitle {
     width: 100%;
     margin: auto;
     margin-bottom: 42px;

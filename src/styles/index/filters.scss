@@ -31,7 +31,7 @@
     padding-bottom: 28px;
     border: none;
     background: none;
-    
+
     &:before {
       content: " ";
       display: inline-block;
@@ -80,7 +80,7 @@
       height: 28px;
       margin-right: 9px;
       fill: #3c4759;
-    }    
+    }
   }
 
   &-sort {
@@ -90,7 +90,7 @@
     padding-bottom: 28px;
     border: none;
     background: none;
-   
+
     &-label {
       display: inline;
     }
@@ -169,10 +169,10 @@
     width: 100%;
     margin: auto;
     margin-top: -45px;
-    
+
     &-search {
       padding-top: 31px;
-      
+
       &:before {
         content: "";
         background: none;
@@ -186,7 +186,6 @@
         font-size: 20px;
         font-family: helvetica;
         color: #3c4759;
-
       }
     }
 

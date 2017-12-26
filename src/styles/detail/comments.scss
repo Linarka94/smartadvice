@@ -71,6 +71,7 @@
       .info_rating {
         display: inline-block;
         float: right;
+        margin-top: -5px;
 
         %icon-like {
           display: inline-block;
@@ -100,7 +101,7 @@
           color: #3c4759;
           .icon-dislike {
             @extend %icon-like;
-            vertical-align: text-top;
+            vertical-align: top;
             height: 25px;
           }
           &:hover {
@@ -132,39 +133,58 @@
   }
 }
 @media (max-width: 767px) {
-  %extend-item {
-    width: 610px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-right: 15px;
-    padding-left: 15px;
-  }
   .comments {
+    padding-top: 0;
     font-size: 20px;
 
     h2 {
-      @extend %extend-item;
+      width: 100%;
+      margin: 0;
+      font-size: 30px;
     }
 
     .comments-item {
-      @extend %extend-item;
+      width: 100%;
+      margin: 0;
+      padding-top: 20px;
+      padding-bottom: 20px;
 
       .comments-item_logo {
-        height: 135px;
+        float: left;
+        .user1,
+        .user2,
+        .user3 {
+          height: 76px;
+          width: 76px;
+          margin-right: 10px;
+          background-size: 76px;
+        }
+      }
+
+      .comments-item_name {
+        width: 100%;
+        font-size: 20px;
+        margin-bottom: 0px;
       }
 
       .comments-item_text {
-        height: 85px;
+        height: 60px;
+        margin-bottom: 20px;
         overflow: hidden;
+        font-size: 14px;
+      }
+      .comments-item_info {
+        margin-left: 0;
       }
     }
     .btn-signup,
     .btn-signup:hover,
     .btn-signup:active {
-      padding: 0 196px;
+      margin-top: 40px;
+      padding: 0 18%;
       padding-top: 23px;
       padding-bottom: 23px;
-      font-size: 24px;
+      font-size: 20px;
     }
   }
 }
