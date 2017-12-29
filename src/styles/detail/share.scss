@@ -1,21 +1,21 @@
 $share-icons: ( facebook: (8px, 16px), twitter: (17px, 14px), in: (16px, 14px), rss: (15px, 15px) );
-.detail-share {
+.share {
   width: 224px;
   margin: auto;
   font-family: helvetica-bold;
   color: #fff;
-  .share-item {
+
+  &-item {
     display: inline-block;
     vertical-align: middle;
     margin-left: 10px;
     margin-right: 10px;
-    a {
-      display: flex;
+
+    &-text {
+      display: inline-block;
+      text-transform: uppercase;
     }
-  }
-  ._text {
-    margin-top: 2px;
-    text-transform: uppercase;
+
   }
   @each $social, $size in $share-icons {
     .icon-#{$social} {

@@ -1,25 +1,30 @@
-.community-text {
-  margin-bottom: 60px;
-  padding-top: 20px;
-  line-height: 24px;
+.content {
   text-align: justify;
   font-size: 16px;
+  font-family: helvetica;
+  line-height: 24px;
   color: #637188;
-  p {
-    margin: 0;
+
+  &-item {
+    margin-top: 0;
     margin-right: -15px;
     margin-left: -15px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
   }
 }
+
 @media (max-width: 768px) {
-  .community-text {
+  .content {
     width: 100%;
     margin: auto;
-    margin-bottom: 42px;
     padding-left: 20px;
     padding-right: 20px;
     padding-top: 0;
     font-size: 20px;
+
+    &-item {
+      margin-right: 0;
+      margin-left: 0;
+    }
   }
 }

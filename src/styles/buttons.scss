@@ -1,0 +1,21 @@
+.button-rectangular {
+  display: block;
+  padding-top: 16px;
+  padding-right: 40px;
+  padding-bottom: 14px;
+  padding-left: 40px;
+  border: none;
+  border-radius: 0;
+  background-image: none;
+  background-color: #00aeef;
+  transition-duration: .25s;
+  text-shadow: none;
+  outline: none;
+  font-size: 18px;
+  color: #fff;
+
+  &:hover {
+    background-color: #009ccc;
+    transition-duration: .25s;
+  }
+}

@@ -1,61 +1,44 @@
-.whyjoin-product {
+.product {
   margin-bottom: 90px;
-  h1 {
+  
+  &-title {
     margin: 0;
     margin-bottom: 20px;
     padding: 0 15px;
     color: #3c4759;
   }
-  .text {
+
+  &-abstract {
     margin-bottom: 54px;
     padding: 0 15px;
     font-size: 16px;
     color: #637188;
   }
-  .whyjoin-product_item {
-    .icon {
+
+  &-item {
+    &-icon {
       display: block;
       margin: auto;
       margin-bottom: 20px;
       width: 170px;
       height: 170px;
       background-color: #3c4759;
-      .icon-calculator {
-        fill: #fff;
-        width: 32px;
-        height: 32px;
-        margin: 69px;
-      }
-      .icon-basket {
-        fill: #fff;
-        width: 32px;
-        height: 32px;
-        margin: 69px;
-        fill: #fff;
-        width: 32px;
-        height: 32px;
-        margin: 69px;
-      }
-      .icon-layers {
-        fill: #fff;
-        width: 32px;
-        height: 32px;
-        margin: 69px;
-      }
-      .icon-wallet {
-        fill: #fff;
-        width: 32px;
-        height: 32px;
-        margin: 69px;
-      }
-      .icon-box {
-        fill: #fff;
-        width: 32px;
-        height: 32px;
-        margin: 69px;
+
+      &:hover {
+        .icon-calculator,
+        .icon-basket,
+        .icon-layers,
+        .icon-wallet,
+        .icon-box {
+          width: 64px;
+          height: 64px;
+          margin: 53px;
+          transition-duration: .25s;
+        }
       }
     }
-    .title {
+
+    &-title {
       display: block;
       margin: auto;
       margin-bottom: 50px;
@@ -65,113 +48,58 @@
       color: #3c4759;
     }
   }
-  .btn-product {
-    display: block;
+
+  &-button-view_all {
     margin-bottom: 90px;
     margin-left: 15px;
-    padding: 0 60px;
-    padding-top: 17px;
-    padding-bottom: 13px;
-    border: none;
-    border-radius: 0;
-    background-image: none;
-    background-color: #00aeef;
-    text-shadow: none;
-    outline: none;
-    font-size: 18px;
-    color: #fff;
-    &:hover {
-      display: block;
-      margin-bottom: 90px;
-      margin-left: 15px;
-      padding: 0 60px;
-      padding-top: 17px;
-      padding-bottom: 13px;
-      border: none;
-      border-radius: 0;
-      background-image: none;
-      background-color: #00aeef;
-      text-shadow: none;
-      outline: none;
-      font-size: 18px;
-      color: #fff;
-    }
-    &:active {
-      display: block;
-      margin-bottom: 90px;
-      margin-left: 15px;
-      padding: 0 60px;
-      padding-top: 17px;
-      padding-bottom: 13px;
-      border: none;
-      border-radius: 0;
-      background-image: none;
-      background-color: #00aeef;
-      text-shadow: none;
-      outline: none;
-      font-size: 18px;
-      color: #fff;
-    }
+    padding-right: 60px;
+    padding-left: 60px;
   }
 }
+
+.icon-calculator,
+.icon-basket,
+.icon-layers,
+.icon-wallet,
+.icon-box {
+  fill: #fff;
+  width: 32px;
+  height: 32px;
+  margin: 69px;
+  transition-duration: .25s;
+}
+
 @media (max-width: 767px) {
-  .whyjoin-product {
-    h1 {
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .text {
+  .product {
+    &-abstract {
       font-size: 20px;
       text-align: justify;
     }
-    .whyjoin-product_item {
-      .icon {
+
+    &-item {
+      &-icon {
         height: 175px;
         width: 175px;
-        .icon-calculator,
-        .icon-basket,
-        .icon-layers,
-        .icon-wallet,
-        .icon-box {
-          fill: #fff;
-          width: 42px;
-          height: 42px;
-          margin: 67px;
-        }
       }
-      .title {
+
+      &-title {
         font-size: 20px;
       }
     }
-    .btn-product {
-      display: block;
+    &-button-view_all {
       margin: auto;
-      padding: 0 20%;
-      padding-top: 17px;
-      padding-bottom: 13px;
-      border: none;
-      border-radius: 0;
-      background-image: none;
-      background-color: #00aeef;
-      text-shadow: none;
-      outline: none;
-      font-size: 18px;
-      color: #fff;
-      &:hover {
-        display: block;
-        margin: auto;
-        padding: 0 20%;
-        padding-top: 17px;
-        padding-bottom: 13px;
-        border: none;
-        border-radius: 0;
-        background-image: none;
-        background-color: #00aeef;
-        text-shadow: none;
-        outline: none;
-        font-size: 18px;
-        color: #fff;
-      }
+      padding-right: 20%;
+      padding-left: 20%;
+    }
+
+    .icon-calculator,
+    .icon-basket,
+    .icon-layers,
+    .icon-wallet,
+    .icon-box {
+      width: 42px;
+      height: 42px;
+      margin: 67px;
     }
   }
 }

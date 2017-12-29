@@ -1,6 +1,6 @@
-.whyjoin-info {
-  padding: 0;
+.extrareasons {
   font-family: helvetica;
+
   &:before {
     content: "";
     display: block;
@@ -9,31 +9,29 @@
     height: 1px;
     background-color: #e2e4e6;
   }
-  .whyjoin-info_item {
-    .icon {
+
+  &-item {
+    &-icon {
       display: block;
       margin: auto;
       margin-bottom: 15px;
       width: 32px;
       height: 32px;
     }
-    .question {
-      background-image: url(assets/img/whyjoin-info-question.png);
-    }
-    .folder {
-      background-image: url(assets/img/whyjoin-info-folder.png);
-    }
-    .resources {
-      background-image: url(assets/img/whyjoin-info-resources.png);
-    }
-    .title {
+
+    &-title {
       display: block;
       margin-bottom: 7px;
       text-align: center;
       font-size: 24px;
       color: #00aeef;
+
+      &:hover {
+        color: #00aeef;
+      }
     }
-    .text {
+
+    &-text {
       display: block;
       margin: auto;
       margin-bottom: 91px;
@@ -43,4 +41,14 @@
       color: #637188;
     }
   }
+}
+
+.icon-question {
+  background-image: url(assets/img/whyjoin-info-question.png);
+}
+.icon-folder {
+  background-image: url(assets/img/whyjoin-info-folder.png);
+}
+.icon-resources {
+  background-image: url(assets/img/whyjoin-info-resources.png);
 }

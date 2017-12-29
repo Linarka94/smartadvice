@@ -38,15 +38,15 @@ $svg-icons:  ( exchange: (56px, 37px), saving-tips: (37px, 39px), product-review
 
 @media (max-width: 768px) {
   $svg-icons:  ( knowledge-exchange: (89px, 60px), saving-tips: (71px, 75px), product-review: (71px, 61px), expert-advice: (71px, 65px), webinar: (55px, 52px) );
-  
-  %reasons-item-title {
-    margin: auto;
-    margin-bottom: 10px;
-    font-size: 30px;
-    line-height: 34px;
-  }
 
   .community {
+    %reasons-item-title {
+      margin: auto;
+      margin-bottom: 10px;
+      font-size: 30px;
+      line-height: 34px;
+    }
+    
     .reasons {
       &-item {
         &:hover {

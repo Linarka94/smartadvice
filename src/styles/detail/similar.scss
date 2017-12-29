@@ -6,7 +6,8 @@
   font-family: helvetica;
   font-size: 16px;
   color: #637188;
-  h2 {
+  
+  &-title {
     margin: 0;
     margin-right: -15px;
     margin-left: -15px;
@@ -14,32 +15,38 @@
     font-size: 36px;
     color: #3c4759;
   }
-  p {
+  &-subtitle {
     margin-bottom: 55px;
   }
+
   .article-item {
     margin-right: -15px;
     margin-left: -15px;
     margin-bottom: 115px;
   }
 }
+
+
 @media (max-width: 767px) {
   .similar {
     padding-top: 40px;
     font-size: 24px;
-    h2 {
+
+    &-title {
       width: 100%;
       margin-left: auto;
       margin-right: auto;
       margin-bottom: 0;
       font-size: 28px;
     }
+
     .article-item {
       display: block;
       position: relative;
       height: 200px;
       margin: auto;
       margin-bottom: 30px;
+
       &:before {
         content: "";
         display: block;
@@ -48,9 +55,11 @@
         background-color: #e2e4e6;
         margin-bottom: 29px;
       }
+
       .article-button {
         display: none;
       }
+
       .article-item-info {
         position: absolute;
         height: 20px;
@@ -83,14 +92,17 @@
           margin-right: 5px;
         }
       }
+
       .article-item-link {
         display: none;
         height: 140px;
         width: 86px;
       }
+
       .article-item-title {
         display: none;
       }
+
       .article-item-img {
         background: #384355 url(assets/img/article-bg_mobile.png);
         background-repeat: no-repeat;
@@ -106,6 +118,7 @@
         height: 86px;
         }
       }
+
       .article-item-category {
         position: absolute;
         width: 100px;
@@ -114,6 +127,7 @@
         padding: 5px 15px;
         font-size: 14px;
       }
+
       .article-item-text {
         margin: 0;
         display: block;
@@ -123,13 +137,9 @@
         color: #3c4759;
       }
     }
-    .first_item {
-      &:before {
-        content: "";
-        display: block;
-        margin-bottom: 30px;
-        background: none;
-      }
+    
+    ._first-child:before {
+      background-color: transparent;
     }
   }
 }

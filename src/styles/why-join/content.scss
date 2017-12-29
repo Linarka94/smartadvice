@@ -1,0 +1,29 @@
+.whyjoin {
+  .content {
+    padding-top: 55px;
+    text-align: center;
+
+    &-benefit {
+      margin-bottom: 28px;
+    }
+
+    &-earn {
+      max-width: 850px;
+      margin: auto;
+      margin-bottom: 30px;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &-singup {
+      margin-bottom: 80px;
+
+      a {
+        color: #00aeef;
+        border-bottom-style: solid;
+        border-bottom-color: #00aeef;
+        border-bottom-width: 2px;
+      }
+    }
+  }
+}

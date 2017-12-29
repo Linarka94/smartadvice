@@ -70,25 +70,10 @@ $svg-icons:  ( user: (56px, 37px), account: (43px, 29px), financing: (34px, 34px
     }
 
     &-button {
-      display: block;
-      margin: 0 auto;
-      padding: 0 97px;
-      padding-top: 17px;
-      padding-bottom: 13px;
-      border: none;
-      border-radius: 0;
-      background-image: none;
-      background-color: #00aeef;
-      transition-duration: .25s;
-      text-shadow: none;
-      outline: none;
-      font-size: 18px;
-      color: #fff;
-
-      &:hover {
-        background-color: #009ccc;
-        transition-duration: .25s;
-      }
+      margin-right: auto;
+      margin-left: auto;
+      padding-right: 97px;
+      padding-left: 97px;
     }
   }
 }

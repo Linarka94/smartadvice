@@ -1,0 +1,141 @@
+%common-style {
+  margin-right: -15px;
+  margin-left: -15px;
+  color: #a3b0c9;
+  transition-duration: .25s;
+
+  &:hover {
+    color: #3c4759;
+    transition-duration: .25s;
+    
+      &:before {
+        border-color: #3c4759;
+        transition-duration: .25s;
+      }
+
+      &:after {
+        border-color: #3c4759;
+        transition-duration: .25s;
+      }
+  }
+
+  &:before {
+    content: "";
+    display: inline-block;
+    transition-duration: .25s;
+  }
+
+  &:after {
+    content: "";
+    display: inline-block;
+    transition-duration: .25s;
+  }
+}
+
+%arrow-style {
+  width: 12px;
+  height: 12px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #a3b0c9;
+  transform: rotate(45deg);
+}
+
+%line-style {
+  position: absolute;
+  width: 17px;
+  height: 0px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #a3b0c9;
+  border-right: none;
+  border-left: none;
+}
+
+.newpage {
+  margin-bottom: 85px;
+  font-family: helvetica-bold;
+  font-size: 14px;
+  text-transform: uppercase;
+
+  &-prev {
+    @extend %common-style;
+
+    &:before {
+      @extend %arrow-style;
+      margin-right: 17px;
+      border-top: none;
+      border-right: none;
+    }
+
+    &:after {
+      @extend %line-style;
+      left: 0;
+      top: 8px;
+    }
+  }
+  &-next {
+    @extend %common-style;
+    float: right;
+
+    &:before {
+      @extend %line-style;
+      right: 0;
+      top: 8px;
+    }
+    &:after {
+      @extend %arrow-style;
+      margin-left: 17px;
+      border-bottom: none;
+      border-left: none;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  %mob_arrow-style {
+    width: 16px;
+    height: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: -2px;
+    border-width: 4px;
+  }
+
+  %mob_line-style {
+    width: 24px;
+    border-width: 2px;
+  }
+
+  .newpage {
+    margin-bottom: 40px;
+    font-size: 16px;
+
+    &-prev {
+      &:before {
+        @extend %mob_arrow-style;
+        border-top: none;
+        border-right: none;
+      }
+
+      &:after {
+        @extend %mob_line-style;
+        margin-left: 20px;
+      }
+    }
+
+    &-next {
+      &:before {
+        @extend %mob_line-style;
+        margin-right: 20px;
+      }
+
+      &:after {
+        @extend %mob_arrow-style;
+        margin-bottom: -3px;
+        border-bottom: none;
+        border-left: none;
+      }
+    }
+  }
+}

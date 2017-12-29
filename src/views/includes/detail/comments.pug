@@ -3,7 +3,7 @@ include ../mixin.pug
 div.container.comments
   div.row
     div.col-xs-12
-      h2 Top Comments
+      h2.comments-header Top Comments
   div.row
     div.col-xs-12
       +commentsOutput( '1',
@@ -30,4 +30,4 @@ div.container.comments
           '340')
   div.row
     div.col-xs-12
-      button(class="btn-signup" onclick="location.href='#'") Sign up to comment
+      button(class="button-rectangular comments-button-signup" onclick="location.href='#'") Sign up to comment

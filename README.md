@@ -21,7 +21,7 @@
 
 ### Installation
 
-Install [Node.js](https://nodejs.org/) to run project and open folder with project in terminal. Install the dependencies and devDependencies and build project :rocket:
+Install [Node.js](https://nodejs.org/) to run project and open folder with project in terminal. Install the dependencies and devDependencies, then build the project :rocket:
 ```sh
 $ cd smartadvice
 $ npm install
@@ -33,4 +33,4 @@ $ gulp build
 * Use `-w` to build developer version with active watcher: `$ gulp build -w`
 
 ### Live Demo
-SmartAdvice application is deployed on heroku (Cloud Application Platform) and aviable by link: [burusha-smartadvice](https://burusha-smartadvice.herokuapp.com/).
+SmartAdvice application is deployed on heroku (Cloud Application Platform) and aviable by link: [burusha-smartadvice](https://burusha-smartadvice.herokuapp.com/). The application is frozen (need 15 seconds to srart server and 1 minute to compress images).

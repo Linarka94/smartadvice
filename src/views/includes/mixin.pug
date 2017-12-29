@@ -7,24 +7,25 @@ mixin productOutput(pageName, iconClassName, linkTitle, iconDescription)
 
 mixin commentsOutput(userId, userName, commentText, commentTimePass, likesValue, dislikesValue)
   ul.comments-item
-    li.comments-item_logo
-      a(class!="user"+userId href="#")
+    li.comments-item-avatar
+      a(class!="avatar-user"+userId href="#")
 
-    li.comments-item_name #{userName}
+    li.comments-item-name #{userName}
 
-    li.comments-item_text #{commentText}
+    li.comments-item-text #{commentText}
 
-    li.comments-item_info
-      div.info_time
+    li.comments-item-info
+      div.info-time
         svg.icon-watch
           use(xlink:href="#icon-watch") 
         | #{commentTimePass} ago
-      div.info_rating
-        a(class="like" href="#") 
+
+      div.info-rating
+        a(class="info-rating-like" href="#") 
           svg.icon-like
             use(xlink:href="#icon-like")
           | #{likesValue}
-        a(class="dislike" href="#") 
+        a(class="info-rating-dislike" href="#") 
           svg.icon-dislike
             use(xlink:href="#icon-dislike")
           | #{dislikesValue}
@@ -51,7 +52,7 @@ mixin articleOutput(M_image, M_category, M_title, M_views, M_date, M_text)
   p.article-item-text #{M_text}
 
 mixin shareIconsOutput(iconName)
-  li(class!="share-item _" + iconName )
+  li(class!="share-item" )
     a(href="#")
       svg(class!="icon-" + iconName )
         use(xlink:href!="#icon-" + iconName )
