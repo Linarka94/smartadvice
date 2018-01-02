@@ -46,7 +46,7 @@ $svg-icons:  ( exchange: (56px, 37px), saving-tips: (37px, 39px), product-review
       font-size: 30px;
       line-height: 34px;
     }
-    
+
     .reasons {
       &-item {
         &:hover {
@@ -54,7 +54,7 @@ $svg-icons:  ( exchange: (56px, 37px), saving-tips: (37px, 39px), product-review
             @extend %reasons-item-title;
           }
         }
-        
+
         &-title {
           @extend %reasons-item-title;
         }
@@ -84,7 +84,7 @@ $svg-icons:  ( exchange: (56px, 37px), saving-tips: (37px, 39px), product-review
         &-text {
           margin-bottom: 30px;
         }
-        
+
         &-button {
           padding: 0 30%;
           padding-top: 25px;

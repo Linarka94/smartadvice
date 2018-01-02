@@ -15,8 +15,8 @@ $share-icons: ( facebook: (8px, 16px), twitter: (17px, 14px), in: (16px, 14px), 
       display: inline-block;
       text-transform: uppercase;
     }
-
   }
+
   @each $social, $size in $share-icons {
     .icon-#{$social} {
       width: nth($size, 1);

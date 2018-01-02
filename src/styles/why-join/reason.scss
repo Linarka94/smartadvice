@@ -1,6 +1,6 @@
 $svg-icons:  ( user: (56px, 37px), account: (43px, 29px), financing: (34px, 34px), deals: (33px, 31px) );
 
-%reason_propeties  {
+%reason_propeties {
   display: block;
   text-align: center;
   font-size: 16px;
@@ -40,7 +40,7 @@ $svg-icons:  ( user: (56px, 37px), account: (43px, 29px), financing: (34px, 34px
     @each $key, $value in $svg-icons {
       $svg-width: nth($value, 1);
       $svg-height: nth($value, 2);
-      
+
       ._prop-icon-#{$key} {
         width: $svg-width;
         height: 37px;

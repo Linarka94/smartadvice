@@ -6,7 +6,7 @@
   font-family: helvetica;
   font-size: 16px;
   color: #637188;
-  
+
   &-title {
     margin: 0;
     margin-right: -15px;
@@ -25,7 +25,6 @@
     margin-bottom: 115px;
   }
 }
-
 
 @media (max-width: 767px) {
   .similar {
@@ -137,7 +136,7 @@
         color: #3c4759;
       }
     }
-    
+
     ._first-child:before {
       background-color: transparent;
     }
